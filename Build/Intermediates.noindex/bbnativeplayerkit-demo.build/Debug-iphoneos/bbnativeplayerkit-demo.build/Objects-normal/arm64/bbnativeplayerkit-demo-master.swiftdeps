@@ -1,0 +1,16 @@
+version: "Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
+options: "6ce223d3e31ff24aa961a14cb44e45f1"
+build_time: [1614950434, 272079000]
+inputs:
+  "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/bbnativeplayerkit-demo/AppDelegate.swift": [1612944138, 113874298]
+  "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/bbnativeplayerkit-demo/ViewController.swift": [1612811625, 71645194]
+  "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/bbnativeplayerkit-demo/Tab-List/Controller/TabListUIViewController.swift": [1613550079, 165350538]
+  "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/bbnativeplayerkit-demo/Tab-List/View/VideoCell.swift": [1614948718, 930196628]
+  "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/bbnativeplayerkit-demo/Tab3/Tab3UIViewController.swift": [1612860489, 362366743]
+  "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/bbnativeplayerkit-demo/Tab-List/Helpers/Extensions.swift": [1605772291, 881626686]
+  "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/bbnativeplayerkit-demo/Tab-List/View/MenuBar.swift": [1605774348, 26637860]
+  "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/bbnativeplayerkit-demo/Tab-API/TabAPIUIViewController.swift": [1613551190, 857360042]
+  "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/bbnativeplayerkit-demo/Tab-List/Controller/ListViewController.swift": [1613209063, 363211782]
+  "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/bbnativeplayerkit-demo/Tab4UIViewController.swift": [1612860495, 469767277]
+  "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/bbnativeplayerkit-demo/Tab-List/Model/Video.swift": [1605778146, 292435338]
+  "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/bbnativeplayerkit-demo/SceneDelegate.swift": [1612811625, 69307732]
