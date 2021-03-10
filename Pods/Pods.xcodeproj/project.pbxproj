@@ -3,13 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
+		4B4CC7DA0B74411ECC0043B1EBA4BF30 /* BlueBillywigNativeShared-iOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FC2FFEFC7C4DB634A49D835A03CD4654 /* Build configuration list for PBXAggregateTarget "BlueBillywigNativeShared-iOS" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = "BlueBillywigNativeShared-iOS";
+		};
 		7362DAB47E2EFA5452F30DD7E9830B56 /* GoogleAds-IMA-iOS-SDK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 3C368ACA6A4E64ED08CDA7B42ED388AF /* Build configuration list for PBXAggregateTarget "GoogleAds-IMA-iOS-SDK" */;
+			buildConfigurationList = 20F47FCC447E46165E68315B2D2D3826 /* Build configuration list for PBXAggregateTarget "GoogleAds-IMA-iOS-SDK" */;
 			buildPhases = (
 			);
 			dependencies = (
@@ -22,83 +31,96 @@
 			buildPhases = (
 			);
 			dependencies = (
-				AB001E3B8954B4386A96A4599FEB1168 /* PBXTargetDependency */,
+				17F9422C448F5BA8766C5D6793E7CE75 /* PBXTargetDependency */,
 			);
 			name = "BlueBillywigNativePlayerKit-iOS";
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		29706146D21CDC3D758FC086D3276781 /* Pods-bbnativeplayerkit-demo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1505CE3522C73CA3C8546DBC21F50D /* Pods-bbnativeplayerkit-demo-dummy.m */; };
-		8BBCF6AE1F95BE126FC7097C238502B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		F39FCA3B7DB6486066C5654C7FB4219E /* Pods-bbnativeplayerkit-demo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 89249A5CC4F82ACC23AD4AE696F93DFA /* Pods-bbnativeplayerkit-demo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		806815DBEA1799E205828A25131355B5 /* Pods-bbnativeplayerkit-demo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1505CE3522C73CA3C8546DBC21F50D /* Pods-bbnativeplayerkit-demo-dummy.m */; };
+		9DB665A2B384404AE777F9D58CA5634E /* Pods-bbnativeplayerkit-demo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 89249A5CC4F82ACC23AD4AE696F93DFA /* Pods-bbnativeplayerkit-demo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE3808E707762AD5CB652B793E654F4F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0C8B8B6CEAD87290A8D94C04DE372CA9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7362DAB47E2EFA5452F30DD7E9830B56;
-			remoteInfo = "GoogleAds-IMA-iOS-SDK";
-		};
-		57751DB3A7810240EA002069530226BF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7362DAB47E2EFA5452F30DD7E9830B56;
-			remoteInfo = "GoogleAds-IMA-iOS-SDK";
-		};
-		7D101DDF9995762EA6E75FA9171498DA /* PBXContainerItemProxy */ = {
+		0F39E9FD75F68E634D825B8203E52729 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C0A3AE4E4B613CA8FE09B10A4F7FFA55;
 			remoteInfo = "BlueBillywigNativePlayerKit-iOS";
 		};
+		44CDFC619D14AF21645456F4FADAF907 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7362DAB47E2EFA5452F30DD7E9830B56;
+			remoteInfo = "GoogleAds-IMA-iOS-SDK";
+		};
+		9FED00371AB14C0D78CF2D07A889CF1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B4CC7DA0B74411ECC0043B1EBA4BF30;
+			remoteInfo = "BlueBillywigNativeShared-iOS";
+		};
+		F661BDD943D9DEF117AB31A9B1C22688 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7362DAB47E2EFA5452F30DD7E9830B56;
+			remoteInfo = "GoogleAds-IMA-iOS-SDK";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0B097F53EF563D7C66CF5DA1012D3671 /* BlueBillywigNativePlayerKit-iOS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "BlueBillywigNativePlayerKit-iOS.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1636D80B4EC969DBCAFE8C391A7A466D /* BlueBillywigNativePlayerKit-iOS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "BlueBillywigNativePlayerKit-iOS.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1E2FCC794B8A43DE2E8E3E61F17048AE /* BlueBillywigNativePlayerKit-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "BlueBillywigNativePlayerKit-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		29D69F146D29709C841469461745DA71 /* Pods-bbnativeplayerkit-demo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-bbnativeplayerkit-demo-acknowledgements.plist"; sourceTree = "<group>"; };
+		3EB882A92BB268EC27E358BAFDD1C72B /* BBNativePlayerKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BBNativePlayerKit.framework; sourceTree = "<group>"; };
 		46E941FC4BA812420BF718A66EFE63C5 /* Pods_bbnativeplayerkit_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_bbnativeplayerkit_demo.framework; path = "Pods-bbnativeplayerkit-demo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B885F95DF2CFB46854ACE4F8612D7E /* Pods-bbnativeplayerkit-demo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-bbnativeplayerkit-demo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5153C5F8539DFDD49588ACA1565A9CA4 /* GoogleInteractiveMediaAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleInteractiveMediaAds.framework; sourceTree = "<group>"; };
 		640652D26961C428ADE818629D031541 /* Pods-bbnativeplayerkit-demo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-bbnativeplayerkit-demo-frameworks.sh"; sourceTree = "<group>"; };
-		693CFCBAA6A702521ABF5B0E2EBC27A5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		6982816E855FF4CE7BD3FC593CFEDE72 /* BBNativePlayerKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BBNativePlayerKit.framework; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		82862BDB0F429DE73BF049805122D390 /* GoogleAds-IMA-iOS-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "GoogleAds-IMA-iOS-SDK.release.xcconfig"; sourceTree = "<group>"; };
 		89249A5CC4F82ACC23AD4AE696F93DFA /* Pods-bbnativeplayerkit-demo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-bbnativeplayerkit-demo-umbrella.h"; sourceTree = "<group>"; };
 		8DD2233D1377783AE56E0E07340126F5 /* Pods-bbnativeplayerkit-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-bbnativeplayerkit-demo.release.xcconfig"; sourceTree = "<group>"; };
 		91B9406A93EE32BCB3F7C1BD82343FF2 /* Pods-bbnativeplayerkit-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-bbnativeplayerkit-demo.debug.xcconfig"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		D40D2037F0CA6A1AADAA6D1904077F31 /* BlueBillywigNativePlayerKit-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "BlueBillywigNativePlayerKit-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		9D955C54999212DD60362271F75F255A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		A093C09D588BA0FEC3229202C1CCE88A /* BlueBillywigNativeShared-iOS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "BlueBillywigNativeShared-iOS.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BB824CB7582D6092659A7E50F7A3385A /* BlueBillywigNativeShared-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "BlueBillywigNativeShared-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		D04D9F5CEDCE1CE70FF0DF7E5EDA5CC2 /* BlueBillywigNativeShared-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "BlueBillywigNativeShared-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		D6722A3D71C118E2F35AC68682E87D4F /* shared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = shared.framework; sourceTree = "<group>"; };
 		E1076B9FFF42DA3D3F49B9DB034EAD2F /* GoogleAds-IMA-iOS-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "GoogleAds-IMA-iOS-SDK.debug.xcconfig"; sourceTree = "<group>"; };
 		E1582AD5B26C77B796E32CA832B49F21 /* Pods-bbnativeplayerkit-demo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-bbnativeplayerkit-demo.modulemap"; sourceTree = "<group>"; };
-		E4B8C86BBDE201A623E3BB9FB2D9B646 /* BlueBillywigNativePlayerKit-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "BlueBillywigNativePlayerKit-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		E94938C69A876E2E0A3120FE1CB28539 /* Pods-bbnativeplayerkit-demo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-bbnativeplayerkit-demo-Info.plist"; sourceTree = "<group>"; };
 		EE1505CE3522C73CA3C8546DBC21F50D /* Pods-bbnativeplayerkit-demo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-bbnativeplayerkit-demo-dummy.m"; sourceTree = "<group>"; };
+		FFDA30FEBDCEDC1A62D810F15B446AC4 /* BlueBillywigNativePlayerKit-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "BlueBillywigNativePlayerKit-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B531AE08C1C6566368DB988427EC51AC /* Frameworks */ = {
+		CE2973FB4CD1E885B0053509B9650D5E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BBCF6AE1F95BE126FC7097C238502B4 /* Foundation.framework in Frameworks */,
+				FE3808E707762AD5CB652B793E654F4F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		12EBE7AB15B8E50FEE1B613C3561A79D /* Frameworks */ = {
+		0E8AE66FD0A14BA086C542B68BC4115C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6982816E855FF4CE7BD3FC593CFEDE72 /* BBNativePlayerKit.framework */,
+				1E2FCC794B8A43DE2E8E3E61F17048AE /* BlueBillywigNativePlayerKit-iOS.debug.xcconfig */,
+				FFDA30FEBDCEDC1A62D810F15B446AC4 /* BlueBillywigNativePlayerKit-iOS.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../bbnativeplayerkit-demo/Pods/Target Support Files/BlueBillywigNativePlayerKit-iOS";
 			sourceTree = "<group>";
 		};
 		1596CE11B830EE3CFBE14B7C94EB4E81 /* Products */ = {
@@ -107,6 +129,15 @@
 				46E941FC4BA812420BF718A66EFE63C5 /* Pods_bbnativeplayerkit_demo.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		2BA34D1CB769663AB0E2689DA215355F /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				1636D80B4EC969DBCAFE8C391A7A466D /* BlueBillywigNativePlayerKit-iOS.podspec */,
+				9D955C54999212DD60362271F75F255A /* LICENSE */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		46D276135F6D5E8EAE03AD154EBF5214 /* GoogleAds-IMA-iOS-SDK */ = {
@@ -127,12 +158,12 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		5973DE80697CAE315EF84210ADB2FED9 /* BlueBillywigNativePlayerKit-iOS */ = {
+		6D28AF3CADB57E41CCDE987FFCDE5E79 /* BlueBillywigNativePlayerKit-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				12EBE7AB15B8E50FEE1B613C3561A79D /* Frameworks */,
-				9FCC6EAD3DBB03978CFD3A44DAEC5D3C /* Pod */,
-				B27C7586B940419CFF640F63D3FAD4CC /* Support Files */,
+				EEFF284AFFC1639A0E9DAA4B2F4B9975 /* Frameworks */,
+				2BA34D1CB769663AB0E2689DA215355F /* Pod */,
+				0E8AE66FD0A14BA086C542B68BC4115C /* Support Files */,
 			);
 			name = "BlueBillywigNativePlayerKit-iOS";
 			path = "../../bbnativeplayerkit-cocoapod";
@@ -148,6 +179,15 @@
 			path = "../Target Support Files/GoogleAds-IMA-iOS-SDK";
 			sourceTree = "<group>";
 		};
+		7A28D624D142CE41FFDE651B932032C6 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D28AF3CADB57E41CCDE987FFCDE5E79 /* BlueBillywigNativePlayerKit-iOS */,
+				E8F9B4CC323BADE02B164E14AEC81324 /* BlueBillywigNativeShared-iOS */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		842A7CA93D1FDCD5541AB40B91B07508 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,21 +196,12 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		9FCC6EAD3DBB03978CFD3A44DAEC5D3C /* Pod */ = {
+		8C8AC368170B4DD18DD5E429F23DC3DC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0B097F53EF563D7C66CF5DA1012D3671 /* BlueBillywigNativePlayerKit-iOS.podspec */,
-				693CFCBAA6A702521ABF5B0E2EBC27A5 /* LICENSE */,
+				D6722A3D71C118E2F35AC68682E87D4F /* shared.framework */,
 			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		AAD7779CF8244C75AD7A0672C643E19E /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				5973DE80697CAE315EF84210ADB2FED9 /* BlueBillywigNativePlayerKit-iOS */,
-			);
-			name = "Development Pods";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		AEBBE4B264F5738676A30F16C855C6BB /* Frameworks */ = {
@@ -181,26 +212,34 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B27C7586B940419CFF640F63D3FAD4CC /* Support Files */ = {
+		C50185C8F1952E727F4021C95EDF5969 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				D40D2037F0CA6A1AADAA6D1904077F31 /* BlueBillywigNativePlayerKit-iOS.debug.xcconfig */,
-				E4B8C86BBDE201A623E3BB9FB2D9B646 /* BlueBillywigNativePlayerKit-iOS.release.xcconfig */,
+				A093C09D588BA0FEC3229202C1CCE88A /* BlueBillywigNativeShared-iOS.podspec */,
 			);
-			name = "Support Files";
-			path = "../bbnativeplayerkit-demo/Pods/Target Support Files/BlueBillywigNativePlayerKit-iOS";
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				AAD7779CF8244C75AD7A0672C643E19E /* Development Pods */,
+				7A28D624D142CE41FFDE651B932032C6 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				842A7CA93D1FDCD5541AB40B91B07508 /* Pods */,
 				1596CE11B830EE3CFBE14B7C94EB4E81 /* Products */,
 				EBA7D861A1DF9A084A37025E6BCE3D00 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		D00E54590A4D6D480AD8BB8CCAFE159B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D04D9F5CEDCE1CE70FF0DF7E5EDA5CC2 /* BlueBillywigNativeShared-iOS.debug.xcconfig */,
+				BB824CB7582D6092659A7E50F7A3385A /* BlueBillywigNativeShared-iOS.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../bbnativeplayerkit-demo/Pods/Target Support Files/BlueBillywigNativeShared-iOS";
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -211,12 +250,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E8F9B4CC323BADE02B164E14AEC81324 /* BlueBillywigNativeShared-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8C8AC368170B4DD18DD5E429F23DC3DC /* Frameworks */,
+				C50185C8F1952E727F4021C95EDF5969 /* Pod */,
+				D00E54590A4D6D480AD8BB8CCAFE159B /* Support Files */,
+			);
+			name = "BlueBillywigNativeShared-iOS";
+			path = "../../bbnativeplayerkit-cocoapod";
+			sourceTree = "<group>";
+		};
 		EBA7D861A1DF9A084A37025E6BCE3D00 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
 				F05FDD349BF3144F028262C71922D945 /* Pods-bbnativeplayerkit-demo */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		EEFF284AFFC1639A0E9DAA4B2F4B9975 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3EB882A92BB268EC27E358BAFDD1C72B /* BBNativePlayerKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		F05FDD349BF3144F028262C71922D945 /* Pods-bbnativeplayerkit-demo */ = {
@@ -239,11 +297,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0C620F0D7325EC828D8B4E8B1FF42B7B /* Headers */ = {
+		A11EA01B8792C2E40AA82167FE831990 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F39FCA3B7DB6486066C5654C7FB4219E /* Pods-bbnativeplayerkit-demo-umbrella.h in Headers */,
+				9DB665A2B384404AE777F9D58CA5634E /* Pods-bbnativeplayerkit-demo-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,18 +310,19 @@
 /* Begin PBXNativeTarget section */
 		CDFC160551F833B14C62179C80906886 /* Pods-bbnativeplayerkit-demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C1C45762F1C534F60FCBE14A53A094D /* Build configuration list for PBXNativeTarget "Pods-bbnativeplayerkit-demo" */;
+			buildConfigurationList = B77B5CED6F2F694BFDDC6AC8E8AD1AE1 /* Build configuration list for PBXNativeTarget "Pods-bbnativeplayerkit-demo" */;
 			buildPhases = (
-				0C620F0D7325EC828D8B4E8B1FF42B7B /* Headers */,
-				25DEE822E5EB80A468AD5093C6C2EB94 /* Sources */,
-				B531AE08C1C6566368DB988427EC51AC /* Frameworks */,
-				4BC49A6A98C061368B71D3D030369DC4 /* Resources */,
+				A11EA01B8792C2E40AA82167FE831990 /* Headers */,
+				F81CA219A13C495F3F757DD905A84287 /* Sources */,
+				CE2973FB4CD1E885B0053509B9650D5E /* Frameworks */,
+				AE144637BC9A2F70150B034524E61144 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F2B155C9BA623240C934958C7C481CE7 /* PBXTargetDependency */,
-				BF47103DDDFE7F6A874B3AC0EC5594C5 /* PBXTargetDependency */,
+				6EB5C6EF2F54B7177B62215090E17333 /* PBXTargetDependency */,
+				CD642E52D1EC838EE4763EA548188816 /* PBXTargetDependency */,
+				6B1855CF114EC2C704FC89B11A5817E1 /* PBXTargetDependency */,
 			);
 			name = "Pods-bbnativeplayerkit-demo";
 			productName = "Pods-bbnativeplayerkit-demo";
@@ -280,7 +339,7 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -293,6 +352,7 @@
 			projectRoot = "";
 			targets = (
 				C0A3AE4E4B613CA8FE09B10A4F7FFA55 /* BlueBillywigNativePlayerKit-iOS */,
+				4B4CC7DA0B74411ECC0043B1EBA4BF30 /* BlueBillywigNativeShared-iOS */,
 				7362DAB47E2EFA5452F30DD7E9830B56 /* GoogleAds-IMA-iOS-SDK */,
 				CDFC160551F833B14C62179C80906886 /* Pods-bbnativeplayerkit-demo */,
 			);
@@ -300,7 +360,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4BC49A6A98C061368B71D3D030369DC4 /* Resources */ = {
+		AE144637BC9A2F70150B034524E61144 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -310,39 +370,270 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		25DEE822E5EB80A468AD5093C6C2EB94 /* Sources */ = {
+		F81CA219A13C495F3F757DD905A84287 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29706146D21CDC3D758FC086D3276781 /* Pods-bbnativeplayerkit-demo-dummy.m in Sources */,
+				806815DBEA1799E205828A25131355B5 /* Pods-bbnativeplayerkit-demo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		AB001E3B8954B4386A96A4599FEB1168 /* PBXTargetDependency */ = {
+		17F9422C448F5BA8766C5D6793E7CE75 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "GoogleAds-IMA-iOS-SDK";
 			target = 7362DAB47E2EFA5452F30DD7E9830B56 /* GoogleAds-IMA-iOS-SDK */;
-			targetProxy = 0C8B8B6CEAD87290A8D94C04DE372CA9 /* PBXContainerItemProxy */;
+			targetProxy = 44CDFC619D14AF21645456F4FADAF907 /* PBXContainerItemProxy */;
 		};
-		BF47103DDDFE7F6A874B3AC0EC5594C5 /* PBXTargetDependency */ = {
+		6B1855CF114EC2C704FC89B11A5817E1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "GoogleAds-IMA-iOS-SDK";
 			target = 7362DAB47E2EFA5452F30DD7E9830B56 /* GoogleAds-IMA-iOS-SDK */;
-			targetProxy = 57751DB3A7810240EA002069530226BF /* PBXContainerItemProxy */;
+			targetProxy = F661BDD943D9DEF117AB31A9B1C22688 /* PBXContainerItemProxy */;
 		};
-		F2B155C9BA623240C934958C7C481CE7 /* PBXTargetDependency */ = {
+		6EB5C6EF2F54B7177B62215090E17333 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "BlueBillywigNativePlayerKit-iOS";
 			target = C0A3AE4E4B613CA8FE09B10A4F7FFA55 /* BlueBillywigNativePlayerKit-iOS */;
-			targetProxy = 7D101DDF9995762EA6E75FA9171498DA /* PBXContainerItemProxy */;
+			targetProxy = 0F39E9FD75F68E634D825B8203E52729 /* PBXContainerItemProxy */;
+		};
+		CD642E52D1EC838EE4763EA548188816 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "BlueBillywigNativeShared-iOS";
+			target = 4B4CC7DA0B74411ECC0043B1EBA4BF30 /* BlueBillywigNativeShared-iOS */;
+			targetProxy = 9FED00371AB14C0D78CF2D07A889CF1C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		125C51B0F88E28C868DC90BD45E4E727 /* Debug */ = {
+		1C0F409AB9E328E592EE3FFB92B64527 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82862BDB0F429DE73BF049805122D390 /* GoogleAds-IMA-iOS-SDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32B5216B1176A335201E1E1C283FFA8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91B9406A93EE32BCB3F7C1BD82343FF2 /* Pods-bbnativeplayerkit-demo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-bbnativeplayerkit-demo/Pods-bbnativeplayerkit-demo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-bbnativeplayerkit-demo/Pods-bbnativeplayerkit-demo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7A25E5D7565A979B7A9ED2F6B2CFD8D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFDA30FEBDCEDC1A62D810F15B446AC4 /* BlueBillywigNativePlayerKit-iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		903A0004D3E6651EFD5D2E16214D101B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		90433073A62577FC780F5BDF67EF9E51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DD2233D1377783AE56E0E07340126F5 /* Pods-bbnativeplayerkit-demo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-bbnativeplayerkit-demo/Pods-bbnativeplayerkit-demo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-bbnativeplayerkit-demo/Pods-bbnativeplayerkit-demo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9B94E891FFA2E30E39754EDEEEFC9267 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E2FCC794B8A43DE2E8E3E61F17048AE /* BlueBillywigNativePlayerKit-iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9E8685078B309A231231620C7ADEB1E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB824CB7582D6092659A7E50F7A3385A /* BlueBillywigNativeShared-iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE6793E79339F5D5F4EF9C409E9E9013 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D04D9F5CEDCE1CE70FF0DF7E5EDA5CC2 /* BlueBillywigNativeShared-iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -395,7 +686,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -408,179 +699,7 @@
 			};
 			name = Debug;
 		};
-		12F92B64693F9748289C2746B2E48326 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D40D2037F0CA6A1AADAA6D1904077F31 /* BlueBillywigNativePlayerKit-iOS.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		853F05D596CAB2A2F20C17BB5719C139 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8DD2233D1377783AE56E0E07340126F5 /* Pods-bbnativeplayerkit-demo.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-bbnativeplayerkit-demo/Pods-bbnativeplayerkit-demo-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-bbnativeplayerkit-demo/Pods-bbnativeplayerkit-demo.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9118E72FF7FC079025E1AC942341528A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 82862BDB0F429DE73BF049805122D390 /* GoogleAds-IMA-iOS-SDK.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		92A3E9AC052A7345115439021B218E3B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		A2B602F4BCA9212AE5D6B9B903AAE794 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 91B9406A93EE32BCB3F7C1BD82343FF2 /* Pods-bbnativeplayerkit-demo.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-bbnativeplayerkit-demo/Pods-bbnativeplayerkit-demo-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-bbnativeplayerkit-demo/Pods-bbnativeplayerkit-demo.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		CE62ECAD976B7541D7D16EC0B7BC2C10 /* Debug */ = {
+		B81F213BA8DB260F0EA8999F1208D6FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E1076B9FFF42DA3D3F49B9DB034EAD2F /* GoogleAds-IMA-iOS-SDK.debug.xcconfig */;
 			buildSettings = {
@@ -597,41 +716,14 @@
 			};
 			name = Debug;
 		};
-		D96473A70828ADC7A17254741016A139 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4B8C86BBDE201A623E3BB9FB2D9B646 /* BlueBillywigNativePlayerKit-iOS.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2C1C45762F1C534F60FCBE14A53A094D /* Build configuration list for PBXNativeTarget "Pods-bbnativeplayerkit-demo" */ = {
+		20F47FCC447E46165E68315B2D2D3826 /* Build configuration list for PBXAggregateTarget "GoogleAds-IMA-iOS-SDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A2B602F4BCA9212AE5D6B9B903AAE794 /* Debug */,
-				853F05D596CAB2A2F20C17BB5719C139 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3C368ACA6A4E64ED08CDA7B42ED388AF /* Build configuration list for PBXAggregateTarget "GoogleAds-IMA-iOS-SDK" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CE62ECAD976B7541D7D16EC0B7BC2C10 /* Debug */,
-				9118E72FF7FC079025E1AC942341528A /* Release */,
+				B81F213BA8DB260F0EA8999F1208D6FE /* Debug */,
+				1C0F409AB9E328E592EE3FFB92B64527 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -639,8 +731,8 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				125C51B0F88E28C868DC90BD45E4E727 /* Debug */,
-				92A3E9AC052A7345115439021B218E3B /* Release */,
+				B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */,
+				903A0004D3E6651EFD5D2E16214D101B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -648,8 +740,26 @@
 		67AF2B6E7FA8A3618BD85C8B127CA7CB /* Build configuration list for PBXAggregateTarget "BlueBillywigNativePlayerKit-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				12F92B64693F9748289C2746B2E48326 /* Debug */,
-				D96473A70828ADC7A17254741016A139 /* Release */,
+				9B94E891FFA2E30E39754EDEEEFC9267 /* Debug */,
+				7A25E5D7565A979B7A9ED2F6B2CFD8D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B77B5CED6F2F694BFDDC6AC8E8AD1AE1 /* Build configuration list for PBXNativeTarget "Pods-bbnativeplayerkit-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32B5216B1176A335201E1E1C283FFA8C /* Debug */,
+				90433073A62577FC780F5BDF67EF9E51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC2FFEFC7C4DB634A49D835A03CD4654 /* Build configuration list for PBXAggregateTarget "BlueBillywigNativeShared-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE6793E79339F5D5F4EF9C409E9E9013 /* Debug */,
+				9E8685078B309A231231620C7ADEB1E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

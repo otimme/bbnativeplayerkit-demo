@@ -419,7 +419,7 @@ depends-member:
 - !private ["So8NSObjectP", "Scanner"]
 - ["So8NSObjectP", "String"]
 - ["So8NSObjectP", "UIColor"]
-- ["So8NSObjectP", "UIView"]
+- !private ["So8NSObjectP", "UIView"]
 - !private ["So8NSObjectP", "UInt64"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "addConstraints"]
@@ -606,22 +606,19 @@ depends-member:
 - !private ["So24UILargeContentViewerItemP", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["So30UIPasteConfigurationSupportingP", "NSLayoutConstraint"]
 - ["So30UIPasteConfigurationSupportingP", "String"]
-- ["So30UIPasteConfigurationSupportingP", "UIView"]
-- !private ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "UIView"]
 - !private ["So30UIPasteConfigurationSupportingP", "addConstraints"]
 - ["So30UIPasteConfigurationSupportingP", "addConstraintsWithFormat"]
 - !private ["So30UIPasteConfigurationSupportingP", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["So11UIResponderC", "NSLayoutConstraint"]
 - ["So11UIResponderC", "String"]
 - ["So11UIResponderC", "UIView"]
-- ["So11UIResponderC", ""]
 - !private ["So11UIResponderC", "addConstraints"]
 - ["So11UIResponderC", "addConstraintsWithFormat"]
 - !private ["So11UIResponderC", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["So30UIResponderStandardEditActionsP", "NSLayoutConstraint"]
 - ["So30UIResponderStandardEditActionsP", "String"]
-- ["So30UIResponderStandardEditActionsP", "UIView"]
-- !private ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "UIView"]
 - !private ["So30UIResponderStandardEditActionsP", "addConstraints"]
 - ["So30UIResponderStandardEditActionsP", "addConstraintsWithFormat"]
 - !private ["So30UIResponderStandardEditActionsP", "translatesAutoresizingMaskIntoConstraints"]
@@ -633,8 +630,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["So23UIUserActivityRestoringP", "NSLayoutConstraint"]
 - ["So23UIUserActivityRestoringP", "String"]
-- ["So23UIUserActivityRestoringP", "UIView"]
-- !private ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "UIView"]
 - !private ["So23UIUserActivityRestoringP", "addConstraints"]
 - ["So23UIUserActivityRestoringP", "addConstraintsWithFormat"]
 - !private ["So23UIUserActivityRestoringP", "translatesAutoresizingMaskIntoConstraints"]
@@ -663,7 +659,7 @@ depends-member:
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "startIndex"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "subscript"]
-- ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "count"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "hasPrefix"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "index"]
@@ -831,7 +827,7 @@ depends-nominal:
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
-- "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s26_ExpressibleByColorLiteralP"
@@ -868,7 +864,7 @@ depends-external:
 - "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Headers/IMACompanionAd.h"
 - "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Headers/IMAContentPlayhead.h"
 - "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Headers/IMAAVPlayerContentPlayhead.h"
-- "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-swift/BBNativePlayerKit/./shared.framework/Headers/shared.h"
+- "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-cocoapod/shared.framework/Headers/shared.h"
 - "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Headers/IMAFriendlyObstruction.h"
 - "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Headers/IMAAdPodInfo.h"
 - "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Headers/IMAAdPlaybackInfo.h"
@@ -894,8 +890,7 @@ depends-external:
 - "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Headers/IMAAVPlayerVideoDisplay.h"
 - "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Headers/IMAPictureInPictureProxy.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.3.sdk/usr/include/mach-o/dyld.modulemap"
-- "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-swift/BBNativePlayerKit/./shared.framework/Modules/module.modulemap"
-- "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-swift/BBNativePlayerKit/shared.framework/Modules/module.modulemap"
+- "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-cocoapod/shared.framework/Modules/module.modulemap"
 - "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Modules/module.modulemap"
 - "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-cocoapod/BBNativePlayerKit.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.3.sdk/usr/include/mach-o/compact_unwind_encoding.modulemap"

@@ -3,13 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6DF605E5D29796471BCEE212 /* Pods_bbnativeplayerkit_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC9EA4A010529D5BE38EE883 /* Pods_bbnativeplayerkit_demo.framework */; };
+		434BCFB6390FE5B2EFB16781 /* Pods_bbnativeplayerkit_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C5A84D4F8D22ED63820C02E /* Pods_bbnativeplayerkit_demo.framework */; };
 		ED533D6525EE2DE9007F22A8 /* TabAPIUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED533D5525EE2DE9007F22A8 /* TabAPIUIViewController.swift */; };
-		ED533D6625EE2DE9007F22A8 /* Tab3UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED533D5725EE2DE9007F22A8 /* Tab3UIViewController.swift */; };
+		ED533D6625EE2DE9007F22A8 /* InOutViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED533D5725EE2DE9007F22A8 /* InOutViewViewController.swift */; };
 		ED533D6725EE2DE9007F22A8 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED533D5A25EE2DE9007F22A8 /* ListViewController.swift */; };
 		ED533D6825EE2DE9007F22A8 /* TabListUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED533D5B25EE2DE9007F22A8 /* TabListUIViewController.swift */; };
 		ED533D6925EE2DE9007F22A8 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED533D5D25EE2DE9007F22A8 /* Video.swift */; };
@@ -27,12 +27,12 @@
 
 /* Begin PBXFileReference section */
 		037F00D8464F9D1B5453F228 /* Pods-bbnativeplayerkit-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bbnativeplayerkit-demo.debug.xcconfig"; path = "Target Support Files/Pods-bbnativeplayerkit-demo/Pods-bbnativeplayerkit-demo.debug.xcconfig"; sourceTree = "<group>"; };
+		2C5A84D4F8D22ED63820C02E /* Pods_bbnativeplayerkit_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bbnativeplayerkit_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63F2AB860CD6EEBC5FBFD08B /* Pods-bbnativeplayerkit-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bbnativeplayerkit-demo.release.xcconfig"; path = "Target Support Files/Pods-bbnativeplayerkit-demo/Pods-bbnativeplayerkit-demo.release.xcconfig"; sourceTree = "<group>"; };
-		DC9EA4A010529D5BE38EE883 /* Pods_bbnativeplayerkit_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bbnativeplayerkit_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED533D3B25EE2D5A007F22A8 /* bbnativeplayerkit-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bbnativeplayerkit-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED533D4C25EE2D5C007F22A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED533D5525EE2DE9007F22A8 /* TabAPIUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabAPIUIViewController.swift; sourceTree = "<group>"; };
-		ED533D5725EE2DE9007F22A8 /* Tab3UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab3UIViewController.swift; sourceTree = "<group>"; };
+		ED533D5725EE2DE9007F22A8 /* InOutViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InOutViewViewController.swift; sourceTree = "<group>"; };
 		ED533D5A25EE2DE9007F22A8 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		ED533D5B25EE2DE9007F22A8 /* TabListUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabListUIViewController.swift; sourceTree = "<group>"; };
 		ED533D5D25EE2DE9007F22A8 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DF605E5D29796471BCEE212 /* Pods_bbnativeplayerkit_demo.framework in Frameworks */,
+				434BCFB6390FE5B2EFB16781 /* Pods_bbnativeplayerkit_demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,14 +66,13 @@
 				037F00D8464F9D1B5453F228 /* Pods-bbnativeplayerkit-demo.debug.xcconfig */,
 				63F2AB860CD6EEBC5FBFD08B /* Pods-bbnativeplayerkit-demo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		6C1DCC80CDEA1F1D7DDB2B58 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DC9EA4A010529D5BE38EE883 /* Pods_bbnativeplayerkit_demo.framework */,
+				2C5A84D4F8D22ED63820C02E /* Pods_bbnativeplayerkit_demo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -101,7 +100,7 @@
 			children = (
 				ED533D5425EE2DE9007F22A8 /* Tab-API */,
 				ED533D5825EE2DE9007F22A8 /* Tab-List */,
-				ED533D5625EE2DE9007F22A8 /* Tab3 */,
+				ED533D5625EE2DE9007F22A8 /* Tab-InOutView */,
 				ED533D6325EE2DE9007F22A8 /* Tab4 */,
 				ED533D7025EE2DF7007F22A8 /* AppDelegate.swift */,
 				ED533D7125EE2DF7007F22A8 /* SceneDelegate.swift */,
@@ -123,12 +122,12 @@
 			path = "Tab-API";
 			sourceTree = "<group>";
 		};
-		ED533D5625EE2DE9007F22A8 /* Tab3 */ = {
+		ED533D5625EE2DE9007F22A8 /* Tab-InOutView */ = {
 			isa = PBXGroup;
 			children = (
-				ED533D5725EE2DE9007F22A8 /* Tab3UIViewController.swift */,
+				ED533D5725EE2DE9007F22A8 /* InOutViewViewController.swift */,
 			);
-			path = Tab3;
+			path = "Tab-InOutView";
 			sourceTree = "<group>";
 		};
 		ED533D5825EE2DE9007F22A8 /* Tab-List */ = {
@@ -194,7 +193,7 @@
 				ED533D3725EE2D5A007F22A8 /* Sources */,
 				ED533D3825EE2D5A007F22A8 /* Frameworks */,
 				ED533D3925EE2D5A007F22A8 /* Resources */,
-				B61262778618C6BA24CCB494 /* [CP] Embed Pods Frameworks */,
+				233906495D1D77B9E75B98CE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -273,7 +272,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B61262778618C6BA24CCB494 /* [CP] Embed Pods Frameworks */ = {
+		233906495D1D77B9E75B98CE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -301,7 +300,7 @@
 				ED533D7225EE2DF7007F22A8 /* ViewController.swift in Sources */,
 				ED533D6825EE2DE9007F22A8 /* TabListUIViewController.swift in Sources */,
 				ED533D6B25EE2DE9007F22A8 /* VideoCell.swift in Sources */,
-				ED533D6625EE2DE9007F22A8 /* Tab3UIViewController.swift in Sources */,
+				ED533D6625EE2DE9007F22A8 /* InOutViewViewController.swift in Sources */,
 				ED533D6C25EE2DE9007F22A8 /* Extensions.swift in Sources */,
 				ED533D6A25EE2DE9007F22A8 /* MenuBar.swift in Sources */,
 				ED533D6525EE2DE9007F22A8 /* TabAPIUIViewController.swift in Sources */,
@@ -439,6 +438,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PFYB2YN255;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "bbnativeplayerkit-demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -459,6 +462,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PFYB2YN255;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "bbnativeplayerkit-demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

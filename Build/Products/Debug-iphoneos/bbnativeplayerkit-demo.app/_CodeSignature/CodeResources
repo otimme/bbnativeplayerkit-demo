@@ -6,43 +6,31 @@
 	<dict>
 		<key>Frameworks/BBNativePlayerKit.framework/.DS_Store</key>
 		<data>
-		eSR1bic2rdvh4+HiUjpxSSQqyUg=
+		Xa0h1jP3id4sKhxKZ50CNfDj6ds=
 		</data>
 		<key>Frameworks/BBNativePlayerKit.framework/Assets.car</key>
 		<data>
-		8uN4iKDlbtaS8y08r4gG3LSug4I=
+		H8oMFAnwhC9RfW/VJZ8ldKHZUbg=
 		</data>
 		<key>Frameworks/BBNativePlayerKit.framework/BBNativePlayerKit</key>
 		<data>
-		uRqWIOxWz4HpgMiAMBYRbD54E0E=
+		roJ3Xahp3YnezuJlOxN92+SgGCc=
 		</data>
 		<key>Frameworks/BBNativePlayerKit.framework/BBNativePlayerKit_profile</key>
 		<data>
-		q+QkGkz5lD04UBqDvriNhnN4xkU=
-		</data>
-		<key>Frameworks/BBNativePlayerKit.framework/Frameworks/shared.framework/Info.plist</key>
-		<data>
-		BHhAKRNJDE04YtkYVuMjjXnzpgk=
-		</data>
-		<key>Frameworks/BBNativePlayerKit.framework/Frameworks/shared.framework/_CodeSignature/CodeResources</key>
-		<data>
-		MLL+UY5ADrzhwBdj4QPX4SS7HGQ=
-		</data>
-		<key>Frameworks/BBNativePlayerKit.framework/Frameworks/shared.framework/shared</key>
-		<data>
-		iICzc1SvE5EgO4Y702UrxADuyng=
+		GLi7S7WmTzmNbEGV2mEfoX/M/uM=
 		</data>
 		<key>Frameworks/BBNativePlayerKit.framework/Info.plist</key>
 		<data>
-		vI4RvhyPM4/VIH/k7+jJIaEAXns=
+		c+DFZ/2kLs9PEQcKufVTkJM5k6U=
 		</data>
 		<key>Frameworks/BBNativePlayerKit.framework/_CodeSignature/CodeResources</key>
 		<data>
-		pG9fncln2ewIhQcfVZFUGHGqxNA=
+		GOqjH8SQVQL3fghV+1QmNei1SOU=
 		</data>
 		<key>Frameworks/GoogleInteractiveMediaAds.framework/GoogleInteractiveMediaAds</key>
 		<data>
-		d3jjwsIqyZ5ZCUBzT9zQRHLknec=
+		Tc9IpryIS0wjbN3hAK7LvnSIgBc=
 		</data>
 		<key>Frameworks/GoogleInteractiveMediaAds.framework/Info.plist</key>
 		<data>
@@ -60,13 +48,25 @@
 		<data>
 		L0B9NWPLRQ9q/2EzSpRDULZ0960=
 		</data>
+		<key>Frameworks/shared.framework/Info.plist</key>
+		<data>
+		BHhAKRNJDE04YtkYVuMjjXnzpgk=
+		</data>
+		<key>Frameworks/shared.framework/_CodeSignature/CodeResources</key>
+		<data>
+		MLL+UY5ADrzhwBdj4QPX4SS7HGQ=
+		</data>
+		<key>Frameworks/shared.framework/shared</key>
+		<data>
+		+vjPKIpaQY2Y4GuPqRlfe9Q9XYw=
+		</data>
 		<key>Info.plist</key>
 		<data>
 		bHCSc1imShwhtERFfZ/1G5kjtYI=
 		</data>
 		<key>LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		lEa3u6mR3cs0STWAe3pfwkq5z8M=
+		DCgbFTmZt73mNFqyHqRk2alSNr8=
 		</data>
 		<key>LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -74,11 +74,15 @@
 		</data>
 		<key>LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		J1TdaNca7Y6a6lH6tJ357wZz4t8=
+		3hl4zJNVmafHSUh0o7NyQ4jj+Lk=
 		</data>
 		<key>Main.storyboardc/6Jg-IA-wSV-view-alX-Ns-GYJ.nib</key>
 		<data>
-		mIIqMygZ59eQI8UffpA5pVdkEO8=
+		9brh2BVd1devpGXo4Eh/o2rfO6U=
+		</data>
+		<key>Main.storyboardc/CCA-hG-vJD-view-uQH-7Q-RGz.nib</key>
+		<data>
+		V47Kq6HvwPY4qv5NU1KDUmXeF/A=
 		</data>
 		<key>Main.storyboardc/Info.plist</key>
 		<data>
@@ -86,11 +90,11 @@
 		</data>
 		<key>Main.storyboardc/UITabBarController-KRd-Xv-qEX.nib</key>
 		<data>
-		iWdyc8kBMeH8JGdon4CfHPyaq/o=
+		xYJt1n1cnshKQag2dRWPHb9/Bq0=
 		</data>
 		<key>Main.storyboardc/VXK-3D-93Y-view-H7H-T1-mfI.nib</key>
 		<data>
-		dCrstnylXUwUqS8c+SNO10vDyCU=
+		mxWVqYusQajNalOx+uad/MC0l6E=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -107,63 +111,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wOTwE99vIVBZJIh6Br1aQG1EiZUw0CgXq1AcAy0SB0o=
+			qXb0XX/kFdM8F0HByQycJVYUzuBpyyh0AVbN1q1O63s=
 			</data>
 		</dict>
 		<key>Frameworks/BBNativePlayerKit.framework/BBNativePlayerKit</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			k58E+BODt6ex0Wf8UU8IERQvNTgb80BTpJshFELij0U=
+			OhxaQVFLJg+68FKevxs4E7qII1fJ6VL31FxsLUD/Sv8=
 			</data>
 		</dict>
 		<key>Frameworks/BBNativePlayerKit.framework/BBNativePlayerKit_profile</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			M5fLVikb7XVISaCLVZxiEVvSKiCfx0YXg/uaZYt8SNs=
-			</data>
-		</dict>
-		<key>Frameworks/BBNativePlayerKit.framework/Frameworks/shared.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			syX4demBY/3rdMCO097ug+fd1RT7+kwSJeIarr9iblg=
-			</data>
-		</dict>
-		<key>Frameworks/BBNativePlayerKit.framework/Frameworks/shared.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ChukfjfdRYpaJWeBqyc4PcOgsNphjoBGWDmaAMKfmzo=
-			</data>
-		</dict>
-		<key>Frameworks/BBNativePlayerKit.framework/Frameworks/shared.framework/shared</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			hpwUkpcn1kArYV1d91rqiCdiZnuYx/tFvq3x8qWzhKQ=
+			rOqIU/5DeJA/dtnYdUUvCvYrFG7qL6YxdDTzS1Ek0j8=
 			</data>
 		</dict>
 		<key>Frameworks/BBNativePlayerKit.framework/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			832kr492bCGNO84ei8A8W1NkmuHh0kLMaAmsFyym5y0=
+			6kub4K+LnnGdShLaEpOKI7YSIFxldbt7suB84sEUOFE=
 			</data>
 		</dict>
 		<key>Frameworks/BBNativePlayerKit.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NXClatVRqAP7+XJyqfEkx6KoNbyqyJsygxOW+0Ri0rU=
+			NlguwgkWyoFezJmPOpfWo6HBriHldmkUz/MaESMx/c4=
 			</data>
 		</dict>
 		<key>Frameworks/GoogleInteractiveMediaAds.framework/GoogleInteractiveMediaAds</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			88kxfgk7mR0FyhNuRShamFijZzo3Gdy2DASHQNLgRGc=
+			bskDTa2uPNFg8BAi3NF4HLw48SbRxyP8R3P99VTAZRE=
 			</data>
 		</dict>
 		<key>Frameworks/GoogleInteractiveMediaAds.framework/Info.plist</key>
@@ -194,11 +177,32 @@
 			8EcioZmiE92QFVr1mAYw/CypNKGYZQNYtBxOPDE6KjE=
 			</data>
 		</dict>
+		<key>Frameworks/shared.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			syX4demBY/3rdMCO097ug+fd1RT7+kwSJeIarr9iblg=
+			</data>
+		</dict>
+		<key>Frameworks/shared.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ChukfjfdRYpaJWeBqyc4PcOgsNphjoBGWDmaAMKfmzo=
+			</data>
+		</dict>
+		<key>Frameworks/shared.framework/shared</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7XjqzwKJULMo7Kd6KCEqsHRuu45ePKumsjTgtFt0cw8=
+			</data>
+		</dict>
 		<key>LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			e6PrHeqtnCgJKy96CvGPK4HnZIX7pGRTwq4+tnaPQiI=
+			1W48bSB26BogTKZXjhuEzXePgkQJcIuTBJneoJNnrjI=
 			</data>
 		</dict>
 		<key>LaunchScreen.storyboardc/Info.plist</key>
@@ -212,14 +216,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AGuJOU7vpofr/lWY7qUcWIHm+T6OIu1ehHZSoNmc9Uk=
+			hRSZ037Ah7KmuPdVxE4/Iwtr5yt31YbD+25FVdWZYPM=
 			</data>
 		</dict>
 		<key>Main.storyboardc/6Jg-IA-wSV-view-alX-Ns-GYJ.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			s44HYwUDNUXqJjMRuAa4rLg2/gGqUBPuiELIZYtON4M=
+			FY+T5Q5Eb9r/J7Wf/1NMqh0/thKmJUGkWML1H27jfDI=
+			</data>
+		</dict>
+		<key>Main.storyboardc/CCA-hG-vJD-view-uQH-7Q-RGz.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2CrxbZwo1wL8WpWffVokJSoHLXrtcgWxe/LapikAgpg=
 			</data>
 		</dict>
 		<key>Main.storyboardc/Info.plist</key>
@@ -233,14 +244,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KzZrZGVd2gkYVdd/96su+W7VtFQjR2cTh0nHhmLnfQc=
+			qQXjXCFx/RVpqR0bAal3fYEx0xMsxlOUYaD400J09zQ=
 			</data>
 		</dict>
 		<key>Main.storyboardc/VXK-3D-93Y-view-H7H-T1-mfI.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			t5/XAT98i3kNG/lMDNjyKCU56HS74fCDEfbNPl7Ttxw=
+			Famy1voo+XVvCPjfi16w/cN1iCPfOFgbs1qLrQhQw5o=
 			</data>
 		</dict>
 		<key>embedded.mobileprovision</key>

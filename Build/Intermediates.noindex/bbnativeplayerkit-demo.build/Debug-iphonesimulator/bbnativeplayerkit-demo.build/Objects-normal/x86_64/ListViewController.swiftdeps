@@ -22,6 +22,7 @@ depends-top-level:
 - !private "Array"
 - "AssignmentPrecedence"
 - !private "BBNativePlayer"
+- !private "BooleanLiteralType"
 - "CGFloat"
 - "CGPoint"
 - "CGRect"
@@ -56,11 +57,16 @@ depends-top-level:
 - "print"
 - !private "view"
 depends-member:
+- !private ["So30AVPlayerViewControllerDelegateP", "nativeControls"]
+- !private ["So30AVPlayerViewControllerDelegateP", "presentModal"]
 - !private ["s18AdditiveArithmeticP", ""]
 - !private ["Sa", "append"]
 - !private ["Sa", "count"]
 - !private ["Sa", "init"]
 - !private ["Sa", "subscript"]
+- !private ["17BBNativePlayerKit0aB0C", "createPlayerView"]
+- !private ["17BBNativePlayerKit0aB4ViewC", "nativeControls"]
+- !private ["17BBNativePlayerKit0aB4ViewC", "presentModal"]
 - ["22bbnativeplayerkit_demo8BaseCellC", ""]
 - !private ["22bbnativeplayerkit_demo8BaseCellC", "mediaClip"]
 - ["SK", ""]
@@ -81,6 +87,8 @@ depends-member:
 - !private ["So15CALayerDelegateP", "indexPathForItem"]
 - !private ["So15CALayerDelegateP", "indexPathForItemAtPoint"]
 - !private ["So15CALayerDelegateP", "mediaClip"]
+- !private ["So15CALayerDelegateP", "nativeControls"]
+- !private ["So15CALayerDelegateP", "presentModal"]
 - !private ["So15CALayerDelegateP", "register"]
 - !private ["So15CALayerDelegateP", "registerClass"]
 - !private ["So15CALayerDelegateP", "registerNib"]
@@ -124,7 +132,9 @@ depends-member:
 - !private ["s7CVarArgP", "main"]
 - !private ["s7CVarArgP", "mediaClip"]
 - !private ["s7CVarArgP", "mediaClips"]
+- !private ["s7CVarArgP", "nativeControls"]
 - !private ["s7CVarArgP", "numberOfTapsRequired"]
+- !private ["s7CVarArgP", "presentModal"]
 - !private ["s7CVarArgP", "print"]
 - !private ["s7CVarArgP", "register"]
 - !private ["s7CVarArgP", "reloadData"]
@@ -186,7 +196,9 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "main"]
 - !private ["s28CustomDebugStringConvertibleP", "mediaClip"]
 - !private ["s28CustomDebugStringConvertibleP", "mediaClips"]
+- !private ["s28CustomDebugStringConvertibleP", "nativeControls"]
 - !private ["s28CustomDebugStringConvertibleP", "numberOfTapsRequired"]
+- !private ["s28CustomDebugStringConvertibleP", "presentModal"]
 - !private ["s28CustomDebugStringConvertibleP", "print"]
 - !private ["s28CustomDebugStringConvertibleP", "register"]
 - !private ["s28CustomDebugStringConvertibleP", "reloadData"]
@@ -248,7 +260,9 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "main"]
 - !private ["s23CustomStringConvertibleP", "mediaClip"]
 - !private ["s23CustomStringConvertibleP", "mediaClips"]
+- !private ["s23CustomStringConvertibleP", "nativeControls"]
 - !private ["s23CustomStringConvertibleP", "numberOfTapsRequired"]
+- !private ["s23CustomStringConvertibleP", "presentModal"]
 - !private ["s23CustomStringConvertibleP", "print"]
 - !private ["s23CustomStringConvertibleP", "register"]
 - !private ["s23CustomStringConvertibleP", "reloadData"]
@@ -336,7 +350,9 @@ depends-member:
 - !private ["SQ", "main"]
 - !private ["SQ", "mediaClip"]
 - !private ["SQ", "mediaClips"]
+- !private ["SQ", "nativeControls"]
 - !private ["SQ", "numberOfTapsRequired"]
+- !private ["SQ", "presentModal"]
 - !private ["SQ", "print"]
 - !private ["SQ", "register"]
 - !private ["SQ", "reloadData"]
@@ -348,6 +364,8 @@ depends-member:
 - !private ["SQ", "viewDidLoad"]
 - !private ["SQ", "white"]
 - !private ["SQ", "width"]
+- !private ["So28SharedEventListenerInterfaceP", "nativeControls"]
+- !private ["So28SharedEventListenerInterfaceP", "presentModal"]
 - !private ["s25ExpressibleByArrayLiteralP", "ArrayLiteralElement"]
 - !private ["s25ExpressibleByArrayLiteralP", "Element"]
 - !private ["s25ExpressibleByArrayLiteralP", ""]
@@ -414,7 +432,9 @@ depends-member:
 - !private ["SH", "main"]
 - !private ["SH", "mediaClip"]
 - !private ["SH", "mediaClips"]
+- !private ["SH", "nativeControls"]
 - !private ["SH", "numberOfTapsRequired"]
+- !private ["SH", "presentModal"]
 - !private ["SH", "print"]
 - !private ["SH", "register"]
 - !private ["SH", "reloadData"]
@@ -515,6 +535,8 @@ depends-member:
 - ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "mediaClip"]
 - ["So8NSCodingP", "mediaClips"]
+- !private ["So8NSCodingP", "nativeControls"]
+- !private ["So8NSCodingP", "presentModal"]
 - !private ["So8NSCodingP", "print"]
 - !private ["So8NSCodingP", "register"]
 - !private ["So8NSCodingP", "registerClass"]
@@ -610,7 +632,9 @@ depends-member:
 - !private ["So8NSObjectC", "main"]
 - !private ["So8NSObjectC", "mediaClip"]
 - ["So8NSObjectC", "mediaClips"]
+- !private ["So8NSObjectC", "nativeControls"]
 - !private ["So8NSObjectC", "numberOfTapsRequired"]
+- !private ["So8NSObjectC", "presentModal"]
 - !private ["So8NSObjectC", "print"]
 - !private ["So8NSObjectC", "register"]
 - !private ["So8NSObjectC", "registerClass"]
@@ -677,7 +701,9 @@ depends-member:
 - !private ["So8NSObjectP", "main"]
 - !private ["So8NSObjectP", "mediaClip"]
 - ["So8NSObjectP", "mediaClips"]
+- !private ["So8NSObjectP", "nativeControls"]
 - !private ["So8NSObjectP", "numberOfTapsRequired"]
+- !private ["So8NSObjectP", "presentModal"]
 - !private ["So8NSObjectP", "print"]
 - !private ["So8NSObjectP", "register"]
 - !private ["So8NSObjectP", "registerClass"]
@@ -781,6 +807,8 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "indexPathForItem"]
 - !private ["So29UIAccessibilityIdentificationP", "indexPathForItemAtPoint"]
 - !private ["So29UIAccessibilityIdentificationP", "mediaClip"]
+- !private ["So29UIAccessibilityIdentificationP", "nativeControls"]
+- !private ["So29UIAccessibilityIdentificationP", "presentModal"]
 - !private ["So29UIAccessibilityIdentificationP", "register"]
 - !private ["So29UIAccessibilityIdentificationP", "registerClass"]
 - !private ["So29UIAccessibilityIdentificationP", "registerNib"]
@@ -798,6 +826,8 @@ depends-member:
 - !private ["So12UIAppearanceP", "indexPathForItem"]
 - !private ["So12UIAppearanceP", "indexPathForItemAtPoint"]
 - !private ["So12UIAppearanceP", "mediaClip"]
+- !private ["So12UIAppearanceP", "nativeControls"]
+- !private ["So12UIAppearanceP", "presentModal"]
 - !private ["So12UIAppearanceP", "register"]
 - !private ["So12UIAppearanceP", "registerClass"]
 - !private ["So12UIAppearanceP", "registerNib"]
@@ -842,6 +872,8 @@ depends-member:
 - ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "mediaClip"]
 - ["So21UIAppearanceContainerP", "mediaClips"]
+- !private ["So21UIAppearanceContainerP", "nativeControls"]
+- !private ["So21UIAppearanceContainerP", "presentModal"]
 - !private ["So21UIAppearanceContainerP", "print"]
 - !private ["So21UIAppearanceContainerP", "register"]
 - !private ["So21UIAppearanceContainerP", "registerClass"]
@@ -1024,6 +1056,8 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "indexPathForItem"]
 - !private ["So17UICoordinateSpaceP", "indexPathForItemAtPoint"]
 - !private ["So17UICoordinateSpaceP", "mediaClip"]
+- !private ["So17UICoordinateSpaceP", "nativeControls"]
+- !private ["So17UICoordinateSpaceP", "presentModal"]
 - !private ["So17UICoordinateSpaceP", "register"]
 - !private ["So17UICoordinateSpaceP", "registerClass"]
 - !private ["So17UICoordinateSpaceP", "registerNib"]
@@ -1050,6 +1084,8 @@ depends-member:
 - !private ["So13UIDynamicItemP", "indexPathForItem"]
 - !private ["So13UIDynamicItemP", "indexPathForItemAtPoint"]
 - !private ["So13UIDynamicItemP", "mediaClip"]
+- !private ["So13UIDynamicItemP", "nativeControls"]
+- !private ["So13UIDynamicItemP", "presentModal"]
 - !private ["So13UIDynamicItemP", "register"]
 - !private ["So13UIDynamicItemP", "registerClass"]
 - !private ["So13UIDynamicItemP", "registerNib"]
@@ -1095,6 +1131,8 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "mediaClip"]
 - ["So18UIFocusEnvironmentP", "mediaClips"]
+- !private ["So18UIFocusEnvironmentP", "nativeControls"]
+- !private ["So18UIFocusEnvironmentP", "presentModal"]
 - !private ["So18UIFocusEnvironmentP", "print"]
 - !private ["So18UIFocusEnvironmentP", "register"]
 - !private ["So18UIFocusEnvironmentP", "registerClass"]
@@ -1115,6 +1153,8 @@ depends-member:
 - !private ["So11UIFocusItemP", "indexPathForItem"]
 - !private ["So11UIFocusItemP", "indexPathForItemAtPoint"]
 - !private ["So11UIFocusItemP", "mediaClip"]
+- !private ["So11UIFocusItemP", "nativeControls"]
+- !private ["So11UIFocusItemP", "presentModal"]
 - !private ["So11UIFocusItemP", "register"]
 - !private ["So11UIFocusItemP", "registerClass"]
 - !private ["So11UIFocusItemP", "registerNib"]
@@ -1132,6 +1172,8 @@ depends-member:
 - !private ["So20UIFocusItemContainerP", "indexPathForItem"]
 - !private ["So20UIFocusItemContainerP", "indexPathForItemAtPoint"]
 - !private ["So20UIFocusItemContainerP", "mediaClip"]
+- !private ["So20UIFocusItemContainerP", "nativeControls"]
+- !private ["So20UIFocusItemContainerP", "presentModal"]
 - !private ["So20UIFocusItemContainerP", "register"]
 - !private ["So20UIFocusItemContainerP", "registerClass"]
 - !private ["So20UIFocusItemContainerP", "registerNib"]
@@ -1167,6 +1209,8 @@ depends-member:
 - !private ["So24UILargeContentViewerItemP", "indexPathForItem"]
 - !private ["So24UILargeContentViewerItemP", "indexPathForItemAtPoint"]
 - !private ["So24UILargeContentViewerItemP", "mediaClip"]
+- !private ["So24UILargeContentViewerItemP", "nativeControls"]
+- !private ["So24UILargeContentViewerItemP", "presentModal"]
 - !private ["So24UILargeContentViewerItemP", "register"]
 - !private ["So24UILargeContentViewerItemP", "registerClass"]
 - !private ["So24UILargeContentViewerItemP", "registerNib"]
@@ -1212,6 +1256,8 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "mediaClip"]
 - ["So30UIPasteConfigurationSupportingP", "mediaClips"]
+- !private ["So30UIPasteConfigurationSupportingP", "nativeControls"]
+- !private ["So30UIPasteConfigurationSupportingP", "presentModal"]
 - !private ["So30UIPasteConfigurationSupportingP", "print"]
 - !private ["So30UIPasteConfigurationSupportingP", "register"]
 - !private ["So30UIPasteConfigurationSupportingP", "registerClass"]
@@ -1259,6 +1305,8 @@ depends-member:
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "mediaClip"]
 - ["So11UIResponderC", "mediaClips"]
+- !private ["So11UIResponderC", "nativeControls"]
+- !private ["So11UIResponderC", "presentModal"]
 - !private ["So11UIResponderC", "print"]
 - !private ["So11UIResponderC", "register"]
 - !private ["So11UIResponderC", "registerClass"]
@@ -1307,6 +1355,8 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "mediaClip"]
 - ["So30UIResponderStandardEditActionsP", "mediaClips"]
+- !private ["So30UIResponderStandardEditActionsP", "nativeControls"]
+- !private ["So30UIResponderStandardEditActionsP", "presentModal"]
 - !private ["So30UIResponderStandardEditActionsP", "print"]
 - !private ["So30UIResponderStandardEditActionsP", "register"]
 - !private ["So30UIResponderStandardEditActionsP", "registerClass"]
@@ -1443,6 +1493,8 @@ depends-member:
 - ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "mediaClip"]
 - ["So18UITraitEnvironmentP", "mediaClips"]
+- !private ["So18UITraitEnvironmentP", "nativeControls"]
+- !private ["So18UITraitEnvironmentP", "presentModal"]
 - !private ["So18UITraitEnvironmentP", "print"]
 - !private ["So18UITraitEnvironmentP", "register"]
 - !private ["So18UITraitEnvironmentP", "registerClass"]
@@ -1491,6 +1543,8 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "mediaClip"]
 - ["So23UIUserActivityRestoringP", "mediaClips"]
+- !private ["So23UIUserActivityRestoringP", "nativeControls"]
+- !private ["So23UIUserActivityRestoringP", "presentModal"]
 - !private ["So23UIUserActivityRestoringP", "print"]
 - !private ["So23UIUserActivityRestoringP", "register"]
 - !private ["So23UIUserActivityRestoringP", "registerClass"]
@@ -1511,6 +1565,8 @@ depends-member:
 - !private ["So6UIViewC", "indexPathForItem"]
 - !private ["So6UIViewC", "indexPathForItemAtPoint"]
 - !private ["So6UIViewC", "mediaClip"]
+- !private ["So6UIViewC", "nativeControls"]
+- !private ["So6UIViewC", "presentModal"]
 - !private ["So6UIViewC", "register"]
 - !private ["So6UIViewC", "registerClass"]
 - !private ["So6UIViewC", "registerNib"]
@@ -1564,6 +1620,7 @@ depends-member:
 - !private ["s24_DestructorSafeContainerP", "count"]
 - !private ["s24_DestructorSafeContainerP", "init"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "init"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
@@ -1613,7 +1670,9 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "mediaClip"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "mediaClips"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "nativeControls"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "numberOfTapsRequired"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "presentModal"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "register"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "reloadData"]
@@ -1656,7 +1715,9 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "main"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "mediaClip"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "mediaClips"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "nativeControls"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "numberOfTapsRequired"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "presentModal"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "print"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "register"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "reloadData"]
@@ -1687,12 +1748,17 @@ depends-member:
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "frame"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "indexPathForItem"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "mediaClip"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "nativeControls"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "presentModal"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "register"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "reloadData"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "scrollIndicatorInsets"]
 depends-nominal:
+- !private "So30AVPlayerViewControllerDelegateP"
 - !private "s18AdditiveArithmeticP"
 - !private "Sa"
+- !private "17BBNativePlayerKit0aB0C"
+- !private "17BBNativePlayerKit0aB4ViewC"
 - "22bbnativeplayerkit_demo8BaseCellC"
 - "SK"
 - !private "So15CALayerDelegateP"
@@ -1713,6 +1779,7 @@ depends-nominal:
 - !private "So17OS_dispatch_queueC"
 - !private "SE"
 - "SQ"
+- !private "So28SharedEventListenerInterfaceP"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s30ExpressibleByDictionaryLiteralP"
 - "s43ExpressibleByExtendedGraphemeClusterLiteralP"
@@ -1804,6 +1871,7 @@ depends-nominal:
 - !private "s14_ArrayProtocolP"
 - !private "s30_CustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
@@ -1836,8 +1904,41 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UniformTypeIdentifiers.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-cocoapod/BBNativePlayerKit.framework/Modules/BBNativePlayerKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Headers/IMAUniversalAdID.h"
+- "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Headers/IMAAd.h"
+- "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Headers/IMACompanionAd.h"
+- "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Headers/IMAContentPlayhead.h"
+- "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Headers/IMAAVPlayerContentPlayhead.h"
+- "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-cocoapod/shared.framework/Headers/shared.h"
+- "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Headers/IMAFriendlyObstruction.h"
+- "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Headers/IMAAdPodInfo.h"
+- "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Headers/IMAAdPlaybackInfo.h"
+- "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Headers/IMAAdsLoader.h"
+- "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Headers/IMAStreamManager.h"
+- "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Headers/IMAAdsManager.h"
+- "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Headers/IMAAdDisplayContainer.h"
+- "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Headers/IMAAdError.h"
+- "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Headers/GoogleInteractiveMediaAds.h"
+- "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Headers/IMASettings.h"
+- "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Headers/IMAAdsRenderingSettings.h"
+- "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Headers/IMAUiElements.h"
+- "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-cocoapod/BBNativePlayerKit.framework/Headers/BBNativePlayerKit-Swift.h"
+- "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-cocoapod/BBNativePlayerKit.framework/Headers/BBNativePlayerKit.h"
+- "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Headers/IMAAdEvent.h"
+- "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Headers/IMACuepoint.h"
+- "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Headers/IMACompanionAdSlot.h"
+- "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Headers/IMAStreamRequest.h"
+- "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Headers/IMAVODStreamRequest.h"
+- "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Headers/IMALiveStreamRequest.h"
+- "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Headers/IMAAdsRequest.h"
+- "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Headers/IMAVideoDisplay.h"
+- "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Headers/IMAAVPlayerVideoDisplay.h"
+- "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Headers/IMAPictureInPictureProxy.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.3.sdk/usr/include/mach-o/dyld.modulemap"
+- "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-cocoapod/shared.framework/Modules/module.modulemap"
+- "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Modules/module.modulemap"
 - "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-cocoapod/BBNativePlayerKit.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.3.sdk/usr/include/mach-o/compact_unwind_encoding.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.3.sdk/usr/include/objc/ObjectiveC.apinotes"

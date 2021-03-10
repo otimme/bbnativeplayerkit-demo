@@ -8,29 +8,40 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--InOut View-->
         <scene sceneID="Gaf-IQ-MOj">
             <objects>
-                <viewController id="CCA-hG-vJD" customClass="Tab2UIViewController" customModule="BlueBillywigNativeiOSDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="CCA-hG-vJD" customClass="InOutViewViewController" customModule="bbnativeplayerkit_demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uQH-7Q-RGz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="yaB-aj-rkJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="icg-at-FjD"/>
+                    <tabBarItem key="tabBarItem" title="InOut View" id="icg-at-FjD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VbC-UO-dbi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3774" y="-1596"/>
+            <point key="canvasLocation" x="-3771" y="-1596"/>
         </scene>
         <!--Item-->
         <scene sceneID="csk-Dz-4t5">
             <objects>
-                <viewController id="RMe-As-LY8" customClass="Tab3UIViewController" customModule="BlueBillywigNativeiOSDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="RMe-As-LY8" customClass="Tab3UIViewController" customModule="bbnativeplayerkit_demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o8i-AU-MMm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uq7-gv-NBU">
+                                <rect key="frame" x="87" y="288" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="K47-AX-lVh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -43,7 +54,7 @@
         <!--List-->
         <scene sceneID="NvE-eM-0So">
             <objects>
-                <viewController id="VXK-3D-93Y" customClass="TabListUIViewController" customModule="BlueBillywigNativeiOSDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="VXK-3D-93Y" customClass="TabListUIViewController" customModule="bbnativeplayerkit_demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H7H-T1-mfI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -59,7 +70,7 @@
         <!--Item-->
         <scene sceneID="H71-S8-Ooa">
             <objects>
-                <viewController id="foS-90-BYM" customClass="Tab4UIViewController" customModule="BlueBillywigNativeiOSDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="foS-90-BYM" customClass="Tab4UIViewController" customModule="bbnativeplayerkit_demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Isk-Es-WnS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -84,16 +95,17 @@
                     <connections>
                         <segue destination="6Jg-IA-wSV" kind="relationship" relationship="viewControllers" id="BNL-Zi-ZGa"/>
                         <segue destination="VXK-3D-93Y" kind="relationship" relationship="viewControllers" id="gXV-5V-eLv"/>
+                        <segue destination="CCA-hG-vJD" kind="relationship" relationship="viewControllers" id="owj-RP-CKk"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zYr-Sc-FwU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5864" y="-871"/>
+            <point key="canvasLocation" x="-6159" y="-964"/>
         </scene>
         <!--API-->
         <scene sceneID="t9H-pT-fH8">
             <objects>
-                <viewController id="6Jg-IA-wSV" userLabel="API" customClass="TabAPIUIViewController" customModule="BlueBillywigNativeiOSDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="6Jg-IA-wSV" userLabel="API" customClass="TabAPIUIViewController" customModule="bbnativeplayerkit_demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="alX-Ns-GYJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
