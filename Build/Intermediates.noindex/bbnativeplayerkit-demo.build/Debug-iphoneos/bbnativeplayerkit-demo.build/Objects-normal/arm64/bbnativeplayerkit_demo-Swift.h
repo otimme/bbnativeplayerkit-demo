@@ -338,12 +338,12 @@ SWIFT_CLASS("_TtC22bbnativeplayerkit_demo22TabAPIUIViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class SharedEmbedObject;
-@class SharedProject;
+@class BbnativesharedEmbedObject;
+@class BbnativesharedProject;
 
 @interface TabAPIUIViewController (SWIFT_EXTENSION(bbnativeplayerkit_demo)) <BBNativePlayerViewDelegate>
-- (void)didLoadEmbedDataWithData:(SharedEmbedObject * _Nonnull)data;
-- (void)didLoadProjectDataWithData:(SharedProject * _Nonnull)data;
+- (void)didLoadEmbedDataWithData:(BbnativesharedEmbedObject * _Nonnull)data;
+- (void)didLoadProjectDataWithData:(BbnativesharedProject * _Nonnull)data;
 - (void)didTriggerCanplay;
 - (void)didTriggerPlay;
 - (void)didTriggerPause;

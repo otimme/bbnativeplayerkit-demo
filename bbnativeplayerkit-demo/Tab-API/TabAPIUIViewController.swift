@@ -2,7 +2,7 @@ import UIKit
 import BBNativePlayerKit
 import AVFoundation
 import AVKit
-import shared
+import bbnativeshared
 
 class TabAPIUIViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
    

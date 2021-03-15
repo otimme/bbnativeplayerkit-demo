@@ -6,19 +6,31 @@
 	<dict>
 		<key>.DS_Store</key>
 		<data>
-		Xa0h1jP3id4sKhxKZ50CNfDj6ds=
+		WCBkzNagmPg8OnMy5uzqGXZAp2g=
 		</data>
 		<key>Assets.car</key>
 		<data>
-		H8oMFAnwhC9RfW/VJZ8ldKHZUbg=
+		S5mY3sy9cw0ibGsKflVC+fa/o4w=
 		</data>
 		<key>BBNativePlayerKit_profile</key>
 		<data>
-		GLi7S7WmTzmNbEGV2mEfoX/M/uM=
+		l6KDCC7Wt+Ig5b4Xb038uzPN8/M=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		c+DFZ/2kLs9PEQcKufVTkJM5k6U=
+		HOsFmXts0DROEFwSHJWycI7kRII=
+		</data>
+		<key>shared.framework/.DS_Store</key>
+		<data>
+		LhkS1r2pXUlTFnAP7xjrtLK5ebY=
+		</data>
+		<key>shared.framework/Info.plist</key>
+		<data>
+		QXyFoHPRLW3t85KtI+MyLmPk58M=
+		</data>
+		<key>shared.framework/shared</key>
+		<data>
+		mq9COkc2ILAZNYVZzvvLkgn6nTc=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -27,22 +39,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			H8oMFAnwhC9RfW/VJZ8ldKHZUbg=
+			S5mY3sy9cw0ibGsKflVC+fa/o4w=
 			</data>
 			<key>hash2</key>
 			<data>
-			qXb0XX/kFdM8F0HByQycJVYUzuBpyyh0AVbN1q1O63s=
+			rc9gpjtWdHEki0mO53n8t2uFl5yjES6KhLUy1t1uFn0=
 			</data>
 		</dict>
 		<key>BBNativePlayerKit_profile</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GLi7S7WmTzmNbEGV2mEfoX/M/uM=
+			l6KDCC7Wt+Ig5b4Xb038uzPN8/M=
 			</data>
 			<key>hash2</key>
 			<data>
-			rOqIU/5DeJA/dtnYdUUvCvYrFG7qL6YxdDTzS1Ek0j8=
+			MiGhKsqyNIM8Stti3EHM9F32HD2AJvS2SWwNIXPTCwY=
+			</data>
+		</dict>
+		<key>shared.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QXyFoHPRLW3t85KtI+MyLmPk58M=
+			</data>
+			<key>hash2</key>
+			<data>
+			r+frN0k7QEdGRmTYoHZ3QLBVc+NC1XNLkjIPq6NUpHY=
+			</data>
+		</dict>
+		<key>shared.framework/shared</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mq9COkc2ILAZNYVZzvvLkgn6nTc=
+			</data>
+			<key>hash2</key>
+			<data>
+			VOHPZ8ncFLfCBH9vGPGYXiqR9ruhMSu1bTIH6SblBDI=
 			</data>
 		</dict>
 	</dict>

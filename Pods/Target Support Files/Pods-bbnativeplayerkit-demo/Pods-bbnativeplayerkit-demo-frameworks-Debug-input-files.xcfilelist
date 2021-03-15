@@ -1,4 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-bbnativeplayerkit-demo/Pods-bbnativeplayerkit-demo-frameworks.sh
 ${PODS_ROOT}/../../bbnativeplayerkit-cocoapod/BBNativePlayerKit.framework
-${PODS_ROOT}/../../bbnativeplayerkit-cocoapod/shared.framework
+${PODS_ROOT}/../../bbnativeplayerkit-cocoapod/bbnativeshared.framework
 ${PODS_ROOT}/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework

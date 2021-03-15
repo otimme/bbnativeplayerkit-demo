@@ -1,8 +1,8 @@
 {
   "name": "BlueBillywigNativeShared-iOS",
   "version": "0.0.14",
-  "summary": "Blue Billywig native player kit",
-  "description": "Blue Billywig native player kit is used to play Blue Billywig mediaclips using the native ios player",
+  "summary": "Blue Billywig native shared framework",
+  "description": "Blue Billywig native shared framwork is a share code base used in BlueBillywigNativePlayerKit",
   "homepage": "https://www.bluebillywig.com/",
   "license": {
     "type": "MIT",
@@ -15,7 +15,7 @@
     "ios": "11.0"
   },
   "ios": {
-    "vendored_frameworks": "shared.framework"
+    "vendored_frameworks": "bbnativeshared.framework"
   },
   "source": {
     "git": "https://github.com/bluebillywig/bbnativeplayerkit-cocoapod.git",

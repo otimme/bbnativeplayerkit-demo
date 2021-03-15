@@ -106,9 +106,9 @@ depends-member:
 - !private ["s18AdditiveArithmeticP", ""]
 - !private ["Sa", "count"]
 - !private ["Sa", "subscript"]
-- ["So13SharedBBModelC", ""]
-- !private ["So13SharedBBModelC", "id"]
-- !private ["So13SharedBBModelC", "name"]
+- ["So21BbnativesharedBBModelC", ""]
+- !private ["So21BbnativesharedBBModelC", "id"]
+- !private ["So21BbnativesharedBBModelC", "name"]
 - !private ["17BBNativePlayerKit0aB0C", "createPlayerView"]
 - !private ["17BBNativePlayerKit0aB4ViewC", "delegate"]
 - !private ["17BBNativePlayerKit0aB4ViewC", "getAssets"]
@@ -291,11 +291,11 @@ depends-member:
 - !private ["SL", "append"]
 - !private ["SL", "count"]
 - !private ["SL", "init"]
-- ["So17SharedContentItemC", ""]
-- !private ["So17SharedContentItemC", "id"]
-- !private ["So17SharedContentItemC", "name"]
-- !private ["So26SharedContentItemInterfaceP", "id"]
-- !private ["So26SharedContentItemInterfaceP", "name"]
+- ["So25BbnativesharedContentItemC", ""]
+- !private ["So25BbnativesharedContentItemC", "id"]
+- !private ["So25BbnativesharedContentItemC", "name"]
+- !private ["So34BbnativesharedContentItemInterfaceP", "id"]
+- !private ["So34BbnativesharedContentItemInterfaceP", "name"]
 - !private ["10Foundation15ContiguousBytesP", "count"]
 - !private ["10Foundation15ContiguousBytesP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "APIAction"]
@@ -587,28 +587,28 @@ depends-member:
 - !private ["SQ", "viewWillTransition"]
 - !private ["SQ", "width"]
 - !private ["SQ", "widthAnchor"]
-- !private ["So28SharedEventListenerInterfaceP", "delegate"]
-- !private ["So28SharedEventListenerInterfaceP", "getAssets"]
-- !private ["So28SharedEventListenerInterfaceP", "getClipData"]
-- !private ["So28SharedEventListenerInterfaceP", "getCurrentTime"]
-- !private ["So28SharedEventListenerInterfaceP", "getDeeplink"]
-- !private ["So28SharedEventListenerInterfaceP", "getDuration"]
-- !private ["So28SharedEventListenerInterfaceP", "getMuted"]
-- !private ["So28SharedEventListenerInterfaceP", "getPhase"]
-- !private ["So28SharedEventListenerInterfaceP", "getPlayoutData"]
-- !private ["So28SharedEventListenerInterfaceP", "getProjectData"]
-- !private ["So28SharedEventListenerInterfaceP", "getThumbnailUrlString"]
-- !private ["So28SharedEventListenerInterfaceP", "heightAnchor"]
-- !private ["So28SharedEventListenerInterfaceP", "isPlaying"]
-- !private ["So28SharedEventListenerInterfaceP", "leftAnchor"]
-- !private ["So28SharedEventListenerInterfaceP", "load"]
-- !private ["So28SharedEventListenerInterfaceP", "nativeControls"]
-- !private ["So28SharedEventListenerInterfaceP", "pause"]
-- !private ["So28SharedEventListenerInterfaceP", "play"]
-- !private ["So28SharedEventListenerInterfaceP", "presentModal"]
-- !private ["So28SharedEventListenerInterfaceP", "topAnchor"]
-- !private ["So28SharedEventListenerInterfaceP", "translatesAutoresizingMaskIntoConstraints"]
-- !private ["So28SharedEventListenerInterfaceP", "widthAnchor"]
+- !private ["So36BbnativesharedEventListenerInterfaceP", "delegate"]
+- !private ["So36BbnativesharedEventListenerInterfaceP", "getAssets"]
+- !private ["So36BbnativesharedEventListenerInterfaceP", "getClipData"]
+- !private ["So36BbnativesharedEventListenerInterfaceP", "getCurrentTime"]
+- !private ["So36BbnativesharedEventListenerInterfaceP", "getDeeplink"]
+- !private ["So36BbnativesharedEventListenerInterfaceP", "getDuration"]
+- !private ["So36BbnativesharedEventListenerInterfaceP", "getMuted"]
+- !private ["So36BbnativesharedEventListenerInterfaceP", "getPhase"]
+- !private ["So36BbnativesharedEventListenerInterfaceP", "getPlayoutData"]
+- !private ["So36BbnativesharedEventListenerInterfaceP", "getProjectData"]
+- !private ["So36BbnativesharedEventListenerInterfaceP", "getThumbnailUrlString"]
+- !private ["So36BbnativesharedEventListenerInterfaceP", "heightAnchor"]
+- !private ["So36BbnativesharedEventListenerInterfaceP", "isPlaying"]
+- !private ["So36BbnativesharedEventListenerInterfaceP", "leftAnchor"]
+- !private ["So36BbnativesharedEventListenerInterfaceP", "load"]
+- !private ["So36BbnativesharedEventListenerInterfaceP", "nativeControls"]
+- !private ["So36BbnativesharedEventListenerInterfaceP", "pause"]
+- !private ["So36BbnativesharedEventListenerInterfaceP", "play"]
+- !private ["So36BbnativesharedEventListenerInterfaceP", "presentModal"]
+- !private ["So36BbnativesharedEventListenerInterfaceP", "topAnchor"]
+- !private ["So36BbnativesharedEventListenerInterfaceP", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["So36BbnativesharedEventListenerInterfaceP", "widthAnchor"]
 - !private ["s25ExpressibleByArrayLiteralP", ""]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
 - ["s25ExpressibleByArrayLiteralP", "init"]
@@ -723,16 +723,16 @@ depends-member:
 - !private ["SH", "viewDidLoad"]
 - !private ["SH", "viewWillTransition"]
 - !private ["SH", "widthAnchor"]
-- ["So10SharedBaseC", ""]
-- !private ["So10SharedBaseC", "id"]
-- !private ["So10SharedBaseC", "name"]
-- ["So16SharedKotlinEnumC", ""]
+- ["So18BbnativesharedBaseC", ""]
+- !private ["So18BbnativesharedBaseC", "id"]
+- !private ["So18BbnativesharedBaseC", "name"]
+- ["So24BbnativesharedKotlinEnumC", ""]
 - !private ["s25LosslessStringConvertibleP", "Element"]
 - ["s25LosslessStringConvertibleP", ""]
 - !private ["s25LosslessStringConvertibleP", "append"]
 - !private ["s25LosslessStringConvertibleP", "count"]
 - !private ["s25LosslessStringConvertibleP", "init"]
-- !private ["So15SharedMediaClipC", "id"]
+- !private ["So23BbnativesharedMediaClipC", "id"]
 - !private ["s10MirrorPathP", "append"]
 - !private ["s10MirrorPathP", "count"]
 - !private ["s10MirrorPathP", "init"]
@@ -1176,8 +1176,8 @@ depends-member:
 - !private ["Sq", "text"]
 - !private ["Sq", "topAnchor"]
 - !private ["Sq", "widthAnchor"]
-- !private ["So13SharedPlayoutC", "name"]
-- !private ["So13SharedProjectC", "name"]
+- !private ["So21BbnativesharedPlayoutC", "name"]
+- !private ["So21BbnativesharedProjectC", "name"]
 - !private ["Sk", ""]
 - !private ["Sk", "count"]
 - !private ["Sk", "subscript"]
@@ -2547,7 +2547,7 @@ depends-nominal:
 - !private "So30AVPlayerViewControllerDelegateP"
 - !private "s18AdditiveArithmeticP"
 - !private "Sa"
-- "So13SharedBBModelC"
+- "So21BbnativesharedBBModelC"
 - !private "17BBNativePlayerKit0aB0C"
 - !private "17BBNativePlayerKit0aB4ViewC"
 - "17BBNativePlayerKit0aB12ViewDelegateP"
@@ -2558,8 +2558,8 @@ depends-nominal:
 - "s7CVarArgP"
 - "Sl"
 - "SL"
-- "So17SharedContentItemC"
-- !private "So26SharedContentItemInterfaceP"
+- "So25BbnativesharedContentItemC"
+- !private "So34BbnativesharedContentItemInterfaceP"
 - !private "10Foundation15ContiguousBytesP"
 - "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
@@ -2569,7 +2569,7 @@ depends-nominal:
 - !private "s26DefaultStringInterpolationV"
 - !private "SE"
 - "SQ"
-- !private "So28SharedEventListenerInterfaceP"
+- !private "So36BbnativesharedEventListenerInterfaceP"
 - "s25ExpressibleByArrayLiteralP"
 - "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
@@ -2578,10 +2578,10 @@ depends-nominal:
 - "s26ExpressibleByStringLiteralP"
 - "s33ExpressibleByUnicodeScalarLiteralP"
 - "SH"
-- "So10SharedBaseC"
-- "So16SharedKotlinEnumC"
+- "So18BbnativesharedBaseC"
+- "So24BbnativesharedKotlinEnumC"
 - "s25LosslessStringConvertibleP"
-- !private "So15SharedMediaClipC"
+- !private "So23BbnativesharedMediaClipC"
 - !private "s10MirrorPathP"
 - !private "SM"
 - !private "10Foundation19MutableDataProtocolP"
@@ -2602,8 +2602,8 @@ depends-nominal:
 - !private "So8NSStringC"
 - !private "Sj"
 - !private "Sq"
-- !private "So13SharedPlayoutC"
-- !private "So13SharedProjectC"
+- !private "So21BbnativesharedPlayoutC"
+- !private "So21BbnativesharedProjectC"
 - !private "Sk"
 - !private "Sm"
 - !private "SY"
@@ -2686,6 +2686,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreAudio.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/os.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UniformTypeIdentifiers.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
@@ -2696,7 +2697,7 @@ depends-external:
 - "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Headers/IMACompanionAd.h"
 - "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Headers/IMAContentPlayhead.h"
 - "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Headers/IMAAVPlayerContentPlayhead.h"
-- "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-cocoapod/shared.framework/Headers/shared.h"
+- "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-cocoapod/bbnativeshared.framework/Headers/bbnativeshared.h"
 - "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Headers/IMAFriendlyObstruction.h"
 - "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Headers/IMAAdPodInfo.h"
 - "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Headers/IMAAdPlaybackInfo.h"
@@ -2722,7 +2723,7 @@ depends-external:
 - "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Headers/IMAAVPlayerVideoDisplay.h"
 - "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Headers/IMAPictureInPictureProxy.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.3.sdk/usr/include/mach-o/dyld.modulemap"
-- "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-cocoapod/shared.framework/Modules/module.modulemap"
+- "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-cocoapod/bbnativeshared.framework/Modules/module.modulemap"
 - "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-demo/Pods/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/Modules/module.modulemap"
 - "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-cocoapod/BBNativePlayerKit.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.3.sdk/usr/include/mach-o/compact_unwind_encoding.modulemap"
@@ -2739,6 +2740,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.3.sdk/System/Library/Frameworks/CoreAudioTypes.framework/Headers/CoreAudioTypes.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.3.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/os.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.3.sdk/System/Library/Frameworks/UniformTypeIdentifiers.framework/Headers/UniformTypeIdentifiers.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.3.sdk/System/Library/Frameworks/AVKit.framework/Headers/AVKit.apinotes"
@@ -2746,4 +2748,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.3.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.3.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.3.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "cb71cd9fa88b94f4aa5bfa71c8aa7723"
+interface-hash: "7f9108554219240488e47178dcfb2684"

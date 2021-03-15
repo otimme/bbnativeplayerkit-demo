@@ -20,7 +20,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   BlueBillywigNativePlayerKit-iOS: 4fb53604b91635fa92a8370c2392b9947d0ddc32
-  BlueBillywigNativeShared-iOS: 078cdcc203ad7ab6fdc00aaa86131287956183ea
+  BlueBillywigNativeShared-iOS: a703c943b64cf1725bc6beac0f161254ffcfb001
   GoogleAds-IMA-iOS-SDK: b8d3693d370edcbd1440c827897c2b2a0b76673d
 
 PODFILE CHECKSUM: 1eb115eae1e95c507ca9dbca98cddaed6c6cc6e8
