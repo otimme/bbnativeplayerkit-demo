@@ -92,8 +92,8 @@
 		9D955C54999212DD60362271F75F255A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		A093C09D588BA0FEC3229202C1CCE88A /* BlueBillywigNativeShared-iOS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "BlueBillywigNativeShared-iOS.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BB824CB7582D6092659A7E50F7A3385A /* BlueBillywigNativeShared-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "BlueBillywigNativeShared-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		CBC6DC2219AC8EF0502D3B69EBAB9ED0 /* bbnativeshared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = bbnativeshared.framework; sourceTree = "<group>"; };
 		D04D9F5CEDCE1CE70FF0DF7E5EDA5CC2 /* BlueBillywigNativeShared-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "BlueBillywigNativeShared-iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		D6722A3D71C118E2F35AC68682E87D4F /* shared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = shared.framework; sourceTree = "<group>"; };
 		E1076B9FFF42DA3D3F49B9DB034EAD2F /* GoogleAds-IMA-iOS-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "GoogleAds-IMA-iOS-SDK.debug.xcconfig"; sourceTree = "<group>"; };
 		E1582AD5B26C77B796E32CA832B49F21 /* Pods-bbnativeplayerkit-demo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-bbnativeplayerkit-demo.modulemap"; sourceTree = "<group>"; };
 		E94938C69A876E2E0A3120FE1CB28539 /* Pods-bbnativeplayerkit-demo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-bbnativeplayerkit-demo-Info.plist"; sourceTree = "<group>"; };
@@ -138,6 +138,14 @@
 				9D955C54999212DD60362271F75F255A /* LICENSE */,
 			);
 			name = Pod;
+			sourceTree = "<group>";
+		};
+		33B9CD315DD88468AE6C70C3C2073DB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBC6DC2219AC8EF0502D3B69EBAB9ED0 /* bbnativeshared.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		46D276135F6D5E8EAE03AD154EBF5214 /* GoogleAds-IMA-iOS-SDK */ = {
@@ -196,14 +204,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		8C8AC368170B4DD18DD5E429F23DC3DC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D6722A3D71C118E2F35AC68682E87D4F /* shared.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		AEBBE4B264F5738676A30F16C855C6BB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,7 +253,7 @@
 		E8F9B4CC323BADE02B164E14AEC81324 /* BlueBillywigNativeShared-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				8C8AC368170B4DD18DD5E429F23DC3DC /* Frameworks */,
+				33B9CD315DD88468AE6C70C3C2073DB5 /* Frameworks */,
 				C50185C8F1952E727F4021C95EDF5969 /* Pod */,
 				D00E54590A4D6D480AD8BB8CCAFE159B /* Support Files */,
 			);

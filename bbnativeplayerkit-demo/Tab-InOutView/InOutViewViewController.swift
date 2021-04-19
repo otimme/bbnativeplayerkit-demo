@@ -149,7 +149,7 @@ import UIKit
 import BBNativePlayerKit
 import AVFoundation
 import AVKit
-import shared
+import bbnativeshared
 
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     

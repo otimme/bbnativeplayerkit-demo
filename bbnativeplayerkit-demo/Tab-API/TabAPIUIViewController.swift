@@ -2,124 +2,19 @@ import UIKit
 import BBNativePlayerKit
 import AVFoundation
 import AVKit
-import shared
+import bbnativeshared
 
 class TabAPIUIViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
-   
-    
-    
     
     @IBOutlet weak var APIAction: UIPickerView!
     
-    
-//    @IBOutlet weak var debugText: UITextView!
-//    @IBOutlet weak var panelView: UIView!
-//
-//    private var debugging: Bool = true
     private var bbPlayerView: BBNativePlayerView? = nil
-    //CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.width * 9 / 16)private var bbPlayerView: BBNativePlayerView
-    
-    
-    
-//    let redView: UIView = {   
-//        let v = UIView()
-//        v.backgroundColor = .red
-//        v.translatesAutoresizingMaskIntoConstraints = false
-//        return v
-//    }()
-//
-//    let greenView: UIView = {
-//        let v = UIView()
-//        v.backgroundColor = .green
-//        v.translatesAutoresizingMaskIntoConstraints = false
-//        return v
-//    }()
-//
-//    let blueView: UIView = {
-//        let v = UIView()
-//        v.backgroundColor = .blue
-//        v.translatesAutoresizingMaskIntoConstraints = false
-//        return v
-//    }()
-//
-//    let scrollView: UIScrollView = {
-//        let v = UIScrollView()
-//        v.translatesAutoresizingMaskIntoConstraints = false
-//        v.backgroundColor = .cyan
-//        return v
-//    }()
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Connect data:
         APIAction.delegate = self
         APIAction.dataSource = self
-        
-        
-        // add the scroll view to self.view
-//        self.view.addSubview(scrollView)
-
-        // constrain the scroll view to 8-pts on each side
-//        scrollView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 8.0).isActive = true
-//        scrollView.topAnchor.constraint(equalTo: view.topAnchor, constant: 8.0).isActive = true
-//        scrollView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -8.0).isActive = true
-//        scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -8.0).isActive = true
-
-        // add three views to the scroll view
-//        scrollView.addSubview(redView)
-//        scrollView.addSubview(greenView)
-//        scrollView.addSubview(blueView)
-
-        // give each view a height of 300
-//        NSLayoutConstraint.activate([
-//            redView.heightAnchor.constraint(equalToConstant: 300),
-//            greenView.heightAnchor.constraint(equalToConstant: 300),
-//            blueView.heightAnchor.constraint(equalToConstant: 100),
-//            ])
-//
-//        // give each view a width constraint equal to scrollView's width
-//        NSLayoutConstraint.activate([
-//            redView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
-//            greenView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
-//            blueView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
-//            ])
-//
-//        // constrain each view's leading and trailing to the scrollView
-//        // this also defines the width of the scrollView's .contentSize
-//        NSLayoutConstraint.activate([
-//            redView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
-//            greenView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
-//            blueView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
-//            redView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
-//            greenView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
-//            blueView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
-//        ])
-//
-//        // constrain redView's Top to scrollView's Top + 8-pts padding
-//        // this also defines the Top of the scrollView's .contentSize
-//        NSLayoutConstraint.activate([
-//            redView.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 8.0),
-//            ])
-//
-//        // constrain greenView's Top to redView's Bottom + 20-pts spacing
-//        NSLayoutConstraint.activate([
-//            greenView.topAnchor.constraint(equalTo: redView.bottomAnchor, constant: 20.0),
-//            ])
-//
-//        // constrain blueView's Top to greenView's Bottom + 20-pts spacing
-//        NSLayoutConstraint.activate([
-//            blueView.topAnchor.constraint(equalTo: greenView.bottomAnchor, constant: 20.0),
-//            ])
-//
-//        // constrain blueView's Bottom to scrollView's Bottom + 8-pts padding
-//        // this also defines the Bottom / Height of the scrollView's .contentSize
-//        // Note: it must be negative
-//        NSLayoutConstraint.activate([
-//            blueView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor, constant: -200.0),
-//            ])
-        
-
 
         bbPlayerView = BBNativePlayer.createPlayerView(frame: view.frame, jsonUrl: "https://bb.dev.bbvms.com/p/puc_click_to_play/c/1092747.json") // verical 1084217  1092747
         // bbPlayerView = BBNativePlayer.createPlayerView(frame: view.frame, jsonUrl: "https://bb.dev.bbvms.com/p/default/c/1092747.json") // verical 1084217  1092747
@@ -127,57 +22,21 @@ class TabAPIUIViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
 
         view.addSubview(bbPlayerView!)
         bbPlayerView?.translatesAutoresizingMaskIntoConstraints = false
-        bbPlayerView?.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        bbPlayerView?.topAnchor.constraint(equalTo: view.topAnchor, constant: 50 ).isActive = true
-        if #available(iOS 11, *) {
-            let guide = view.safeAreaLayoutGuide
-            bbPlayerView?.topAnchor.constraint(equalTo: guide.topAnchor, constant: 8 ).isActive = true
-        } else {
-            bbPlayerView?.topAnchor.constraint(equalTo: topLayoutGuide.bottomAnchor, constant: 8 ).isActive = true
-        }
-        
-        bbPlayerView?.widthAnchor.constraint(equalTo: view.widthAnchor) .isActive = true
+        bbPlayerView?.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor).isActive = true
+        bbPlayerView?.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 50 ).isActive = true
+        bbPlayerView?.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor).isActive = true
         bbPlayerView?.heightAnchor.constraint(equalToConstant: self.view.frame.size.width * 9/16).isActive = true
-       
-//        scrollView.addSubview(bbPlayerView!)
-//        bbPlayerView?.translatesAutoresizingMaskIntoConstraints = false
-//        bbPlayerView?.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor).isActive = true
-//        bbPlayerView?.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor).isActive = true
-//        bbPlayerView?.topAnchor.constraint(equalTo: blueView.bottomAnchor, constant: 20 ).isActive = true
-//        bbPlayerView?.widthAnchor.constraint(equalTo: scrollView.widthAnchor) .isActive = true
-//        bbPlayerView?.heightAnchor.constraint(equalToConstant: self.scrollView.frame.size.width * 9/16).isActive = true
-//        bbPlayerView?.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor).isActive = true
-
-        
-        
-        
         
         bbPlayerView!.delegate = self
-
     }
     
-//    override var prefersStatusBarHidden: Bool {
-//        return true
-//    }
-//
-    @IBAction func VideoModal(_ sender: UIButton) {
+
+    func VideoModal() {
         bbPlayerView = BBNativePlayer.createPlayerView(frame: view.frame, jsonUrl: "https://bb.dev.bbvms.com/p/puc_click_to_play/c/1092747.json")
         bbPlayerView?.nativeControls = true
         bbPlayerView?.presentModal(uiViewContoller: self, animated: true)
     }
-    
-//    @IBAction func DebugButton(_ sender: UISegmentedControl) {
-//        print("# of Segments = \(sender.numberOfSegments)")
-//        switch sender.selectedSegmentIndex {
-//        case 0:
-//            debugging = true
-//        case 1:
-//            debugging = false
-//        default:
-//            break;
-//        }  //Switch
-//    }
-    
+        
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
 
         super.viewWillTransition(to: size, with: coordinator)
@@ -196,23 +55,8 @@ class TabAPIUIViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         }
     }
     
-//    func addToDebugText( _ text: String ) {
-//        if ( !debugging ) {
-//            return
-//        }
-//        print(text)
-//        DispatchQueue.main.async { [weak self] in
-//            self?.debugText.text.append(text + "\n")
-//            let range = NSMakeRange((self?.debugText.text.count ?? 0) - 1, 0)
-//            self?.debugText.scrollRangeToVisible(range)
-//
-//        }
-//    }
-    
-
     
     //MARK: - API TESTS
-    
     @IBOutlet weak var debugTextLabel: UILabel!
     @IBOutlet weak var debugUIText: UITextField!
     @IBOutlet weak var debugUITextView: UITextView!
@@ -236,99 +80,98 @@ class TabAPIUIViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         // This method is triggered whenever the user makes a change to the picker selection.
         // The parameter named row and component represents what was selected.
         print(APIActions[row])
-    switch APIActions[row] {
-    case "Play":
-        bbPlayerView?.play()
-        break
-    case "Pause":
-        bbPlayerView?.pause()
-        break
-    case "Load":
-        bbPlayerView?.load(contentId: "345353654", contentIndicator: "c", initiator: nil, autoPlay: nil, seekPosition: nil)
-        break
-    case "GetThumnailUrlString":
-        showValue(title: "Thumbnail url", message: (bbPlayerView?.getThumbnailUrlString(clipId: "999999", width: 300, height: 200))!)
-        break
-    case "getAssets":
-        if ( bbPlayerView?.getAssets() != nil ) {
-            //showValue(title: "Asset count", message: (String((bbPlayerView?.getAssets()!.count)!)))
-        }
-        break
-    case "getClipData":
-        if ( bbPlayerView?.getClipData() != nil ) {
-            showValue(title: "Clip id", message: (bbPlayerView?.getClipData()?.id)!)
-        } else {
-            showValue(title: "Data", message: "Not available atm")
-        }
-        break
-    case "getCurrentTime":
-        if ( bbPlayerView?.getCurrentTime() != nil ) {
-            showValue(title: "Current time", message: String((bbPlayerView?.getCurrentTime())!))
-        } else {
-            showValue(title: "Data", message: "Not available atm")
-        }
-        break
-    case "getDeeplink":
-        if ( bbPlayerView?.getDeeplink() != nil ) {
-            showValue(title: "Deeplink", message: String((bbPlayerView?.getDeeplink())!))
-        } else {
-            showValue(title: "Data", message: "Not available atm")
-        }
-        break
-    case "getDuration":
-        if ( bbPlayerView?.getDuration() != nil ) {
-            showValue(title: "Duration", message: String((bbPlayerView?.getDuration())!))
-        } else {
-            showValue(title: "Data", message: "Not available atm")
-        }
-        break
-    case "getMuted":
-        if ( bbPlayerView?.getMuted() != nil ) {
-            showValue(title: "Muted?", message: String((bbPlayerView?.getMuted())!))
-        } else {
-            showValue(title: "Data", message: "Not available atm")
-        }
-        break
-    case "getPhase":
-        if ( bbPlayerView?.getPhase() != nil ) {
-            showValue(title: "Phase", message: "\(bbPlayerView?.getPhase())")
-        } else {
-            showValue(title: "Data", message: "Not available atm")
-        }
-        break
-    case "isPlaying":
-        if ( bbPlayerView?.isPlaying() != nil ) {
-            showValue(title: "Playing?", message: String((bbPlayerView?.isPlaying())!))
-        } else {
-            showValue(title: "Data", message: "Not available atm")
-        }
-        break
-    case "getPlayoutData":
-        if ( bbPlayerView?.getPlayoutData() != nil ) {
-            showValue(title: "Playout name", message: (bbPlayerView?.getPlayoutData()?.name)!)
-        } else {
-            showValue(title: "Data", message: "Not available atm")
-        }
-        break
-    case "getProjectData":
-        if ( bbPlayerView?.getProjectData() != nil ) {
-            showValue(title: "Project name", message: (bbPlayerView?.getProjectData()?.name)!)
-        } else {
-            showValue(title: "Data", message: "Not available atm")
-        }
-        break
-    default:
+        switch APIActions[row] {
+        case "Play":
+            bbPlayerView?.play()
             break
-        }
+        case "Pause":
+            bbPlayerView?.pause()
+            break
+        case "Load":
+            bbPlayerView?.load(contentId: "1084217", contentIndicator: "c", initiator: nil, autoPlay: nil, seekPosition: nil)
+            break
+        case "GetThumnailUrlString":
+            showValue(title: "Thumbnail url", message: (bbPlayerView?.getThumbnailUrlString(clipId: "999999", width: 300, height: 200))!)
+            break
+        case "getAssets":
+            if ( bbPlayerView?.getAssets() != nil ) {
+                //showValue(title: "Asset count", message: (String((bbPlayerView?.getAssets()!.count)!)))
+            }
+            break
+        case "getClipData":
+            if ( bbPlayerView?.getClipData() != nil ) {
+                showValue(title: "Clip id", message: (bbPlayerView?.getClipData()?.id)!)
+            } else {
+                showValue(title: "Data", message: "Not available atm")
+            }
+            break
+        case "getCurrentTime":
+            if ( bbPlayerView?.getCurrentTime() != nil ) {
+                showValue(title: "Current time", message: String((bbPlayerView?.getCurrentTime())!))
+            } else {
+                showValue(title: "Data", message: "Not available atm")
+            }
+            break
+        case "getDeeplink":
+            if ( bbPlayerView?.getDeeplink() != nil ) {
+                showValue(title: "Deeplink", message: String((bbPlayerView?.getDeeplink())!))
+            } else {
+                showValue(title: "Data", message: "Not available atm")
+            }
+            break
+        case "getDuration":
+            if ( bbPlayerView?.getDuration() != nil ) {
+                showValue(title: "Duration", message: String((bbPlayerView?.getDuration())!))
+            } else {
+                showValue(title: "Data", message: "Not available atm")
+            }
+            break
+        case "getMuted":
+            if ( bbPlayerView?.getMuted() != nil ) {
+                showValue(title: "Muted?", message: String((bbPlayerView?.getMuted())!))
+            } else {
+                showValue(title: "Data", message: "Not available atm")
+            }
+            break
+        case "getPhase":
+            if ( bbPlayerView?.getPhase() != nil ) {
+                showValue(title: "Phase", message: "\(String(describing: bbPlayerView?.getPhase()))")
+            } else {
+                showValue(title: "Data", message: "Not available atm")
+            }
+            break
+        case "isPlaying":
+            if ( bbPlayerView?.isPlaying() != nil ) {
+                showValue(title: "Playing?", message: String((bbPlayerView?.isPlaying())!))
+            } else {
+                showValue(title: "Data", message: "Not available atm")
+            }
+            break
+        case "getPlayoutData":
+            if ( bbPlayerView?.getPlayoutData() != nil ) {
+                showValue(title: "Playout name", message: (bbPlayerView?.getPlayoutData()?.name)!)
+            } else {
+                showValue(title: "Data", message: "Not available atm")
+            }
+            break
+        case "getProjectData":
+            if ( bbPlayerView?.getProjectData() != nil ) {
+                showValue(title: "Project name", message: (bbPlayerView?.getProjectData()?.name)!)
+            } else {
+                showValue(title: "Data", message: "Not available atm")
+            }
+            break
+        case "OpenModalPlayer":
+            VideoModal()
+            break
+        default:
+                break
+            }
     }
     
     func showValue(title: String, message: String) {
         debugTextLabel.text = title
         debugUIText.text = message
-        
-//        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-//        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-//        self.present(alert, animated: true)
     }
     
     func addToEventDebug( _ message: String ) {
@@ -340,20 +183,36 @@ class TabAPIUIViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
 
 extension TabAPIUIViewController: BBNativePlayerViewDelegate {
     
-    func didLoadEmbedData(data: EmbedObject) {
-        addToEventDebug("Player API Delegate: didLoadEmbedData")
+    func didSetupWithJson(url: String?) {
+        addToEventDebug("Player API Delegate: didSetupWithJson")
     }
     
-    func didLoadMediaClipData(data: MediaClip) {
-        addToEventDebug("Player API Delegate: didLoadMediaClipData")
+    func didTriggerMediaClipLoaded(data: MediaClip) {
+        addToEventDebug("Player API Delegate: didTriggerMediaClipLoaded")
     }
     
-    func didLoadProjectData(data: Project) {
-        addToEventDebug("Player API Delegate: didLoadProjectData")
+    func didTriggerMediaClipFailed() {
+        addToEventDebug("Player API Delegate: didTriggerMediaClipFailed")
     }
     
-    func didTriggerCanplay() {
-        addToEventDebug("Player API Delegate: didTriggerCanplay")
+    func didTriggerViewStarted() {
+        addToEventDebug("Player API Delegate: didTriggerViewStarted")
+    }
+    
+    func didTriggerViewFinished() {
+        addToEventDebug("Player API Delegate: didTriggerViewFinished")
+    }
+    
+    func didTriggerProjectLoaded(data: Project) {
+        addToEventDebug("Player API Delegate: didTriggerProjectLoaded")
+    }
+    
+    func didTriggerCanPlay() {
+        addToEventDebug("Player API Delegate: didTriggerCanPlay")
+    }
+    
+    func didTriggerDurationChange(duration: Double) {
+        addToEventDebug("Player API Delegate: didTriggerDurationChange : \(duration)")
     }
     
     func didTriggerPlay() {
@@ -376,31 +235,43 @@ extension TabAPIUIViewController: BBNativePlayerViewDelegate {
         addToEventDebug("Player API Delegate: didTriggerSeeking")
     }
     
-    func didTriggerSeek() {
-        addToEventDebug("Player API Delegate: didTriggerSeek")
-    }
-    
-    func didTriggerEnd() {
-        addToEventDebug("Player API Delegate: didTriggerEnd")
-    }
-    
-    func didTriggerStart() {
-        addToEventDebug("Player API Delegate: didTriggerStart")
+    func didTriggerSeeked(seekOffset: Double) {
+        addToEventDebug("Player API Delegate: didTriggerSeeked : \(seekOffset)")
     }
     
     func didTriggerStall() {
         addToEventDebug("Player API Delegate: didTriggerStall")
     }
     
-    func didTriggerProgress() {
-        addToEventDebug("Player API Delegate: didTriggerProgress")
+    func didTriggerAutoPause() {
+        addToEventDebug("Player API Delegate: didTriggerAutoPause")
     }
     
-    func didTriggerError() {
-        addToEventDebug("Player API Delegate: didTriggerError")
+    func didTriggerAutoPausePlay() {
+        addToEventDebug("Player API Delegate: didTriggerAutoPausePlay")
     }
     
-    func didTriggerAdError() {
-        addToEventDebug("Player API Delegate: didTriggerAdError")
+    func didFailWithError() {
+        addToEventDebug("Player API Delegate: didFailWithError")
+    }
+    
+    func didTriggerAdError(error: String?) {
+        addToEventDebug("Player API Delegate: didTriggerAdError : \(String(describing: error))")
+    }
+
+    func didTriggerResized(dimensions: String?, fullscreen: Bool) {
+        addToEventDebug("Player API Delegate: apiDidTriggerResized('\(String(describing: dimensions))', \(fullscreen))")
+    }
+    
+    func didTriggerPhaseChange(phase: Phase?) {
+        addToEventDebug("Player API Delegate: didTriggerPhaseChange : \(String(describing: phase))")
+    }
+    
+    func didTriggerStateChange(state: State?) {
+        addToEventDebug("Player API Delegate: didTriggerStateChange : \(String(describing: state))")
+    }
+    
+    func didRequestOpenUrl(url: String?) {
+        addToEventDebug("Player API Delegate: didRequestOpenUrl : \(String(describing: url))")
     }
 }
