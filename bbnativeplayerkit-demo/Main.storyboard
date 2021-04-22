@@ -167,10 +167,12 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="API" id="Iav-q9-Dy3"/>
                     <connections>
-                        <outlet property="APIAction" destination="vr3-nx-H0h" id="6rr-iY-kox"/>
+                        <outlet property="APIActionUIPickerView" destination="vr3-nx-H0h" id="6rr-iY-kox"/>
                         <outlet property="DebugUIText" destination="CgN-fK-XnE" id="VDa-zp-RNq"/>
                         <outlet property="DebugUITextView" destination="c5M-pk-WJh" id="WRX-7G-a6X"/>
                         <outlet property="debugTextLabel" destination="4mZ-D2-u9x" id="Oa2-eS-Ila"/>
+                        <outlet property="debugUIText" destination="CgN-fK-XnE" id="uRt-7P-0EX"/>
+                        <outlet property="debugUITextView" destination="c5M-pk-WJh" id="93J-b6-kad"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VTC-4V-XDJ" sceneMemberID="firstResponder"/>

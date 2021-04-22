@@ -105,7 +105,6 @@
 				ED533D7025EE2DF7007F22A8 /* AppDelegate.swift */,
 				ED533D7125EE2DF7007F22A8 /* SceneDelegate.swift */,
 				ED533D6F25EE2DF7007F22A8 /* ViewController.swift */,
-				ED533D6425EE2DE9007F22A8 /* Tab4UIViewController.swift */,
 				ED533D7625EE2E00007F22A8 /* Main.storyboard */,
 				ED533D4C25EE2D5C007F22A8 /* Info.plist */,
 				ED533D7C25EE2E1B007F22A8 /* LaunchScreen.storyboard */,
@@ -178,6 +177,7 @@
 		ED533D6325EE2DE9007F22A8 /* Tab4 */ = {
 			isa = PBXGroup;
 			children = (
+				ED533D6425EE2DE9007F22A8 /* Tab4UIViewController.swift */,
 			);
 			path = Tab4;
 			sourceTree = "<group>";
@@ -443,6 +443,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "bbnativeplayerkit-demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,7 +451,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bluebillywig.bbnativeplayerkit-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -467,6 +468,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "bbnativeplayerkit-demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -474,7 +476,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bluebillywig.bbnativeplayerkit-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
