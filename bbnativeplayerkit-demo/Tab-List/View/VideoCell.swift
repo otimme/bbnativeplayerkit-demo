@@ -13,30 +13,21 @@ class BaseCell: UICollectionViewCell {
         setupViews()
     }
     
-    func setupViews() {
-        
-    }
+    func setupViews() {}
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }
 
+// The cell used in the CollectionViewController in ListViewController
 class VideoCell: BaseCell {
     
-    var mediaClip: MediaClip? {
+    var mediaClip: CollectionViewMediaClipModel? {
         didSet {
             titleLabel.text = mediaClip?.title
-            
-           // thumbnailImageView.image = UIImage(named: (video?.thumbnailImageName)!)
-                      
-            if let description = mediaClip?.description { //, let numberOfViews = video?.numberOfViews
-                
-                let numberFormatter = NumberFormatter()
-                numberFormatter.numberStyle = .decimal
-                
-                // let subtitleText = "\(channelName) • \(numberFormatter.string(from: numberOfViews)!) • 2 years ago "
-                // subtitleTextView.text = subtitleText
+
+            if let description = mediaClip?.description {
                 subtitleTextView.text = description;
             }
             
@@ -57,26 +48,8 @@ class VideoCell: BaseCell {
         }
     }
     
-    func setupThumbnailImage() {
-//        if let thumbnailImageUrl = mediaClip?.thumbnailImageUrl {
-//            downloadImage(from: URL(string: thumbnailImageUrl)!)
-//        }
-    }
     
-    func getData(from url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
-        URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
-    }
-    
-    func downloadImage(from url: URL) {
-        print("Download Started")
-        getData(from: url) { data, response, error in
-            guard let data = data, error == nil else { return }
-            DispatchQueue.main.async() { [weak self] in
-                self?.thumbnailImageView.image = UIImage(data: data)
-            }
-        }
-    }
-    
+    //MARK: - UI elements
     let thumbnailImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
@@ -86,8 +59,10 @@ class VideoCell: BaseCell {
     
     let userProfileImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.layer.cornerRadius = 22
+        imageView.image = UIImage(named: "logo")
+        imageView.layer.cornerRadius = 10
         imageView.layer.masksToBounds = true
+        imageView.backgroundColor = .white
         return imageView
     }()
     
@@ -115,13 +90,36 @@ class VideoCell: BaseCell {
     
     var titleLabelHeightConstraint: NSLayoutConstraint?
     
+    //MARK: - Loading Thumbnail Image
+    func setupThumbnailImage() {
+        if let thumbnailImageUrl = mediaClip?.thumbnailImageUrl {
+            downloadImage(from: URL(string: thumbnailImageUrl)!)
+        }
+    }
+    func downloadImage(from url: URL) {
+        getImageData(from: url) { data, response, error in
+            guard let data = data, error == nil else { return }
+            DispatchQueue.main.async() { [weak self] in
+                self?.thumbnailImageView.image = UIImage(data: data)
+            }
+        }
+    }
+    func getImageData(from url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
+        URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
+    }
+    
+    
+    //MARK: - Setup Views
     override func setupViews() {
+        // adding subviews
         addSubview(thumbnailImageView)
         addSubview(separatorView)
         addSubview(userProfileImageView)
         addSubview(titleLabel)
         addSubview(subtitleTextView)
         
+        
+        //setting constraints
         addConstraintsWithFormat("H:|-16-[v0]-16-|", views: thumbnailImageView)
         
         addConstraintsWithFormat("H:|-16-[v0(44)]", views: userProfileImageView)
@@ -150,5 +148,15 @@ class VideoCell: BaseCell {
         addConstraint(NSLayoutConstraint(item: subtitleTextView, attribute: .height, relatedBy: .equal, toItem: self, attribute: .height, multiplier: 0, constant: 30))
     }
     
-    
+    // helper method for setting consraints (the old way)
+    func addConstraintsWithFormat(_ format: String, views: UIView...) {
+        var viewsDictionary = [String: UIView]()
+        for (index, view) in views.enumerated() {
+            let key = "v\(index)"
+            view.translatesAutoresizingMaskIntoConstraints = false
+            viewsDictionary[key] = view
+        }
+        
+        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: format, options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: viewsDictionary))
+    }
 }
