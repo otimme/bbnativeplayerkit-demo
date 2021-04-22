@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import BBNativePlayerKit
+import bbnativeshared
 
 
 class ListViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
@@ -32,16 +33,16 @@ class ListViewController: UICollectionViewController, UICollectionViewDelegateFl
                 self.mediaClips = [MediaClip]()
 
                 if let mediaclips = dictionary["items"] {
-                    for mediaclip in mediaclips as! [[String: Any]] {
-                        let clip = MediaClip()
-                        clip.id = mediaclip["id"] as? String
-                        clip.title = mediaclip["title"] as? String
-                        clip.description = mediaclip["description"] as? String
-                        
-                        clip.thumbnailImageUrl = "https://bb.dev.bbvms.com/mediaclip/\(mediaclip["id"] ?? "")/pthumbnail/default/default.jpg?scalingMode=cover"
-                        
-                        self.mediaClips?.append(clip)
-                    }
+//                    for mediaclip in mediaclips as! [[String: Any]] {
+//                        let clip = MediaClip()
+//                        clip.id = mediaclip["id"] as? String
+//                        clip.title = mediaclip["title"] as? String
+//                        clip.description = mediaclip["description"] as? String
+//                        
+//                        clip.thumbnailImageUrl = "https://bb.dev.bbvms.com/mediaclip/\(mediaclip["id"] ?? "")/pthumbnail/default/default.jpg?scalingMode=cover"
+//                        
+//                        self.mediaClips?.append(clip)
+//                    }
                     DispatchQueue.main.async { [weak self] in
                        self?.collectionView.reloadData()
                     }
@@ -109,7 +110,6 @@ class ListViewController: UICollectionViewController, UICollectionViewDelegateFl
         let height = (view.frame.width - 16 - 16) * 9 / 16
         let frame: CGRect = CGRect(x: 0, y:0, width: view.frame.width, height: height + 16 + 88)
         let bbPlayerView = BBNativePlayer.createPlayerView(frame: frame, jsonUrl: url)
-        bbPlayerView.nativeControls = true
         bbPlayerView.presentModal(uiViewContoller: self, animated: true)
     }
 }

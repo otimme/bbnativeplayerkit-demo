@@ -6,11 +6,11 @@
 
 import UIKit
 
-class MediaClip {
-    var id: String?
-    var thumbnailImageUrl: String?
-    var title: String?
-    var description: String?
-    var numberOfViews: NSNumber?
-    var uploadDate: NSDate?
-}
+//class MediaClip {
+//    var id: String?
+//    var thumbnailImageUrl: String?
+//    var title: String?
+//    var description: String?
+//    var numberOfViews: NSNumber?
+//    var uploadDate: NSDate?
+//}

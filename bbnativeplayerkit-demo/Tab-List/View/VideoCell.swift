@@ -5,6 +5,7 @@
 
 import UIKit
 import BBNativePlayerKit
+import bbnativeshared
 
 class BaseCell: UICollectionViewCell {
     override init(frame: CGRect) {
@@ -57,9 +58,9 @@ class VideoCell: BaseCell {
     }
     
     func setupThumbnailImage() {
-        if let thumbnailImageUrl = mediaClip?.thumbnailImageUrl {
-            downloadImage(from: URL(string: thumbnailImageUrl)!)
-        }
+//        if let thumbnailImageUrl = mediaClip?.thumbnailImageUrl {
+//            downloadImage(from: URL(string: thumbnailImageUrl)!)
+//        }
     }
     
     func getData(from url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
