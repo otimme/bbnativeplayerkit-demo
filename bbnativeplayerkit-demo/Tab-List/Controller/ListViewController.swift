@@ -45,7 +45,7 @@ class ListViewController: UICollectionViewController, UICollectionViewDelegateFl
                         clip.title = mediaclip["title"] as? String
                         clip.description = mediaclip["description"] as? String
                         
-                        clip.thumbnailImageUrl = "\(self.blueBillywigPublicstionBaseUrl)/mediaclip/\(mediaclip["id"] ?? "")/pthumbnail/default/default.jpg?scalingMode=cover"
+                        clip.thumbnailImageUrl = "\(self.blueBillywigPublicationBaseUrl)/mediaclip/\(mediaclip["id"] ?? "")/pthumbnail/default/default.jpg?scalingMode=cover"
                         
                         self.mediaClips?.append(clip)
                     }
