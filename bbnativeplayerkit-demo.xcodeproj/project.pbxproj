@@ -12,10 +12,8 @@
 		ED533D6625EE2DE9007F22A8 /* InOutViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED533D5725EE2DE9007F22A8 /* InOutViewViewController.swift */; };
 		ED533D6725EE2DE9007F22A8 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED533D5A25EE2DE9007F22A8 /* ListViewController.swift */; };
 		ED533D6825EE2DE9007F22A8 /* TabListUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED533D5B25EE2DE9007F22A8 /* TabListUIViewController.swift */; };
-		ED533D6925EE2DE9007F22A8 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED533D5D25EE2DE9007F22A8 /* Video.swift */; };
-		ED533D6A25EE2DE9007F22A8 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED533D5F25EE2DE9007F22A8 /* MenuBar.swift */; };
+		ED533D6925EE2DE9007F22A8 /* CollectionViewMediaClipModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED533D5D25EE2DE9007F22A8 /* CollectionViewMediaClipModel.swift */; };
 		ED533D6B25EE2DE9007F22A8 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED533D6025EE2DE9007F22A8 /* VideoCell.swift */; };
-		ED533D6C25EE2DE9007F22A8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED533D6225EE2DE9007F22A8 /* Extensions.swift */; };
 		ED533D6D25EE2DE9007F22A8 /* Tab4UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED533D6425EE2DE9007F22A8 /* Tab4UIViewController.swift */; };
 		ED533D7225EE2DF7007F22A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED533D6F25EE2DF7007F22A8 /* ViewController.swift */; };
 		ED533D7325EE2DF7007F22A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED533D7025EE2DF7007F22A8 /* AppDelegate.swift */; };
@@ -35,10 +33,8 @@
 		ED533D5725EE2DE9007F22A8 /* InOutViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InOutViewViewController.swift; sourceTree = "<group>"; };
 		ED533D5A25EE2DE9007F22A8 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		ED533D5B25EE2DE9007F22A8 /* TabListUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabListUIViewController.swift; sourceTree = "<group>"; };
-		ED533D5D25EE2DE9007F22A8 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
-		ED533D5F25EE2DE9007F22A8 /* MenuBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
+		ED533D5D25EE2DE9007F22A8 /* CollectionViewMediaClipModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewMediaClipModel.swift; sourceTree = "<group>"; };
 		ED533D6025EE2DE9007F22A8 /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
-		ED533D6225EE2DE9007F22A8 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		ED533D6425EE2DE9007F22A8 /* Tab4UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab4UIViewController.swift; sourceTree = "<group>"; };
 		ED533D6F25EE2DF7007F22A8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ED533D7025EE2DF7007F22A8 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -135,7 +131,6 @@
 				ED533D5925EE2DE9007F22A8 /* Controller */,
 				ED533D5C25EE2DE9007F22A8 /* Model */,
 				ED533D5E25EE2DE9007F22A8 /* View */,
-				ED533D6125EE2DE9007F22A8 /* Helpers */,
 			);
 			path = "Tab-List";
 			sourceTree = "<group>";
@@ -143,8 +138,8 @@
 		ED533D5925EE2DE9007F22A8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				ED533D5A25EE2DE9007F22A8 /* ListViewController.swift */,
 				ED533D5B25EE2DE9007F22A8 /* TabListUIViewController.swift */,
+				ED533D5A25EE2DE9007F22A8 /* ListViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -152,7 +147,7 @@
 		ED533D5C25EE2DE9007F22A8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				ED533D5D25EE2DE9007F22A8 /* Video.swift */,
+				ED533D5D25EE2DE9007F22A8 /* CollectionViewMediaClipModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -160,18 +155,9 @@
 		ED533D5E25EE2DE9007F22A8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				ED533D5F25EE2DE9007F22A8 /* MenuBar.swift */,
 				ED533D6025EE2DE9007F22A8 /* VideoCell.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		ED533D6125EE2DE9007F22A8 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				ED533D6225EE2DE9007F22A8 /* Extensions.swift */,
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		ED533D6325EE2DE9007F22A8 /* Tab4 */ = {
@@ -301,12 +287,10 @@
 				ED533D6825EE2DE9007F22A8 /* TabListUIViewController.swift in Sources */,
 				ED533D6B25EE2DE9007F22A8 /* VideoCell.swift in Sources */,
 				ED533D6625EE2DE9007F22A8 /* InOutViewViewController.swift in Sources */,
-				ED533D6C25EE2DE9007F22A8 /* Extensions.swift in Sources */,
-				ED533D6A25EE2DE9007F22A8 /* MenuBar.swift in Sources */,
 				ED533D6525EE2DE9007F22A8 /* TabAPIUIViewController.swift in Sources */,
 				ED533D6725EE2DE9007F22A8 /* ListViewController.swift in Sources */,
 				ED533D6D25EE2DE9007F22A8 /* Tab4UIViewController.swift in Sources */,
-				ED533D6925EE2DE9007F22A8 /* Video.swift in Sources */,
+				ED533D6925EE2DE9007F22A8 /* CollectionViewMediaClipModel.swift in Sources */,
 				ED533D7425EE2DF7007F22A8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
