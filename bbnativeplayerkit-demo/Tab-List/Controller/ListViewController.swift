@@ -22,7 +22,7 @@ class ListViewController: UICollectionViewController, UICollectionViewDelegateFl
 
     //MARK: - Uing the blue billywig search api to fetch a cliplist
     func fetchVideos() {
-        let url = URL(string: "\(blueBillywigPublicstionBaseUrl)/json/search?cliplistid=1587737771658258&allowCache=true")
+        let url = URL(string: "\(blueBillywigPublicationBaseUrl)/json/search?cliplistid=1587737771658258&allowCache=true")
         
         let request: URLRequest? = URLRequest(url: url!)
 
