@@ -14,7 +14,7 @@ import bbnativeshared
 
 class ListViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
-    let blueBillywigPublicstionBaseUrl = "https://bb.dev.bbvms.com"
+    let blueBillywigPublicationBaseUrl = "https://bb.dev.bbvms.com"
     let playoutName = "default"
     
     var bbPlayerView: BBNativePlayerView?
