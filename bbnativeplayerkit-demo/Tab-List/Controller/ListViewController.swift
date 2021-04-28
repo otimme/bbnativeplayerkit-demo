@@ -109,7 +109,7 @@ class ListViewController: UICollectionViewController, UICollectionViewDelegateFl
             print("cell \(selectedCell) was tapped")
             let cell = selectedCell as! VideoCell
             if let clipId = cell.mediaClip?.id {
-                let url = "\(blueBillywigPublicstionBaseUrl)/p/\(playoutName)/c/\(clipId).json"
+                let url = "\(blueBillywigPublicationBaseUrl)/p/\(playoutName)/c/\(clipId).json"
                 ShowVideo(url: url)
             }
         }
