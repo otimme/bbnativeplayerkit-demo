@@ -14,7 +14,7 @@ import bbnativeshared
 
 class ListViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
-    let blueBillywigPublicstionBaseUrl = "https://bb.dev.bbvms.com"
+    let blueBillywigPublicationBaseUrl = "https://bb.dev.bbvms.com"
     let playoutName = "default"
     
     var bbPlayerView: BBNativePlayerView?
@@ -22,7 +22,7 @@ class ListViewController: UICollectionViewController, UICollectionViewDelegateFl
 
     //MARK: - Uing the blue billywig search api to fetch a cliplist
     func fetchVideos() {
-        let url = URL(string: "\(blueBillywigPublicstionBaseUrl)/json/search?cliplistid=1587737771658258&allowCache=true")
+        let url = URL(string: "\(blueBillywigPublicationBaseUrl)/json/search?cliplistid=1587737771658258&allowCache=true")
         
         let request: URLRequest? = URLRequest(url: url!)
 
@@ -45,7 +45,7 @@ class ListViewController: UICollectionViewController, UICollectionViewDelegateFl
                         clip.title = mediaclip["title"] as? String
                         clip.description = mediaclip["description"] as? String
                         
-                        clip.thumbnailImageUrl = "\(self.blueBillywigPublicstionBaseUrl)/mediaclip/\(mediaclip["id"] ?? "")/pthumbnail/default/default.jpg?scalingMode=cover"
+                        clip.thumbnailImageUrl = "\(self.blueBillywigPublicationBaseUrl)/mediaclip/\(mediaclip["id"] ?? "")/pthumbnail/default/default.jpg?scalingMode=cover"
                         
                         self.mediaClips?.append(clip)
                     }
@@ -109,7 +109,7 @@ class ListViewController: UICollectionViewController, UICollectionViewDelegateFl
             print("cell \(selectedCell) was tapped")
             let cell = selectedCell as! VideoCell
             if let clipId = cell.mediaClip?.id {
-                let url = "\(blueBillywigPublicstionBaseUrl)/p/\(playoutName)/c/\(clipId).json"
+                let url = "\(blueBillywigPublicationBaseUrl)/p/\(playoutName)/c/\(clipId).json"
                 ShowVideo(url: url)
             }
         }
