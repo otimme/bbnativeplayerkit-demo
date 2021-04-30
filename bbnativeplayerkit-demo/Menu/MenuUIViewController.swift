@@ -132,8 +132,8 @@ class MenuCollectionViewController: UIViewController, UICollectionViewDelegate, 
                                 color1: UIColor.init(hex: "#9FE499FF") ?? UIColor.systemGray,
                                 color2: UIColor.init(hex: "#71D767FF") ?? UIColor.systemGray)
         menuItems.append(menuItem)
-        menuItem = MenuItem(name: "",
-                                title: "",
+        menuItem = MenuItem(name: "WebView",
+                                title: "WebView",
                                 color1: UIColor.init(hex: "#DE433CFF") ?? UIColor.systemGray,
                                 color2: UIColor.init(hex: "#CE2824FF") ?? UIColor.systemGray)
         menuItems.append(menuItem)

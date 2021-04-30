@@ -23,6 +23,7 @@
 		ED533D7D25EE2E1B007F22A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED533D7C25EE2E1B007F22A8 /* LaunchScreen.storyboard */; };
 		ED7FD95326398EC70043C63C /* MenuUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7FD95226398EC70043C63C /* MenuUIViewController.swift */; };
 		ED9D2B862636C77900E69487 /* PrePostrollUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9D2B852636C77900E69487 /* PrePostrollUIViewController.swift */; };
+		EDD8161B263BEB4300381B4B /* WebViewUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD8161A263BEB4300381B4B /* WebViewUIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		ED533D7C25EE2E1B007F22A8 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED7FD95226398EC70043C63C /* MenuUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuUIViewController.swift; sourceTree = "<group>"; };
 		ED9D2B852636C77900E69487 /* PrePostrollUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrePostrollUIViewController.swift; sourceTree = "<group>"; };
+		EDD8161A263BEB4300381B4B /* WebViewUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewUIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +106,9 @@
 				ED533D5625EE2DE9007F22A8 /* Tab-InOutView */,
 				ED533D6325EE2DE9007F22A8 /* Tab-OutStream */,
 				ED9D2B842636C73E00E69487 /* Tab-Pre-Postroll */,
-				ED533D7025EE2DF7007F22A8 /* AppDelegate.swift */,
+				EDD81619263BEB0600381B4B /* Tab-WebView */,
 				ED533D7125EE2DF7007F22A8 /* SceneDelegate.swift */,
+				ED533D7025EE2DF7007F22A8 /* AppDelegate.swift */,
 				ED533D6F25EE2DF7007F22A8 /* ViewController.swift */,
 				ED533D7625EE2E00007F22A8 /* Main.storyboard */,
 				ED533D4C25EE2D5C007F22A8 /* Info.plist */,
@@ -188,6 +191,14 @@
 				ED9D2B852636C77900E69487 /* PrePostrollUIViewController.swift */,
 			);
 			path = "Tab-Pre-Postroll";
+			sourceTree = "<group>";
+		};
+		EDD81619263BEB0600381B4B /* Tab-WebView */ = {
+			isa = PBXGroup;
+			children = (
+				EDD8161A263BEB4300381B4B /* WebViewUIViewController.swift */,
+			);
+			path = "Tab-WebView";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,6 +323,7 @@
 				ED533D6625EE2DE9007F22A8 /* InOutViewViewController.swift in Sources */,
 				ED533D6525EE2DE9007F22A8 /* TabAPIUIViewController.swift in Sources */,
 				ED533D6725EE2DE9007F22A8 /* ListViewController.swift in Sources */,
+				EDD8161B263BEB4300381B4B /* WebViewUIViewController.swift in Sources */,
 				ED533D6D25EE2DE9007F22A8 /* OutStreamUIViewController.swift in Sources */,
 				ED533D6925EE2DE9007F22A8 /* CollectionViewMediaClipModel.swift in Sources */,
 				ED533D7425EE2DF7007F22A8 /* SceneDelegate.swift in Sources */,
