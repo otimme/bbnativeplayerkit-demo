@@ -63,4 +63,10 @@ Felis bibendum ut tristique et egestas. Bibendum neque egestas congue quisque eg
         let rect = CGRect(x: 0, y: 200, width: view.bounds.size.width, height: view.bounds.size.width * 9/16)
         textView.textContainer.exclusionPaths = [UIBezierPath(rect: rect)]
     }
+    
+    // cleanup when view disappears
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        bbPlayerView?.__destruct()
+    }
 }
