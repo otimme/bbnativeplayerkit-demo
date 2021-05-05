@@ -19,7 +19,7 @@ class ListViewController: UICollectionViewController, UICollectionViewDelegateFl
     
     var bbPlayerView: BBNativePlayerView?
     var mediaClips: [CollectionViewMediaClipModel]?
-
+    
     //MARK: - Uing the blue billywig search api to fetch a cliplist
     func fetchVideos() {
         let url = URL(string: "\(blueBillywigPublicationBaseUrl)/json/search?cliplistid=1587737771658258&allowCache=true")
@@ -64,7 +64,7 @@ class ListViewController: UICollectionViewController, UICollectionViewDelegateFl
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchVideos()
-
+        
         // setup CollectionView
         collectionView?.backgroundColor = .white
         collectionView?.register(VideoCell.self, forCellWithReuseIdentifier: "cellId")
@@ -90,8 +90,20 @@ class ListViewController: UICollectionViewController, UICollectionViewDelegateFl
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let height = (view.frame.width - 16 - 16) * 9 / 16
-        return CGSize(width: view.frame.width, height: height + 16 + 88)
+        let insetsHor = collectionView.contentInset.left + collectionView.contentInset.right
+        let insetsVer = collectionView.contentInset.top + collectionView.contentInset.bottom
+        let width = collectionView.bounds.width - insetsHor
+        let height = collectionView.bounds.height - insetsVer
+        
+        var cellWidth = view.frame.width - 32
+
+        if ( height < width ) {
+            cellWidth = view.frame.height - 32
+        }
+        
+        let cellHeight = cellWidth * 9 / 16 + 104
+        
+        return CGSize(width: cellWidth, height: cellHeight)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
@@ -126,6 +138,12 @@ class ListViewController: UICollectionViewController, UICollectionViewDelegateFl
         
         // Set delegate for bbPlayerView to listen to the 'CanPlay' event and start the video
         bbPlayerView?.delegate = self
+    }
+    
+    // re-draw list on rotation
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        collectionView.collectionViewLayout.invalidateLayout()
     }
 }
 
