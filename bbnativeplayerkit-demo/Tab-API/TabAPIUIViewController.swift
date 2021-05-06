@@ -58,7 +58,7 @@ class TabAPIUIViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
        return APIActions[row]
     }
     
-    private var APIActions: [String] = ["Select API method", "Play", "Pause", "Load", "GetThumnailUrlString", "getClipData", "getCurrentTime", "getDeeplink", "getDuration", "getMuted", "getPhase", "isPlaying", "getPlayoutData", "getProjectData", "OpenModalPlayer"]
+    private var APIActions: [String] = ["Select API method", "Play", "Pause", "Mute", "Unmute", "Load", "GetThumnailUrlString", "getClipData", "getCurrentTime", "getDeeplink", "getDuration", "getMuted", "getPhase", "isPlaying", "getPlayoutData", "getProjectData", "OpenModalPlayer"]
     
     // Capture the picker view selection
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
@@ -70,6 +70,12 @@ class TabAPIUIViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             break
         case "Pause":
             bbPlayerView?.pause()
+            break
+        case "Mute":
+            bbPlayerView?.mute()
+            break
+        case "Unmute":
+            bbPlayerView?.unmute()
             break
         case "Load":
             bbPlayerView?.load(contentId: "1084217", contentIndicator: "c", initiator: nil, autoPlay: nil, seekPosition: nil)
