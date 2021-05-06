@@ -92,6 +92,21 @@
             </objects>
             <point key="canvasLocation" x="-3997.1014492753625" y="-1596.4285714285713"/>
         </scene>
+        <!--Web ViewUI View Controller-->
+        <scene sceneID="fWe-8f-y28">
+            <objects>
+                <viewController storyboardIdentifier="WebView" id="hSB-Gg-oAp" customClass="WebViewUIViewController" customModule="bbnativeplayerkit_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WiH-oq-gtw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="07U-lU-d70"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bJt-Pq-4Lt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2901" y="-1507"/>
+        </scene>
         <!--API-->
         <scene sceneID="t9H-pT-fH8">
             <objects>
