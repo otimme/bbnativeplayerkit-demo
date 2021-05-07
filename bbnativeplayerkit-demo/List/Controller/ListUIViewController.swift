@@ -3,7 +3,7 @@
 import Foundation
 import UIKit
 
-class TabListUIViewController: UIViewController {
+class ListUIViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

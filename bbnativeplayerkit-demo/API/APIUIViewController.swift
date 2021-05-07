@@ -4,7 +4,7 @@ import AVFoundation
 import AVKit
 import bbnativeshared
 
-class TabAPIUIViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class APIUIViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     @IBOutlet weak var APIActionUIPickerView: UIPickerView!
     
@@ -78,7 +78,7 @@ class TabAPIUIViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             bbPlayerView?.unmute()
             break
         case "Load":
-            bbPlayerView?.load(contentId: "1084217", contentIndicator: "c", initiator: nil, autoPlay: nil, seekPosition: nil)
+            bbPlayerView?.load(contentId: "1084217", contentIndicator: "c", initiator: nil, autoPlay: true, seekPosition: nil)
             break
         case "GetThumnailUrlString":
             if let thumbnailUrlString = bbPlayerView?.getThumbnailUrlString(clipId: "123456", width: 300, height: 200) {
@@ -184,7 +184,7 @@ class TabAPIUIViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
 //MARK: - BBNativePlayerViewDelegate in extension
 
 //Implements BBNativePlayerViewDelegate to recieve all API events and logs them in the DebugUITextView
-extension TabAPIUIViewController: BBNativePlayerViewDelegate {
+extension APIUIViewController: BBNativePlayerViewDelegate {
     
     func didSetupWithJson(url: String?) {
         addToEventDebug("Player API Delegate: didSetupWithJson")

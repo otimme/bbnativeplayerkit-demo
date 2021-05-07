@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		434BCFB6390FE5B2EFB16781 /* Pods_bbnativeplayerkit_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C5A84D4F8D22ED63820C02E /* Pods_bbnativeplayerkit_demo.framework */; };
-		ED533D6525EE2DE9007F22A8 /* TabAPIUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED533D5525EE2DE9007F22A8 /* TabAPIUIViewController.swift */; };
+		ED533D6525EE2DE9007F22A8 /* APIUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED533D5525EE2DE9007F22A8 /* APIUIViewController.swift */; };
 		ED533D6625EE2DE9007F22A8 /* InOutViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED533D5725EE2DE9007F22A8 /* InOutViewViewController.swift */; };
 		ED533D6725EE2DE9007F22A8 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED533D5A25EE2DE9007F22A8 /* ListViewController.swift */; };
-		ED533D6825EE2DE9007F22A8 /* TabListUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED533D5B25EE2DE9007F22A8 /* TabListUIViewController.swift */; };
+		ED533D6825EE2DE9007F22A8 /* ListUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED533D5B25EE2DE9007F22A8 /* ListUIViewController.swift */; };
 		ED533D6925EE2DE9007F22A8 /* CollectionViewMediaClipModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED533D5D25EE2DE9007F22A8 /* CollectionViewMediaClipModel.swift */; };
 		ED533D6B25EE2DE9007F22A8 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED533D6025EE2DE9007F22A8 /* VideoCell.swift */; };
 		ED533D6D25EE2DE9007F22A8 /* OutStreamUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED533D6425EE2DE9007F22A8 /* OutStreamUIViewController.swift */; };
@@ -32,10 +32,10 @@
 		63F2AB860CD6EEBC5FBFD08B /* Pods-bbnativeplayerkit-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bbnativeplayerkit-demo.release.xcconfig"; path = "Target Support Files/Pods-bbnativeplayerkit-demo/Pods-bbnativeplayerkit-demo.release.xcconfig"; sourceTree = "<group>"; };
 		ED533D3B25EE2D5A007F22A8 /* bbnativeplayerkit-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bbnativeplayerkit-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED533D4C25EE2D5C007F22A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ED533D5525EE2DE9007F22A8 /* TabAPIUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabAPIUIViewController.swift; sourceTree = "<group>"; };
+		ED533D5525EE2DE9007F22A8 /* APIUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIUIViewController.swift; sourceTree = "<group>"; };
 		ED533D5725EE2DE9007F22A8 /* InOutViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InOutViewViewController.swift; sourceTree = "<group>"; };
 		ED533D5A25EE2DE9007F22A8 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
-		ED533D5B25EE2DE9007F22A8 /* TabListUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabListUIViewController.swift; sourceTree = "<group>"; };
+		ED533D5B25EE2DE9007F22A8 /* ListUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListUIViewController.swift; sourceTree = "<group>"; };
 		ED533D5D25EE2DE9007F22A8 /* CollectionViewMediaClipModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewMediaClipModel.swift; sourceTree = "<group>"; };
 		ED533D6025EE2DE9007F22A8 /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		ED533D6425EE2DE9007F22A8 /* OutStreamUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutStreamUIViewController.swift; sourceTree = "<group>"; };
@@ -101,12 +101,12 @@
 			isa = PBXGroup;
 			children = (
 				ED7FD95126398E9C0043C63C /* Menu */,
-				ED533D5425EE2DE9007F22A8 /* Tab-API */,
-				ED533D5825EE2DE9007F22A8 /* Tab-List */,
-				ED533D5625EE2DE9007F22A8 /* Tab-InOutView */,
-				ED533D6325EE2DE9007F22A8 /* Tab-OutStream */,
-				ED9D2B842636C73E00E69487 /* Tab-Pre-Postroll */,
-				EDD81619263BEB0600381B4B /* Tab-WebView */,
+				ED533D5425EE2DE9007F22A8 /* API */,
+				ED533D5825EE2DE9007F22A8 /* List */,
+				ED533D5625EE2DE9007F22A8 /* InOutView */,
+				ED533D6325EE2DE9007F22A8 /* OutStream */,
+				ED9D2B842636C73E00E69487 /* Pre-Postroll */,
+				EDD81619263BEB0600381B4B /* WebView */,
 				ED533D7125EE2DF7007F22A8 /* SceneDelegate.swift */,
 				ED533D7025EE2DF7007F22A8 /* AppDelegate.swift */,
 				ED533D6F25EE2DF7007F22A8 /* ViewController.swift */,
@@ -118,36 +118,36 @@
 			path = "bbnativeplayerkit-demo";
 			sourceTree = "<group>";
 		};
-		ED533D5425EE2DE9007F22A8 /* Tab-API */ = {
+		ED533D5425EE2DE9007F22A8 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				ED533D5525EE2DE9007F22A8 /* TabAPIUIViewController.swift */,
+				ED533D5525EE2DE9007F22A8 /* APIUIViewController.swift */,
 			);
-			path = "Tab-API";
+			path = API;
 			sourceTree = "<group>";
 		};
-		ED533D5625EE2DE9007F22A8 /* Tab-InOutView */ = {
+		ED533D5625EE2DE9007F22A8 /* InOutView */ = {
 			isa = PBXGroup;
 			children = (
 				ED533D5725EE2DE9007F22A8 /* InOutViewViewController.swift */,
 			);
-			path = "Tab-InOutView";
+			path = InOutView;
 			sourceTree = "<group>";
 		};
-		ED533D5825EE2DE9007F22A8 /* Tab-List */ = {
+		ED533D5825EE2DE9007F22A8 /* List */ = {
 			isa = PBXGroup;
 			children = (
 				ED533D5925EE2DE9007F22A8 /* Controller */,
 				ED533D5C25EE2DE9007F22A8 /* Model */,
 				ED533D5E25EE2DE9007F22A8 /* View */,
 			);
-			path = "Tab-List";
+			path = List;
 			sourceTree = "<group>";
 		};
 		ED533D5925EE2DE9007F22A8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				ED533D5B25EE2DE9007F22A8 /* TabListUIViewController.swift */,
+				ED533D5B25EE2DE9007F22A8 /* ListUIViewController.swift */,
 				ED533D5A25EE2DE9007F22A8 /* ListViewController.swift */,
 			);
 			path = Controller;
@@ -169,12 +169,12 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		ED533D6325EE2DE9007F22A8 /* Tab-OutStream */ = {
+		ED533D6325EE2DE9007F22A8 /* OutStream */ = {
 			isa = PBXGroup;
 			children = (
 				ED533D6425EE2DE9007F22A8 /* OutStreamUIViewController.swift */,
 			);
-			path = "Tab-OutStream";
+			path = OutStream;
 			sourceTree = "<group>";
 		};
 		ED7FD95126398E9C0043C63C /* Menu */ = {
@@ -185,20 +185,20 @@
 			path = Menu;
 			sourceTree = "<group>";
 		};
-		ED9D2B842636C73E00E69487 /* Tab-Pre-Postroll */ = {
+		ED9D2B842636C73E00E69487 /* Pre-Postroll */ = {
 			isa = PBXGroup;
 			children = (
 				ED9D2B852636C77900E69487 /* PrePostrollUIViewController.swift */,
 			);
-			path = "Tab-Pre-Postroll";
+			path = "Pre-Postroll";
 			sourceTree = "<group>";
 		};
-		EDD81619263BEB0600381B4B /* Tab-WebView */ = {
+		EDD81619263BEB0600381B4B /* WebView */ = {
 			isa = PBXGroup;
 			children = (
 				EDD8161A263BEB4300381B4B /* WebViewUIViewController.swift */,
 			);
-			path = "Tab-WebView";
+			path = WebView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,11 +317,11 @@
 			files = (
 				ED533D7325EE2DF7007F22A8 /* AppDelegate.swift in Sources */,
 				ED533D7225EE2DF7007F22A8 /* ViewController.swift in Sources */,
-				ED533D6825EE2DE9007F22A8 /* TabListUIViewController.swift in Sources */,
+				ED533D6825EE2DE9007F22A8 /* ListUIViewController.swift in Sources */,
 				ED7FD95326398EC70043C63C /* MenuUIViewController.swift in Sources */,
 				ED533D6B25EE2DE9007F22A8 /* VideoCell.swift in Sources */,
 				ED533D6625EE2DE9007F22A8 /* InOutViewViewController.swift in Sources */,
-				ED533D6525EE2DE9007F22A8 /* TabAPIUIViewController.swift in Sources */,
+				ED533D6525EE2DE9007F22A8 /* APIUIViewController.swift in Sources */,
 				ED533D6725EE2DE9007F22A8 /* ListViewController.swift in Sources */,
 				EDD8161B263BEB4300381B4B /* WebViewUIViewController.swift in Sources */,
 				ED533D6D25EE2DE9007F22A8 /* OutStreamUIViewController.swift in Sources */,
