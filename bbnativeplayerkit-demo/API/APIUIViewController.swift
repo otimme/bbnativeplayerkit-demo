@@ -9,6 +9,7 @@ class APIUIViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     @IBOutlet weak var APIActionUIPickerView: UIPickerView!
     
     private var bbPlayerView: BBNativePlayerView? = nil
+    lazy var playerHeightConstraint = bbPlayerView?.heightAnchor.constraint(equalToConstant: view.safeAreaLayoutGuide.layoutFrame.width * 9/16)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +27,12 @@ class APIUIViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         bbPlayerView?.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor).isActive = true
         bbPlayerView?.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0 ).isActive = true
         bbPlayerView?.widthAnchor.constraint(equalTo: view.safeAreaLayoutGuide.widthAnchor).isActive = true
-        bbPlayerView?.heightAnchor.constraint(equalToConstant: view.safeAreaLayoutGuide.layoutFrame.width * 9/16).isActive = true
+        if ( view.safeAreaLayoutGuide.layoutFrame.width > view.safeAreaLayoutGuide.layoutFrame.height ) {
+            self.playerHeightConstraint?.constant = self.view.safeAreaLayoutGuide.layoutFrame.height
+        } else {
+            self.playerHeightConstraint?.constant = self.view.safeAreaLayoutGuide.layoutFrame.width * 9/16
+        }
+        playerHeightConstraint?.isActive = true
         
         // set class to delegate of player view
         bbPlayerView?.delegate = self
@@ -37,7 +43,7 @@ class APIUIViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         bbPlayerView?.presentModal(uiViewContoller: self, animated: true)
     }
     
-    //MARK: - API TESTS
+    //MARK: - API TESTS UI ELEMENTS
     @IBOutlet weak var debugTextLabel: UILabel!
     @IBOutlet weak var debugUIText: UITextField!
     @IBOutlet weak var debugUITextView: UITextView!
@@ -175,6 +181,21 @@ class APIUIViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         debugUITextView.text.append(message + "\n")
         let range = NSMakeRange((debugUITextView.text.count) - 1, 0)
         debugUITextView.scrollRangeToVisible(range)
+    }
+    
+    //MARK: - Handle rotation
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        
+        if UIDevice.current.orientation.isLandscape {
+            DispatchQueue.main.async {
+                self.playerHeightConstraint?.constant = self.view.safeAreaLayoutGuide.layoutFrame.height
+            }
+        } else {
+            DispatchQueue.main.async {
+                self.playerHeightConstraint?.constant = self.view.safeAreaLayoutGuide.layoutFrame.width * 9/16
+            }
+        }
     }
 }
 
