@@ -1,28 +1,24 @@
 PODS:
-  - BlueBillywigNativePlayerKit-iOS (0.0.14):
+  - BlueBillywigNativePlayerKit-iOS (0.1.1):
+    - BlueBillywigNativeShared-iOS (~> 0.1.0)
     - GoogleAds-IMA-iOS-SDK (~> 3.13.0)
-  - BlueBillywigNativeShared-iOS (0.0.14)
+  - BlueBillywigNativeShared-iOS (0.1.1)
   - GoogleAds-IMA-iOS-SDK (3.13.0)
 
 DEPENDENCIES:
-  - BlueBillywigNativePlayerKit-iOS (from `../bbnativeplayerkit-cocoapod`)
-  - BlueBillywigNativeShared-iOS (from `../bbnativeplayerkit-cocoapod`)
+  - BlueBillywigNativePlayerKit-iOS (~> 0.1.0)
 
 SPEC REPOS:
   trunk:
+    - BlueBillywigNativePlayerKit-iOS
+    - BlueBillywigNativeShared-iOS
     - GoogleAds-IMA-iOS-SDK
 
-EXTERNAL SOURCES:
-  BlueBillywigNativePlayerKit-iOS:
-    :path: "../bbnativeplayerkit-cocoapod"
-  BlueBillywigNativeShared-iOS:
-    :path: "../bbnativeplayerkit-cocoapod"
-
 SPEC CHECKSUMS:
-  BlueBillywigNativePlayerKit-iOS: 4fb53604b91635fa92a8370c2392b9947d0ddc32
-  BlueBillywigNativeShared-iOS: a703c943b64cf1725bc6beac0f161254ffcfb001
+  BlueBillywigNativePlayerKit-iOS: 7b5fc92c0c2b1c262f33def8a09ca645340e5c13
+  BlueBillywigNativeShared-iOS: f01420fdd6663ff443444358dbc936e69fddd8da
   GoogleAds-IMA-iOS-SDK: b8d3693d370edcbd1440c827897c2b2a0b76673d
 
-PODFILE CHECKSUM: 1eb115eae1e95c507ca9dbca98cddaed6c6cc6e8
+PODFILE CHECKSUM: 3e53bdfe5fc9e7de695e15993ace3bd63fc27824
 
 COCOAPODS: 1.10.1

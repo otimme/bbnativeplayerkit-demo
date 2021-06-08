@@ -1,0 +1,90 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BBNativePlayerKit
+import AVFoundation
+import AVKit
+@_exported import BBNativePlayerKit
+import Foundation
+import GoogleInteractiveMediaAds
+import Swift
+import UIKit
+import bbnativeshared
+import os
+extension BBNativePlayerView {
+  public func load(contentId: Swift.String, contentIndicator: Swift.String?, initiator: Swift.String?, autoPlay: Swift.Bool, seekPosition: Swift.Int?)
+  public func play()
+  public func pause()
+  public func mute()
+  public func unmute()
+  public func seek(positionInSeconds: Swift.Int)
+  public func setProgramVolume(volume: Swift.Float)
+  public func setFitMode(fitMode: bbnativeshared.FitMode)
+  public func getClipData() -> bbnativeshared.MediaClip?
+  public func getCurrentAsset() -> bbnativeshared.MediaAsset?
+  public func getCurrentTime() -> Swift.Int?
+  public func getDeeplink() -> Swift.String?
+  public func getDuration() -> Swift.Double?
+  public func getMuted() -> Swift.Bool?
+  public func getPhase() -> bbnativeshared.Phase?
+  public func isPlaying() -> Swift.Bool?
+  public func getPlayoutData() -> bbnativeshared.Playout?
+  public func getProjectData() -> bbnativeshared.Project?
+  public func getThumbnailUrlString(clipId: Swift.String, width: Swift.Int?, height: Swift.Int?) -> Swift.String?
+  public func getVolume() -> Swift.Float?
+}
+@objc public protocol BBNativePlayerViewDelegate {
+  @objc optional func didSetupWithJson(url: Swift.String?)
+  @objc optional func didTriggerMediaClipLoaded(data: bbnativeshared.MediaClip)
+  @objc optional func didTriggerMediaClipFailed()
+  @objc optional func didTriggerViewStarted()
+  @objc optional func didTriggerViewFinished()
+  @objc optional func didTriggerProjectLoaded(data: bbnativeshared.Project)
+  @objc optional func didTriggerCanPlay()
+  @objc optional func didTriggerDurationChange(duration: Swift.Double)
+  @objc optional func didTriggerPlay()
+  @objc optional func didTriggerPause()
+  @objc optional func didTriggerAutoPause()
+  @objc optional func didTriggerAutoPausePlay()
+  @objc optional func didTriggerPlaying()
+  @objc optional func didTriggerSeeking()
+  @objc optional func didTriggerSeeked(seekOffset: Swift.Double)
+  @objc optional func didTriggerStall()
+  @objc optional func didFailWithError(error: Swift.String?)
+  @objc optional func didTriggerAdError(error: Swift.String?)
+  @objc optional func didTriggerResized(dimensions: Swift.String?, fullscreen: Swift.Bool)
+  @objc optional func didTriggerPhaseChange(phase: bbnativeshared.Phase?)
+  @objc optional func didTriggerStateChange(state: bbnativeshared.State?)
+  @objc optional func didRequestOpenUrl(url: Swift.String?)
+}
+extension BBNativePlayerView : bbnativeshared.EventListenerInterface {
+  @objc dynamic public func onEvent(eventType: bbnativeshared.EventName, data: [Swift.String : Any]?)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BBNativePlayerView : UIKit.UIView {
+  public var delegate: BBNativePlayerKit.BBNativePlayerViewDelegate?
+  public func presentModal(uiViewContoller: UIKit.UIViewController, animated: Swift.Bool)
+  @objc override dynamic public func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
+  @objc override dynamic public func removeFromSuperview()
+  public func __destruct()
+  @objc deinit
+}
+extension BBNativePlayerView : AVKit.AVPlayerViewControllerDelegate {
+  @objc dynamic public func playerViewController(_ playerViewController: AVKit.AVPlayerViewController, willEndFullScreenPresentationWithAnimationCoordinator coordinator: UIKit.UIViewControllerTransitionCoordinator)
+}
+public class BBNativePlayer {
+  public init()
+  public static func createPlayerView(frame: CoreGraphics.CGRect, jsonUrl: Swift.String) -> BBNativePlayerKit.BBNativePlayerView
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BBNativePlayerViewController : UIKit.UIViewController {
+  public var inViewController: bbnativeshared.InViewController?
+  @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
+  @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
+  public func __destruct()
+  @objc deinit
+}
+extension UIColor {
+  convenience public init?(hex: Swift.String)
+}
+extension UIView {
+  public func isVisible() -> Swift.Bool
+}
