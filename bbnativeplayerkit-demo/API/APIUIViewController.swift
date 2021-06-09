@@ -204,7 +204,7 @@ class APIUIViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
 
 //MARK: - BBNativePlayerViewDelegate in extension
 
-//Implements BBNativePlayerViewDelegate to recieve all API events and logs them in the DebugUITextView
+//Implements BBNativePlayerViewDelegate to receive all API events and logs them in the DebugUITextView
 extension APIUIViewController: BBNativePlayerViewDelegate {
     
     func didSetupWithJson(url: String?) {
