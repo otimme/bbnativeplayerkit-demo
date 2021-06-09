@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EBA9251ABDBD39EB2C88F2B5 /* libPods-bbnativeplayerkit-demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CC738CB6A802ADC421D8508 /* libPods-bbnativeplayerkit-demo.a */; };
+		0DF4C7883D76908705BD3072 /* libPods-bbnativeplayerkit-demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D81934D4BEA7E8A663CA44 /* libPods-bbnativeplayerkit-demo.a */; };
 		ED533D6525EE2DE9007F22A8 /* APIUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED533D5525EE2DE9007F22A8 /* APIUIViewController.swift */; };
 		ED533D6625EE2DE9007F22A8 /* InOutViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED533D5725EE2DE9007F22A8 /* InOutViewViewController.swift */; };
 		ED533D6725EE2DE9007F22A8 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED533D5A25EE2DE9007F22A8 /* ListViewController.swift */; };
@@ -28,8 +28,8 @@
 
 /* Begin PBXFileReference section */
 		037F00D8464F9D1B5453F228 /* Pods-bbnativeplayerkit-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bbnativeplayerkit-demo.debug.xcconfig"; path = "Target Support Files/Pods-bbnativeplayerkit-demo/Pods-bbnativeplayerkit-demo.debug.xcconfig"; sourceTree = "<group>"; };
-		0CC738CB6A802ADC421D8508 /* libPods-bbnativeplayerkit-demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-bbnativeplayerkit-demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63F2AB860CD6EEBC5FBFD08B /* Pods-bbnativeplayerkit-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bbnativeplayerkit-demo.release.xcconfig"; path = "Target Support Files/Pods-bbnativeplayerkit-demo/Pods-bbnativeplayerkit-demo.release.xcconfig"; sourceTree = "<group>"; };
+		A1D81934D4BEA7E8A663CA44 /* libPods-bbnativeplayerkit-demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-bbnativeplayerkit-demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED533D3B25EE2D5A007F22A8 /* bbnativeplayerkit-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bbnativeplayerkit-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED533D4C25EE2D5C007F22A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED533D5525EE2DE9007F22A8 /* APIUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIUIViewController.swift; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBA9251ABDBD39EB2C88F2B5 /* libPods-bbnativeplayerkit-demo.a in Frameworks */,
+				0DF4C7883D76908705BD3072 /* libPods-bbnativeplayerkit-demo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,7 +74,7 @@
 		6C1DCC80CDEA1F1D7DDB2B58 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0CC738CB6A802ADC421D8508 /* libPods-bbnativeplayerkit-demo.a */,
+				A1D81934D4BEA7E8A663CA44 /* libPods-bbnativeplayerkit-demo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

@@ -134,6 +134,18 @@ Non pulvinar neque laoreet suspendisse interdum consectetur libero. Volutpat odi
         textView.textContainer.exclusionPaths = [imageFrame, playerFrame]
     }
     
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        
+        // update Frames for text exclusionPaths
+        DispatchQueue.main.async {
+            let imageFrame = UIBezierPath(rect: self.imageView.frame)
+            let rect = CGRect(x: 0, y: 800, width: self.containerView.bounds.size.width, height: self.containerView.bounds.size.width * 9/16)
+            let playerFrame = UIBezierPath(rect: rect)
+            self.textView.textContainer.exclusionPaths = [imageFrame, playerFrame]
+        }
+    }
+    
     // cleanup when view disappears
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
