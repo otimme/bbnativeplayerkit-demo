@@ -1,3 +1,0 @@
-${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BBNativePlayerKit.framework
-${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/bbnativeshared.framework
-${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleInteractiveMediaAds.framework
