@@ -49,8 +49,8 @@ Felis bibendum ut tristique et egestas. Bibendum neque egestas congue quisque eg
         
         
         // Create player with content playing pre- and postroll advertisements
-        bbPlayerView = BBNativePlayer.createPlayerView(frame: view.frame, jsonUrl: "https://testsuite.acc.bbvms.com/p/leader_test/c/6417.json")
-
+        bbPlayerView = BBNativePlayer.createPlayerView(frame: view.frame, jsonUrl: "https://demo.bbvms.com/p/native_sdk_preroll/c/4256600.json")
+        
         // Add player to View
         view.addSubview(bbPlayerView!)
         

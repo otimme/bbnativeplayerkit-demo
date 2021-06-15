@@ -14,15 +14,15 @@ import bbnativeshared
 
 class ListViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
-    let blueBillywigPublicationBaseUrl = "https://bb.dev.bbvms.com"
+    let blueBillywigPublicationBaseUrl = "https://demo.bbvms.com"
     let playoutName = "default"
     
     var bbPlayerView: BBNativePlayerView?
     var mediaClips: [CollectionViewMediaClipModel]?
     
-    //MARK: - Uing the blue billywig search api to fetch a cliplist
+    //MARK: - Uing the Blue Billywig search api to fetch a cliplist
     func fetchVideos() {
-        let url = URL(string: "\(blueBillywigPublicationBaseUrl)/json/search?cliplistid=1587737771658258&allowCache=true")
+        let url = URL(string: "\(blueBillywigPublicationBaseUrl)/json/search?cliplistid=1623750782772352&allowCache=true")
         
         let request: URLRequest? = URLRequest(url: url!)
 

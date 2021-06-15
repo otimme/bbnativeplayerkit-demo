@@ -49,7 +49,7 @@ Felis bibendum ut tristique et egestas. Bibendum neque egestas congue quisque eg
         
         
         // Create player playing inarticle advertisment
-        bbPlayerView = BBNativePlayer.createPlayerView(frame: view.frame, jsonUrl: "https://testsuite.acc.bbvms.com/a/boomwackers.json")
+        bbPlayerView = BBNativePlayer.createPlayerView(frame: view.frame, jsonUrl: "https://demo.bbvms.com/a/native_sdk_outstream.json")
 
         // Add player to View
         view.addSubview(bbPlayerView!)
