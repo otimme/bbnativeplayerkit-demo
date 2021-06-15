@@ -1,6 +1,0 @@
-framework module bbnativeshared {
-    umbrella header "bbnativeshared.h"
-
-    export *
-    module * { export * }
-}
