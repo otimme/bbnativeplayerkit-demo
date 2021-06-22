@@ -64,7 +64,7 @@ class APIUIViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
        return APIActions[row]
     }
     
-    private var APIActions: [String] = ["Select API method", "Play", "Pause", "Mute", "Unmute", "Load", "GetThumnailUrlString", "getClipData", "getCurrentTime", "getDeeplink", "getDuration", "getMuted", "getPhase", "isPlaying", "getPlayoutData", "getProjectData", "OpenModalPlayer"]
+    private var APIActions: [String] = ["Select API method", "Play", "Pause", "Mute", "Unmute", "Load", "GetThumnailUrlString", "getClipData", "getCurrentTime", "getDeeplink", "getDuration", "getMuted", "getPhase", "isPlaying", "getPlayoutData", "getProjectData","Fullscreen", "RetractFullscreen", "OpenModalPlayer"]
     
     // Capture the picker view selection
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
@@ -161,6 +161,12 @@ class APIUIViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
             } else {
                 showValue(title: "Project", message: "Not available atm")
             }
+            break
+        case "Fullscreen":
+            bbPlayerView?.fullscreen()
+            break
+        case "RetractFullscreen":
+            bbPlayerView?.retractFullscreen()
             break
         case "OpenModalPlayer":
             showValue(title: "Showing video in modal mode name", message: "")
