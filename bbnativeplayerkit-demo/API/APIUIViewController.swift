@@ -19,7 +19,7 @@ class APIUIViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         APIActionUIPickerView.delegate = self
 
         // create player view using the embed url
-        bbPlayerView = BBNativePlayer.createPlayerView(frame: view.frame, jsonUrl: "https://bb.dev.bbvms.com/p/default/c/1092747.json") // verical 1084217  1092747
+        bbPlayerView = BBNativePlayer.createPlayerView(frame: view.frame, jsonUrl: "https://demo.bbvms.com/p/default/c/4256600.json")
         
         // use constraints to place and size the player view
         view.addSubview(bbPlayerView!)
@@ -39,7 +39,7 @@ class APIUIViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     }
     
     func VideoModal() {
-        bbPlayerView = BBNativePlayer.createPlayerView(frame: view.frame, jsonUrl: "https://bb.dev.bbvms.com/p/puc_click_to_play/c/1092747.json")
+        bbPlayerView = BBNativePlayer.createPlayerView(frame: view.frame, jsonUrl: "https://demo.bbvms.com/p/default/c/4256615.json")
         bbPlayerView?.presentModal(uiViewContoller: self, animated: true)
     }
     
@@ -84,7 +84,7 @@ class APIUIViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
             bbPlayerView?.unmute()
             break
         case "Load":
-            bbPlayerView?.load(contentId: "1084217", contentIndicator: "c", initiator: nil, autoPlay: true, seekPosition: nil)
+            bbPlayerView?.load(contentId: "4256575", contentIndicator: "c", initiator: nil, autoPlay: true, seekPosition: nil)
             break
         case "GetThumnailUrlString":
             if let thumbnailUrlString = bbPlayerView?.getThumbnailUrlString(clipId: "123456", width: 300, height: 200) {
