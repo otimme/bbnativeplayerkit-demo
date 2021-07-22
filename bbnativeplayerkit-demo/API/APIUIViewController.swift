@@ -64,112 +64,105 @@ class APIUIViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
        return APIActions[row]
     }
     
-    private var APIActions: [String] = ["Select API method", "Play", "Pause", "Mute", "Unmute", "Load", "GetThumnailUrlString", "getClipData", "getCurrentTime", "getDeeplink", "getDuration", "getMuted", "getPhase", "isPlaying", "getPlayoutData", "getProjectData","Fullscreen", "RetractFullscreen", "OpenModalPlayer"]
+    private var APIActions: [String] = ["Select API method", "Play", "Pause", "Seek", "Mute", "Unmute", "Load","getMuted", "getDuration", "getPhase", "getState", "getMode", "getClipData", "getPlayoutData", "getProjectData", "getVolume", "OpenModalPlayer"]
     
     // Capture the picker view selection
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        // This method is triggered whenever the user makes a change to the APIActionUIPickerView selection.
-        // The parameter named row represents what was selected.
-        switch APIActions[row] {
+        // This method is triggered whenever the user makes a change to the picker selection.
+        // The parameter named row and component represents what was selected.
+    switch APIActions[row] {
+        case "Fullscreen":
+            bbPlayerView?.setApiProperty(property: .fullscreen, value: true)
+            break
+        case "RetractFullscreen":
+            bbPlayerView?.setApiProperty(property: .fullscreen, value: false)
+            break
         case "Play":
-            bbPlayerView?.play()
+            bbPlayerView?.callApiMethod(method: .play, args: nil)
             break
         case "Pause":
-            bbPlayerView?.pause()
+            bbPlayerView?.callApiMethod(method: .pause, args: nil)
+            break
+        case "Seek":
+            bbPlayerView?.callApiMethod(method: .seek, args: ["offsetInSeconds": 10])
             break
         case "Mute":
-            bbPlayerView?.mute()
+            bbPlayerView?.setApiProperty(property: .muted, value: true)
             break
         case "Unmute":
-            bbPlayerView?.unmute()
+            bbPlayerView?.setApiProperty(property: .muted, value: false)
             break
         case "Load":
-            bbPlayerView?.load(contentId: "4256575", contentIndicator: "c", initiator: nil, autoPlay: true, seekPosition: nil)
-            break
-        case "GetThumnailUrlString":
-            if let thumbnailUrlString = bbPlayerView?.getThumbnailUrlString(clipId: "123456", width: 300, height: 200) {
-                showValue(title: "Thumbnail url", message: thumbnailUrlString)
-            } else {
-                showValue(title: "Thumbnail url", message: "Unable to get thumbnailUrlString")
-            }
+            bbPlayerView?.callApiMethod(method: .load_, args: ["clipId": "1084217", "autoPlay": true])
             break
         case "getClipData":
-            if let mediaClip = bbPlayerView?.getClipData() {
-                if let clipId = mediaClip.id {
-                    showValue(title: "Clip ID", message: clipId)
-                }
+            if let mediaClip: MediaClip = bbPlayerView?.getApiProperty(property: .clipdata) as? MediaClip {
+                showValue(title: "Clip id", message: mediaClip.id!)
             } else {
-                showValue(title: "Clip Data", message: "Not available atm")
-            }
-            break
-        case "getCurrentTime":
-            if let currentTime = bbPlayerView?.getCurrentTime() {
-                showValue(title: "Current time", message: String(currentTime))
-            } else {
-                showValue(title: "Current time", message: "Not available atm")
-            }
-            break
-        case "getDeeplink":
-            if let deeplink = bbPlayerView?.getDeeplink() {
-                showValue(title: "Deeplink", message: deeplink)
-            } else {
-                showValue(title: "Deeplink", message: "Not available atm")
+                showValue(title: "Data", message: "Not available atm")
             }
             break
         case "getDuration":
-            if let duration = bbPlayerView?.getDuration() {
-                showValue(title: "Duration", message: String(duration))
+            if ( bbPlayerView?.getApiProperty(property: .duration) != nil ) {
+                showValue(title: "Duration", message: "\(String(describing: bbPlayerView?.getApiProperty(property: .duration)))")
             } else {
-                showValue(title: "Duration", message: "Not available atm")
+                showValue(title: "Data", message: "Not available atm")
             }
             break
         case "getMuted":
-            if let muted = bbPlayerView?.getMuted() {
+            if let muted: Bool = bbPlayerView?.getApiProperty(property: .muted) as? Bool {
                 showValue(title: "Muted?", message: String(muted))
             } else {
-                showValue(title: "Muted", message: "Not available atm")
+                showValue(title: "Data", message: "Not available atm")
             }
             break
         case "getPhase":
-            if let phase = bbPlayerView?.getPhase() {
+            if let phase: Phase = bbPlayerView?.getApiProperty(property: .phase) as? Phase {
                 showValue(title: "Phase", message: "\(String(describing: phase))")
+            }
+            if ( bbPlayerView?.getApiProperty(property: .phase) != nil ) {
+                
             } else {
-                showValue(title: "Phase", message: "Not available atm")
+                showValue(title: "Data", message: "Not available atm")
             }
             break
-        case "isPlaying":
-            if let playing = bbPlayerView?.isPlaying() {
-                showValue(title: "Playing?", message: String(playing))
+        case "getState":
+            if let state: State = bbPlayerView?.getApiProperty(property: .state) as? State {
+                showValue(title: "State", message: "\(String(describing: state))")
             } else {
-                showValue(title: "Playing", message: "Not available atm")
+                showValue(title: "Data", message: "Not available atm")
+            }
+            break
+        case "getMode":
+            if let mode: String = bbPlayerView?.getApiProperty(property: .mode) as? String {
+                showValue(title: "Mode", message: "\(String(describing: mode))")
+            } else {
+                showValue(title: "Data", message: "Not available atm")
             }
             break
         case "getPlayoutData":
-            if let playout = bbPlayerView?.getPlayoutData() {
-                if let name = playout.name {
-                    showValue(title: "Playout name", message: name)
-                }
+            if let playout: Playout = bbPlayerView?.getApiProperty(property: .playoutdata) as? Playout {
+                showValue(title: "Playout name", message: playout.name!)
             } else {
-                showValue(title: "Playout", message: "Not available atm")
+                showValue(title: "Data", message: "Not available atm")
             }
             break
         case "getProjectData":
-            if let project = bbPlayerView?.getProjectData() {
-                if let name = project.name {
-                    showValue(title: "Project name", message: name)
-                }
+            if let project: Project = bbPlayerView?.getApiProperty(property: .projectdata) as? Project {
+                showValue(title: "Project name", message: project.name!)
             } else {
-                showValue(title: "Project", message: "Not available atm")
+                showValue(title: "Data", message: "Not available atm")
             }
             break
-        case "Fullscreen":
-            bbPlayerView?.fullscreen()
-            break
-        case "RetractFullscreen":
-            bbPlayerView?.retractFullscreen()
+            
+        case "getVolume":
+            if let volume: Float = bbPlayerView?.getApiProperty(property: .volume) as? Float {
+                showValue(title: "Project name", message: "\(volume)")
+            } else {
+                showValue(title: "Data", message: "Not available atm")
+            }
             break
         case "OpenModalPlayer":
-            showValue(title: "Showing video in modal mode name", message: "")
             VideoModal()
             break
         default:
