@@ -149,6 +149,6 @@ Non pulvinar neque laoreet suspendisse interdum consectetur libero. Volutpat odi
     // cleanup when view disappears
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        bbPlayerView?.__destruct()
+        bbPlayerView?.destroy()
     }
 }

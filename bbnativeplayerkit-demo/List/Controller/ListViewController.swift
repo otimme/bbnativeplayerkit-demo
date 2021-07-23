@@ -152,6 +152,6 @@ class ListViewController: UICollectionViewController, UICollectionViewDelegateFl
 extension ListViewController: BBNativePlayerViewDelegate {
     func didTriggerCanPlay() {
         // when player is ready to play, call play
-        bbPlayerView?.play()
+        bbPlayerView?.callApiMethod(method: .play, args: nil)
     }
 }
