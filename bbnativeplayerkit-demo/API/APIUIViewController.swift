@@ -93,7 +93,7 @@ class APIUIViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
             bbPlayerView?.setApiProperty(property: .muted, value: false)
             break
         case "Load":
-            bbPlayerView?.callApiMethod(method: .load_, args: ["clipId": "1084217", "autoPlay": true])
+            bbPlayerView?.callApiMethod(method: .load_, args: ["clipId": "4256575", "autoPlay": true])
             break
         case "getClipData":
             if let mediaClip: MediaClip = bbPlayerView?.getApiProperty(property: .clipdata) as? MediaClip {
@@ -119,9 +119,6 @@ class APIUIViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         case "getPhase":
             if let phase: Phase = bbPlayerView?.getApiProperty(property: .phase) as? Phase {
                 showValue(title: "Phase", message: "\(String(describing: phase))")
-            }
-            if ( bbPlayerView?.getApiProperty(property: .phase) != nil ) {
-                
             } else {
                 showValue(title: "Data", message: "Not available atm")
             }
