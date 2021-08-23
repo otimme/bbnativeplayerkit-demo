@@ -17,7 +17,7 @@
     <a title="BBNativePlayerViewDelegate Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (59% documented)</p>
+        <p><a href="../index.html"> Docs</a> (66% documented)</p>
         <p class="header-right">
           <form role="search" action="../search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -106,12 +106,12 @@
                             <tr>
                               <td>
                                 <code>
-                                <em>data</em>
+                                <em>url</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>EmbedData Object</p>
+                                  <p>String</p>
                                 </div>
                               </td>
                             </tr>
@@ -205,7 +205,8 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>MediaClip Object</p>
+                                  <p>MediaClip Object
+(for more information on data objects see the SAPI reference guide on the developer documentation website at: <a href="https://support.bluebillywig.com/topics/developers/">https://support.bluebillywig.com/topics/developers/</a>)</p>
                                 </div>
                               </td>
                             </tr>
@@ -240,25 +241,6 @@
 
                         </div>
                       </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>data</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>none</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
                     </section>
                   </div>
                 </li>
@@ -286,25 +268,6 @@
 <span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didTriggerViewFinished</span><span class="p">()</span></code></pre>
 
                         </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>data</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>none</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
                       </div>
                     </section>
                   </div>
@@ -346,7 +309,8 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Project Object</p>
+                                  <p>Project Object
+(for more information on data objects see the SAPI reference guide on the developer documentation website at : <a href="https://support.bluebillywig.com/topics/developers/">https://support.bluebillywig.com/topics/developers/</a>)</p>
                                 </div>
                               </td>
                             </tr>
@@ -633,6 +597,25 @@
 
                         </div>
                       </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>seekOffset</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Double</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -724,12 +707,12 @@
                             <tr>
                               <td>
                                 <code>
-                                <em>data</em>
+                                <em>error</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>Error Object</p>
+                                  <p>String</p>
                                 </div>
                               </td>
                             </tr>
@@ -752,7 +735,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The player changed phase</p>
 
                       </div>
                       <div class="declaration">
@@ -763,6 +746,26 @@
 <span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didTriggerPhaseChange</span><span class="p">(</span><span class="nv">phase</span><span class="p">:</span> <span class="kt">Phase</span><span class="p">?)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>phase</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Phase Enum
+(for more information on phases, states and modes, see the developer documentation website at <a href="https://support.bluebillywig.com/player-api/events-modes-and-phases/">https://support.bluebillywig.com/player-api/events-modes-and-phases/</a>)</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -780,7 +783,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The player changed state</p>
 
                       </div>
                       <div class="declaration">
@@ -791,6 +794,26 @@
 <span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didTriggerStateChange</span><span class="p">(</span><span class="nv">state</span><span class="p">:</span> <span class="kt">State</span><span class="p">?)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>state</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>State Enum
+(for more information on phases, states and modes, see the developer documentation website at <a href="https://support.bluebillywig.com/player-api/events-modes-and-phases/">https://support.bluebillywig.com/player-api/events-modes-and-phases/</a>)</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -808,7 +831,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The player changed mode</p>
 
                       </div>
                       <div class="declaration">
@@ -820,33 +843,25 @@
 
                         </div>
                       </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@BBNativePlayerKit@objc(pl)BBNativePlayerViewDelegate(im)didRequestOpenUrlWithUrl:"></a>
-                    <a name="//apple_ref/swift/Method/didRequestOpenUrl(url:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@BBNativePlayerKit@objc(pl)BBNativePlayerViewDelegate(im)didRequestOpenUrlWithUrl:">didRequestOpenUrl(url:<wbr>)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didRequestOpenUrl</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span></code></pre>
-
-                        </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>mode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>String
+(for more information on phases, states and modes, see the developer documentation website at <a href="https://support.bluebillywig.com/player-api/events-modes-and-phases/">https://support.bluebillywig.com/player-api/events-modes-and-phases/</a>)</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>

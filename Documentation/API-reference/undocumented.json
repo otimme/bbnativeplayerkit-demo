@@ -85,34 +85,6 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-swift/BBNativePlayerKit/BBNativePlayerKit/Views/BBNativePlayerView+API.swift",
-      "line": 733,
-      "symbol": "BBNativePlayerViewDelegate.didTriggerPhaseChange(phase:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-swift/BBNativePlayerKit/BBNativePlayerKit/Views/BBNativePlayerView+API.swift",
-      "line": 735,
-      "symbol": "BBNativePlayerViewDelegate.didTriggerStateChange(state:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-swift/BBNativePlayerKit/BBNativePlayerKit/Views/BBNativePlayerView+API.swift",
-      "line": 737,
-      "symbol": "BBNativePlayerViewDelegate.didTriggerModeChange(mode:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-swift/BBNativePlayerKit/BBNativePlayerKit/Views/BBNativePlayerView+API.swift",
-      "line": 739,
-      "symbol": "BBNativePlayerViewDelegate.didRequestOpenUrl(url:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/Olaf/Documents/Projects/BlueBillywig/bbnativeplayerkit-swift/BBNativePlayerKit/BBNativePlayerKit/Views/BigPlayButtonView.swift",
       "line": 73,
       "symbol": "BigPlayButtonView.onEvent(eventType:data:)",
