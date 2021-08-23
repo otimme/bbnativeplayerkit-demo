@@ -38,16 +38,10 @@ class APIUIViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         bbPlayerView?.delegate = self
     }
     
-    func VideoModal() {
-        bbPlayerView = BBNativePlayer.createPlayerView(frame: view.frame, jsonUrl: "https://demo.bbvms.com/p/default/c/4256615.json")
-        bbPlayerView?.presentModal(uiViewContoller: self, animated: true)
-    }
-    
     //MARK: - API TESTS UI ELEMENTS
     @IBOutlet weak var debugTextLabel: UILabel!
     @IBOutlet weak var debugUIText: UITextField!
     @IBOutlet weak var debugUITextView: UITextView!
-    
     
     
     //MARK: - UIPickerView
@@ -72,10 +66,10 @@ class APIUIViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         // The parameter named row and component represents what was selected.
     switch APIActions[row] {
         case "Fullscreen":
-            bbPlayerView?.setApiProperty(property: .fullscreen, value: true)
+            //bbPlayerView?.setApiProperty(property: .fullscreen, value: true)
             break
         case "RetractFullscreen":
-            bbPlayerView?.setApiProperty(property: .fullscreen, value: false)
+            //bbPlayerView?.setApiProperty(property: .fullscreen, value: false)
             break
         case "Play":
             bbPlayerView?.callApiMethod(method: .play, args: nil)
@@ -160,7 +154,7 @@ class APIUIViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
             }
             break
         case "OpenModalPlayer":
-            VideoModal()
+            BBNativePlayer.createModalPlayerView(uiViewContoller: self, jsonUrl: "https://demo.bbvms.com/p/default/c/4256615.json")
             break
         default:
                 break
@@ -203,7 +197,7 @@ class APIUIViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
 //Implements BBNativePlayerViewDelegate to receive all API events and logs them in the DebugUITextView
 extension APIUIViewController: BBNativePlayerViewDelegate {
     
-    func didSetupWithJson(url: String?) {
+    func didSetupWithJsonUrl(url: String?) {
         addToEventDebug("Player API Delegate: didSetupWithJson")
     }
     

@@ -53,12 +53,7 @@ extension WebViewUIViewController: WKScriptMessageHandler {
                     return
             }
             
-            videoModal(with: embedUrl)
+            BBNativePlayer.createModalPlayerView(uiViewContoller: self, jsonUrl: embedUrl)
         }
-    }
-    
-    private func videoModal( with embedUrl: String ) {
-        bbPlayerView = BBNativePlayer.createPlayerView(frame: view.frame, jsonUrl: embedUrl)
-        bbPlayerView?.presentModal(uiViewContoller: self, animated: true)
     }
 }
