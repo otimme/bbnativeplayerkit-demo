@@ -17,7 +17,7 @@
     <a title="BBNativePlayer Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (70% documented)</p>
+        <p><a href="../index.html"> Docs</a> (59% documented)</p>
         <p class="header-right">
           <form role="search" action="../search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -73,6 +73,89 @@
           <section class="section task-group-section">
             <div class="task-group">
               <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17BBNativePlayerKit0aB0C06createB4View5frame7jsonUrl7optionsAA0abE0CSo6CGRectV_SSSDySSypGSgtFZ"></a>
+                    <a name="//apple_ref/swift/Method/createPlayerView(frame:jsonUrl:options:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17BBNativePlayerKit0aB0C06createB4View5frame7jsonUrl7optionsAA0abE0CSo6CGRectV_SSSDySSypGSgtFZ">createPlayerView(frame:<wbr>jsonUrl:<wbr>options:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a BBNativePlayerView to be used</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">createPlayerView</span><span class="p">(</span><span class="nv">frame</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">,</span> <span class="nv">jsonUrl</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">options</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/BBNativePlayerView.html">BBNativePlayerView</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>frame</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The size of the player</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>jsonUrl</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The EMBED url the player will use to setup</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A dictionary with options to send to the player st creation.</p>
+
+<ul>
+<li><strong>&ldquo;adsystem_ppid&rdquo;: String</strong>       used to fill the ppid for google IMA</li>
+<li><strong>&ldquo;adsystem_buid&rdquo;: String</strong>       used for adsystem macro replacement</li>
+<li><strong>&ldquo;adsystem_rdid&rdquo;:  String</strong>       used for adsystem macro replacement</li>
+<li><strong>&ldquo;adsystem_idtype&rdquo;: String</strong>    used for adsystem macro replacement</li>
+<li><strong>&ldquo;adsystem_is_lat&rdquo;: Bool</strong>       used for adsystem macro replacement</li>
+<li><strong>&ldquo;noStats&rdquo;: Bool</strong>                     disables statistics logging when true</li>
+</ul>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>BBNativePlayerView</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -135,12 +218,157 @@
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17BBNativePlayerKit0aB0C011createModalB4View02uiF9Contoller7jsonUrl7optionsySo16UIViewControllerC_SSSDySSypGSgtFZ"></a>
+                    <a name="//apple_ref/swift/Method/createModalPlayerView(uiViewContoller:jsonUrl:options:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17BBNativePlayerKit0aB0C011createModalB4View02uiF9Contoller7jsonUrl7optionsySo16UIViewControllerC_SSSDySSypGSgtFZ">createModalPlayerView(uiViewContoller:<wbr>jsonUrl:<wbr>options:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a BBNativePlayerView and presents it as a full screen modal</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">createModalPlayerView</span><span class="p">(</span><span class="nv">uiViewContoller</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">,</span> <span class="nv">jsonUrl</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">options</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>uiViewContoller</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>UIViewController  - is used to present the modal player</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>jsonUrl</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The EMBED url the player will use to setup</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A dictionary with options to send to the player st creation.</p>
+
+<ul>
+<li><strong>&ldquo;adsystem_ppid&rdquo;: String</strong>       used to fill the ppid for google IMA</li>
+<li><strong>&ldquo;adsystem_buid&rdquo;: String</strong>       used for adsystem macro replacement</li>
+<li><strong>&ldquo;adsystem_rdid&rdquo;:  String</strong>       used for adsystem macro replacement</li>
+<li><strong>&ldquo;adsystem_idtype&rdquo;: String</strong>    used for adsystem macro replacement</li>
+<li><strong>&ldquo;adsystem_is_lat&rdquo;: Bool</strong>       used for adsystem macro replacement</li>
+<li><strong>&ldquo;noStats&rdquo;: Bool</strong>                     disables statistics logging when true</li>
+</ul>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>none</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17BBNativePlayerKit0aB0C011createModalB4View02uiF9Contoller7jsonUrlySo16UIViewControllerC_SStFZ"></a>
+                    <a name="//apple_ref/swift/Method/createModalPlayerView(uiViewContoller:jsonUrl:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17BBNativePlayerKit0aB0C011createModalB4View02uiF9Contoller7jsonUrlySo16UIViewControllerC_SStFZ">createModalPlayerView(uiViewContoller:<wbr>jsonUrl:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a BBNativePlayerView and presents it as a full screen modal</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">createModalPlayerView</span><span class="p">(</span><span class="nv">uiViewContoller</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">,</span> <span class="nv">jsonUrl</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>uiViewContoller</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>UIViewController  - is used to present the modal player</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>jsonUrl</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The EMBED url the player will use to setup</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>none</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2021 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2021-06-29)</p>
+          <p>&copy; 2021 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2021-08-23)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

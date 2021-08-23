@@ -129,29 +129,13 @@ class ListViewController: UICollectionViewController, UICollectionViewDelegateFl
     
     // Show video using the Blue Billywig player SDK
     func ShowVideo( url: String) {
-        let height = (view.frame.width - 16 - 16) * 9 / 16
-        let frame: CGRect = CGRect(x: 0, y:0, width: view.frame.width, height: height + 16 + 88)
-        
         // Create player and present it modally
-        bbPlayerView = BBNativePlayer.createPlayerView(frame: frame, jsonUrl: url)
-        bbPlayerView?.presentModal(uiViewContoller: self, animated: true)
-        
-        // Set delegate for bbPlayerView to listen to the 'CanPlay' event and start the video
-        bbPlayerView?.delegate = self
+        BBNativePlayer.createModalPlayerView(uiViewContoller: self, jsonUrl: url)
     }
     
     // re-draw list on rotation
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
         collectionView.collectionViewLayout.invalidateLayout()
-    }
-}
-
-//MARK: - BBNativePlayerViewDelegate in extension
-//Implements BBNativePlayerViewDelegate to recieve all API events and logs them in the DebugUITextView
-extension ListViewController: BBNativePlayerViewDelegate {
-    func didTriggerCanPlay() {
-        // when player is ready to play, call play
-        bbPlayerView?.callApiMethod(method: .play, args: nil)
     }
 }
