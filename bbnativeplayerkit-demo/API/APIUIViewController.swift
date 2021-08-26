@@ -58,7 +58,7 @@ class APIUIViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
        return APIActions[row]
     }
     
-    private var APIActions: [String] = ["Select API method", "Play", "Pause", "Seek", "Mute", "Unmute", "Load","getMuted", "getDuration", "getPhase", "getState", "getMode", "getClipData", "getPlayoutData", "getProjectData", "getVolume", "OpenModalPlayer"]
+    private var APIActions: [String] = ["Select API method", "Play", "Pause", "Seek", "Mute", "Unmute", "loadMediaClipById", "loadProjectById", "loadMediaClipListById", "loadMediaClip","loadProject","loadMediaClipList", "getMuted", "getDuration", "getPhase", "getState", "getMode", "getClipData", "getPlayoutData", "getProjectData", "getVolume", "OpenModalPlayer"]
     
     // Capture the picker view selection
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
@@ -86,8 +86,23 @@ class APIUIViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         case "Unmute":
             bbPlayerView?.setApiProperty(property: .muted, value: false)
             break
-        case "Load":
+        case "loadMediaClip":
+            self.loadMediaClip()
+            break
+        case "loadProject":
+            self.loadProject()
+            break
+        case "loadMediaClipList":
+            self.loadMediaClipList()
+            break
+        case "loadMediaClipById":
             bbPlayerView?.callApiMethod(method: .load_, args: ["clipId": "4256575", "autoPlay": true])
+            break
+        case "loadProjectById":
+            bbPlayerView?.callApiMethod(method: .load_, args: ["projectId": "2209", "autoPlay": true])
+            break
+        case "loadMediaClipListById":
+            bbPlayerView?.callApiMethod(method: .load_, args: ["cliplistId": "1619442239940600", "autoPlay": true])
             break
         case "getClipData":
             if let mediaClip: MediaClip = bbPlayerView?.getApiProperty(property: .clipdata) as? MediaClip {
@@ -160,6 +175,114 @@ class APIUIViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
                 break
             }
     }
+    
+    //MARK: - API load types
+    func loadMediaClip() {
+        if let url = URL(string: "https://demo.bbvms.com/json/mediaclip/4256575" ) {
+            // Create a URLSession
+            let session: URLSession = URLSession(configuration: .default)
+            
+            // Give the session a task
+            let task: URLSessionTask = session.dataTask(with: url) { (data, response, error) in
+                if ( error != nil ) {
+                    print("MediaClip load failed")
+                    return
+                }
+                if let safeData = data {
+                    let dataString = String(data: safeData, encoding: .utf8) ?? ""
+                    
+                    // Option 1: use the jsonstring to load content (uncomment and comment option 2 to try)
+//                    DispatchQueue.main.async {
+//                        self.bbPlayerView?.callApiMethod(method: .load_, args: ["clipDataJsonString": dataString, "autoPlay": true])
+//                    }
+                    
+                    // Option 2: parse the data using ContentLoader Companion object, then use parsed object to load content (uncomment and comment option 1 to try)
+                    DispatchQueue.main.async {
+                        if let clip: MediaClip = ContentLoader.Companion.init().parseMediaClip(jsonString: dataString) {
+                            self.bbPlayerView?.callApiMethod(method: .load_, args: ["clipData": clip, "autoPlay": false])
+                        } else {
+                            print("Parsing of MediaClip Failed:")
+                        }
+                    }
+                }
+            }
+            
+            // Start the task and load the url
+            task.resume()
+        }
+    }
+        
+    func loadProject() {
+        if let url = URL(string: "https://demo.bbvms.com/json/project/2209" ) {
+            // Create a URLSession
+            let session: URLSession = URLSession(configuration: .default)
+            
+            // Give the session a task
+            let task: URLSessionTask = session.dataTask(with: url) { (data, response, error) in
+                if ( error != nil ) {
+                    print("Project load failed")
+                    return
+                }
+                if let safeData = data {
+                    let dataString = String(data: safeData, encoding: .utf8) ?? ""
+                    
+                    // Option 1: use the jsonstring to load content (uncomment and comment option 2 to try)
+//                    DispatchQueue.main.async {
+//                        self.bbPlayerView?.callApiMethod(method: .load_, args: ["projectDataJsonString": dataString, "autoPlay": true])
+//                    }
+                    
+                    // Option 2: parse the data using ContentLoader Companion object, then use parsed object to load content (uncomment and comment option 1 to try)
+                    DispatchQueue.main.async {
+                        if let project: Project = ContentLoader.Companion.init().parseProject(jsonString: dataString) {
+                            self.bbPlayerView?.callApiMethod(method: .load_, args: ["projectData": project, "autoPlay": true])
+                        } else {
+                            print("Parsing Project Failed:")
+                        }
+                    }
+                }
+            }
+            
+            // Start the task and load the url
+            task.resume()
+        }
+    }
+    func loadMediaClipList() {
+        if let url = URL(string: "https://demo.bbvms.com/json/mediacliplist/1619442239940600" ) {
+            // Create a URLSession
+            let session: URLSession = URLSession(configuration: .default)
+            
+            // Give the session a task
+            let task: URLSessionTask = session.dataTask(with: url) { (data, response, error) in
+                if ( error != nil ) {
+                    print("MediaClipList load failed")
+                    return
+                }
+                if let safeData = data {
+                    let dataString = String(data: safeData, encoding: .utf8) ?? ""
+                    
+                    // Option 1: use the jsonstring to load content (uncomment and comment option 2 to try)
+//                    DispatchQueue.main.async {
+//                        self.bbPlayerView?.callApiMethod(method: .load_, args: ["clipListDataJsonString": dataString, "autoPlay": true])
+//                    }
+                    
+                    // Option 2: parse the data using ContentLoader Companion object, then use parsed object to load content (uncomment and comment option 1 to try)
+                    DispatchQueue.main.async {
+                        if let clipList: MediaClipList = ContentLoader.Companion.init().parseMediaClipList(jsonString: dataString) {
+                            self.bbPlayerView?.callApiMethod(method: .load_, args: ["clipListData": clipList, "autoPlay": true])
+
+                        } else {
+                            print("Parsing MediaClipList Failed:")
+                        }
+                    }
+                }
+            }
+            
+            // Start the task
+            task.resume()
+        }
+    }
+    
+    
     
     //MARK: - Debug Info in UI
     func showValue(title: String, message: String) {
