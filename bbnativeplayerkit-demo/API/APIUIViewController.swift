@@ -324,31 +324,31 @@ extension APIUIViewController: BBNativePlayerViewDelegate {
         addToEventDebug("Player API Delegate: didSetupWithJson")
     }
     
-    func didTriggerMediaClipLoaded(data: MediaClip) {
+    func bbNativePlayerView(playerView: BBNativePlayerView, didTriggerMediaClipLoaded data: MediaClip) {
         addToEventDebug("Player API Delegate: didTriggerMediaClipLoaded")
     }
 
-    func didTriggerMediaClipFailed() {
+    func bbNativePlayerView(didTriggerMediaClipFailed playerView: BBNativePlayerView) {
         addToEventDebug("Player API Delegate: didTriggerMediaClipFailed")
     }
     
-    func didTriggerViewStarted() {
+    func bbNativePlayerView(didTriggerViewStarted playerView: BBNativePlayerView) {
         addToEventDebug("Player API Delegate: didTriggerViewStarted")
     }
     
-    func didTriggerViewFinished() {
+    func bbNativePlayerView(didTriggerViewFinished playerView: BBNativePlayerView) {
         addToEventDebug("Player API Delegate: didTriggerViewFinished")
     }
     
-    func didTriggerProjectLoaded(data: Project) {
+    func bbNativePlayerView(playerView: BBNativePlayerView, didTriggerProjectLoaded data: Project) {
         addToEventDebug("Player API Delegate: didTriggerProjectLoaded")
     }
     
-    func didTriggerCanPlay() {
+    func bbNativePlayerView(didTriggerCanPlay playerView: BBNativePlayerView) {
         addToEventDebug("Player API Delegate: didTriggerCanPlay")
     }
     
-    func didTriggerDurationChange(duration: Double) {
+    func bbNativePlayerView(playerView: BBNativePlayerView, didTriggerDurationChange duration: Double) {
         addToEventDebug("Player API Delegate: didTriggerDurationChange : \(duration)")
     }
     
@@ -356,11 +356,11 @@ extension APIUIViewController: BBNativePlayerViewDelegate {
         addToEventDebug("Player API Delegate: didTriggerPlay")
     }
     
-    func didTriggerPause() {
+    func bbNativePlayerView(didTriggerPause playerView: BBNativePlayerView) {
         addToEventDebug("Player API Delegate: didTriggerPause")
     }
     
-    func didTriggerPlaying() {
+    func bbNativePlayerView(didTriggerPlaying playerView: BBNativePlayerView) {
         addToEventDebug("Player API Delegate: didTriggerPlaying")
     }
     
@@ -368,31 +368,31 @@ extension APIUIViewController: BBNativePlayerViewDelegate {
         addToEventDebug("Player API Delegate: didTriggerFinish")
     }
     
-    func didTriggerSeeking() {
+    func bbNativePlayerView(didTriggerSeeking playerView: BBNativePlayerView) {
         addToEventDebug("Player API Delegate: didTriggerSeeking")
     }
     
-    func didTriggerSeeked(seekOffset: Double) {
+    func bbNativePlayerView(playerView: BBNativePlayerView, didTriggerSeeked seekOffset: Double) {
         addToEventDebug("Player API Delegate: didTriggerSeeked : \(seekOffset)")
     }
     
-    func didTriggerStall() {
+    func bbNativePlayerView(didTriggerStall playerView: BBNativePlayerView) {
         addToEventDebug("Player API Delegate: didTriggerStall")
     }
     
-    func didTriggerAutoPause() {
+    func bbNativePlayerView(didTriggerAutoPause playerView: BBNativePlayerView) {
         addToEventDebug("Player API Delegate: didTriggerAutoPause")
     }
     
-    func didTriggerAutoPausePlay() {
+    func bbNativePlayerView(didTriggerAutoPausePlay playerView: BBNativePlayerView) {
         addToEventDebug("Player API Delegate: didTriggerAutoPausePlay")
     }
     
-    func didFailWithError() {
+    func bbNativePlayerView(playerView: BBNativePlayerView, didFailWithError error: String?) {
         addToEventDebug("Player API Delegate: didFailWithError")
     }
     
-    func didTriggerAdError(error: String?) {
+    func bbNativePlayerView(playerView: BBNativePlayerView, didTriggerAdError error: String?) {
         addToEventDebug("Player API Delegate: didTriggerAdError : \(String(describing: error))")
     }
 
@@ -400,11 +400,11 @@ extension APIUIViewController: BBNativePlayerViewDelegate {
         addToEventDebug("Player API Delegate: apiDidTriggerResized('\(String(describing: dimensions))', \(fullscreen))")
     }
     
-    func didTriggerPhaseChange(phase: Phase?) {
+    func bbNativePlayerView(playerView: BBNativePlayerView, didTriggerPhaseChange phase: Phase?) {
         addToEventDebug("Player API Delegate: didTriggerPhaseChange : \(String(describing: phase))")
     }
     
-    func didTriggerStateChange(state: State?) {
+    func bbNativePlayerView(playerView: BBNativePlayerView, didTriggerStateChange state: State?) {
         addToEventDebug("Player API Delegate: didTriggerStateChange : \(String(describing: state))")
     }
     
