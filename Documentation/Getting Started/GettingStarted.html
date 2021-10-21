@@ -89,11 +89,11 @@ override func viewDidLoad() {
 
 <pre><code>
 extension ViewController: BBNativePlayerViewDelegate {    
-    func didTriggerPlay() {
-        print("Blue Billlywig Player: didTriggerPlay")
+    func bbNativePlayerView(didTriggerPlaying playerView: BBNativePlayerView) {
+        print("Blue Billlywig Player: didTriggerPlaying")
     }
     
-    func didTriggerPause() {
+    func bbNativePlayerView(didTriggerPause playerView: BBNativePlayerView) {
         print("Blue Billlywig Player: didTriggerPause")
     }
 }
