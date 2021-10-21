@@ -72,19 +72,19 @@ class APIUIViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
             //bbPlayerView?.setApiProperty(property: .fullscreen, value: false)
             break
         case "Play":
-            bbPlayerView?.callApiMethod(method: .play, args: nil)
+            bbPlayerView?.player.play()
             break
         case "Pause":
-            bbPlayerView?.callApiMethod(method: .pause, args: nil)
+            bbPlayerView?.player.pause()
             break
         case "Seek":
-            bbPlayerView?.callApiMethod(method: .seek, args: ["offsetInSeconds": 10])
+            bbPlayerView?.player.seek(offsetInSeconds: 10)
             break
         case "Mute":
-            bbPlayerView?.setApiProperty(property: .muted, value: true)
+            bbPlayerView?.player.muted = true
             break
         case "Unmute":
-            bbPlayerView?.setApiProperty(property: .muted, value: false)
+            bbPlayerView?.player.muted = false
             break
         case "loadMediaClip":
             self.loadMediaClip()
@@ -96,65 +96,65 @@ class APIUIViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
             self.loadMediaClipList()
             break
         case "loadMediaClipById":
-            bbPlayerView?.callApiMethod(method: .load_, args: ["clipId": "4256575", "autoPlay": true])
+            bbPlayerView?.player.loadWithClipId(clipId: "4256575", initiator: nil, autoPlay: true, seekTo: nil)
             break
         case "loadProjectById":
-            bbPlayerView?.callApiMethod(method: .load_, args: ["projectId": "2209", "autoPlay": true])
+            bbPlayerView?.player.loadWithProjectId(projectId: "2209", initiator: nil, autoPlay: true, seekTo: nil)
             break
         case "loadMediaClipListById":
-            bbPlayerView?.callApiMethod(method: .load_, args: ["cliplistId": "1619442239940600", "autoPlay": true])
+            bbPlayerView?.player.loadWithClipListId(clipListId: "1619442239940600", initiator: nil, autoPlay: true, seekTo: nil)
             break
         case "getClipData":
-            if let mediaClip: MediaClip = bbPlayerView?.getApiProperty(property: .clipdata) as? MediaClip {
+            if let mediaClip: MediaClip = bbPlayerView?.player.clipData as? MediaClip {
                 showValue(title: "Clip id", message: mediaClip.id!)
             } else {
                 showValue(title: "Data", message: "Not available atm")
             }
             break
         case "getDuration":
-            if ( bbPlayerView?.getApiProperty(property: .duration) != nil ) {
+            if ( bbPlayerView?.player.duration != nil ) {
                 showValue(title: "Duration", message: "\(String(describing: bbPlayerView?.getApiProperty(property: .duration)))")
             } else {
                 showValue(title: "Data", message: "Not available atm")
             }
             break
         case "getMuted":
-            if let muted: Bool = bbPlayerView?.getApiProperty(property: .muted) as? Bool {
+            if let muted: Bool = bbPlayerView?.player.muted as? Bool {
                 showValue(title: "Muted?", message: String(muted))
             } else {
                 showValue(title: "Data", message: "Not available atm")
             }
             break
         case "getPhase":
-            if let phase: Phase = bbPlayerView?.getApiProperty(property: .phase) as? Phase {
+            if let phase: Phase = bbPlayerView?.player.phase {
                 showValue(title: "Phase", message: "\(String(describing: phase))")
             } else {
                 showValue(title: "Data", message: "Not available atm")
             }
             break
         case "getState":
-            if let state: State = bbPlayerView?.getApiProperty(property: .state) as? State {
+            if let state: State = bbPlayerView?.player.state {
                 showValue(title: "State", message: "\(String(describing: state))")
             } else {
                 showValue(title: "Data", message: "Not available atm")
             }
             break
         case "getMode":
-            if let mode: String = bbPlayerView?.getApiProperty(property: .mode) as? String {
+            if let mode: String = bbPlayerView?.player.mode {
                 showValue(title: "Mode", message: "\(String(describing: mode))")
             } else {
                 showValue(title: "Data", message: "Not available atm")
             }
             break
         case "getPlayoutData":
-            if let playout: Playout = bbPlayerView?.getApiProperty(property: .playoutdata) as? Playout {
+            if let playout: Playout = bbPlayerView?.player.playoutData {
                 showValue(title: "Playout name", message: playout.name!)
             } else {
                 showValue(title: "Data", message: "Not available atm")
             }
             break
         case "getProjectData":
-            if let project: Project = bbPlayerView?.getApiProperty(property: .projectdata) as? Project {
+            if let project: Project = bbPlayerView?.player.projectData {
                 showValue(title: "Project name", message: project.name!)
             } else {
                 showValue(title: "Data", message: "Not available atm")
@@ -162,7 +162,7 @@ class APIUIViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
             break
             
         case "getVolume":
-            if let volume: Float = bbPlayerView?.getApiProperty(property: .volume) as? Float {
+            if let volume: Float = bbPlayerView?.player.volume {
                 showValue(title: "Project name", message: "\(volume)")
             } else {
                 showValue(title: "Data", message: "Not available atm")
