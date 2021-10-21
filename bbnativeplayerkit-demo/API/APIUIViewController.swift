@@ -352,10 +352,6 @@ extension APIUIViewController: BBNativePlayerViewDelegate {
         addToEventDebug("Player API Delegate: didTriggerDurationChange : \(duration)")
     }
     
-    func didTriggerPlay() {
-        addToEventDebug("Player API Delegate: didTriggerPlay")
-    }
-    
     func bbNativePlayerView(didTriggerPause playerView: BBNativePlayerView) {
         addToEventDebug("Player API Delegate: didTriggerPause")
     }
@@ -364,10 +360,10 @@ extension APIUIViewController: BBNativePlayerViewDelegate {
         addToEventDebug("Player API Delegate: didTriggerPlaying")
     }
     
-    func didTriggerFinish() {
-        addToEventDebug("Player API Delegate: didTriggerFinish")
+    func bbNativePlayerView(didTriggerEnded playerView: BBNativePlayerView) {
+        addToEventDebug("Player API Delegate: didTriggerEnded")
     }
-    
+   
     func bbNativePlayerView(didTriggerSeeking playerView: BBNativePlayerView) {
         addToEventDebug("Player API Delegate: didTriggerSeeking")
     }
@@ -396,10 +392,6 @@ extension APIUIViewController: BBNativePlayerViewDelegate {
         addToEventDebug("Player API Delegate: didTriggerAdError : \(String(describing: error))")
     }
 
-    func didTriggerResized(dimensions: String?, fullscreen: Bool) {
-        addToEventDebug("Player API Delegate: apiDidTriggerResized('\(String(describing: dimensions))', \(fullscreen))")
-    }
-    
     func bbNativePlayerView(playerView: BBNativePlayerView, didTriggerPhaseChange phase: Phase?) {
         addToEventDebug("Player API Delegate: didTriggerPhaseChange : \(String(describing: phase))")
     }
