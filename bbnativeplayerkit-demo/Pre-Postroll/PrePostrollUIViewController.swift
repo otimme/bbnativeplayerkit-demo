@@ -49,7 +49,7 @@ Felis bibendum ut tristique et egestas. Bibendum neque egestas congue quisque eg
         
         
         // Create player with content playing pre- and postroll advertisements
-        bbPlayerView = BBNativePlayer.createPlayerView(frame: view.frame, jsonUrl: "https://demo.bbvms.com/p/native_sdk_preroll/c/4256600.json")
+        bbPlayerView = BBNativePlayer.createPlayerView(uiViewController: self, frame: view.frame, jsonUrl: "https://demo.bbvms.com/p/native_sdk_preroll/c/4256600.json")
         
         // Add player to View
         view.addSubview(bbPlayerView!)
@@ -75,6 +75,12 @@ Felis bibendum ut tristique et egestas. Bibendum neque egestas congue quisque eg
         // create rect for player to exclude text to render there
         let rect = CGRect(x: 0, y: 200, width: view.bounds.size.width, height: view.bounds.size.width * 9/16)
         textView.textContainer.exclusionPaths = [UIBezierPath(rect: rect)]
+        
+        // place the cast button in the navigation bar
+        if let castButton = bbPlayerView?.player.createChromeCastButton {
+            castButton.tintColor = UIColor.black
+            navigationItem.rightBarButtonItem = UIBarButtonItem(customView: castButton)
+        }
     }
     
     //MARK: - Handle rotation

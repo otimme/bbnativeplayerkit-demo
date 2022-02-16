@@ -122,15 +122,23 @@ class ListViewController: UICollectionViewController, UICollectionViewDelegateFl
             let cell = selectedCell as! VideoCell
             if let clipId = cell.mediaClip?.id {
                 let url = "\(blueBillywigPublicationBaseUrl)/p/\(playoutName)/c/\(clipId).json"
-                ShowVideo(url: url)
+                ShowVideo(url: url, index: selectedIndexPath.row)
             }
         }
     }
     
     // Show video using the Blue Billywig player SDK
-    func ShowVideo( url: String) {
+    func ShowVideo( url: String, index: Int) {
+        var options: [String:Any]? = nil
+        
+        if ( index % 2 != 0 ) {
+            options = [
+                "autoPlay": false,
+                "showChromeCastMiniControlsInPlayer": true
+            ]
+        }
         // Create player and present it modally
-        BBNativePlayer.createModalPlayerView(uiViewContoller: self, jsonUrl: url)
+        _ = BBNativePlayer.createModalPlayerView(uiViewContoller: self, jsonUrl: url, options: options )
     }
     
     // re-draw list on rotation

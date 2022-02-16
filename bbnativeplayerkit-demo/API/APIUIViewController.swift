@@ -19,7 +19,7 @@ class APIUIViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         APIActionUIPickerView.delegate = self
 
         // create player view using the embed url
-        bbPlayerView = BBNativePlayer.createPlayerView(frame: view.frame, jsonUrl: "https://demo.bbvms.com/p/default/c/4256600.json")
+        bbPlayerView = BBNativePlayer.createPlayerView(uiViewController: self, frame: view.frame, jsonUrl: "https://demo.bbvms.com/p/default/c/4256600.json", options: ["showChromeCastMiniControlsInPlayer": true])
         
         // use constraints to place and size the player view
         view.addSubview(bbPlayerView!)
@@ -36,6 +36,12 @@ class APIUIViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         
         // set class to delegate of player view
         bbPlayerView?.delegate = self
+        
+        // place the cast button in the navigation bar
+        if let castButton = bbPlayerView?.player.createChromeCastButton {
+            castButton.tintColor = UIColor.black
+            navigationItem.rightBarButtonItem = UIBarButtonItem(customView: castButton)
+        }
     }
     
     //MARK: - API TESTS UI ELEMENTS
@@ -105,7 +111,7 @@ class APIUIViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
             bbPlayerView?.player.loadWithClipListId(clipListId: "1619442239940600", initiator: nil, autoPlay: true, seekTo: nil)
             break
         case "getClipData":
-            if let mediaClip: MediaClip = bbPlayerView?.player.clipData as? MediaClip {
+            if let mediaClip: MediaClip = bbPlayerView?.player.clipData {
                 showValue(title: "Clip id", message: mediaClip.id!)
             } else {
                 showValue(title: "Data", message: "Not available atm")
@@ -119,7 +125,7 @@ class APIUIViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
             }
             break
         case "getMuted":
-            if let muted: Bool = bbPlayerView?.player.muted as? Bool {
+            if let muted: Bool = bbPlayerView?.player.muted {
                 showValue(title: "Muted?", message: String(muted))
             } else {
                 showValue(title: "Data", message: "Not available atm")
@@ -169,7 +175,7 @@ class APIUIViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
             }
             break
         case "OpenModalPlayer":
-            BBNativePlayer.createModalPlayerView(uiViewContoller: self, jsonUrl: "https://demo.bbvms.com/p/default/c/4256615.json")
+            _ = BBNativePlayer.createModalPlayerView(uiViewContoller: self, jsonUrl: "https://demo.bbvms.com/p/default/c/4256615.json")
             break
         default:
                 break

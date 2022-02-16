@@ -1,15 +1,15 @@
 //
-//  Tab1ViewController.swift
-//  BlueBillywigNativeiOSDemo
+//  ChromeCastControlsUIViewController.swift
+//  bbnativeplayerkit-demo
 //
-//  Created by Olaf Timme on 09/02/2021.
+//  Created by Olaf Timme on 16/02/2022.
 //
 
-import Foundation
 import UIKit
 import BBNativePlayerKit
+import bbnativeshared
 
-class InOutViewViewController: UIViewController {
+class ChromeCastControlsUIViewController: UIViewController {
 
     let containerView: UIView = {
         let view = UIView()
@@ -115,7 +115,7 @@ Non pulvinar neque laoreet suspendisse interdum consectetur libero. Volutpat odi
         let imageFrame = UIBezierPath(rect: imageView.frame)
         
         // Create player using playout with inview play and outview pause action
-        bbPlayerView = BBNativePlayer.createPlayerView(uiViewController: self, frame: view.frame, jsonUrl: "https://demo.bbvms.com/p/native_sdk_inoutview/c/4256635.json")
+        bbPlayerView = BBNativePlayer.createPlayerView(uiViewController: self, frame: view.frame, jsonUrl: "https://demo.bbvms.com/p/default/c/4339066.json")
 
         // Add player to scrollView
         scrollView.addSubview(bbPlayerView!)
@@ -126,17 +126,27 @@ Non pulvinar neque laoreet suspendisse interdum consectetur libero. Volutpat odi
         bbPlayerView?.centerXAnchor.constraint(equalTo: containerView.centerXAnchor, constant: 0 ).isActive = true
         bbPlayerView?.widthAnchor.constraint(equalTo: containerView.widthAnchor) .isActive = true
         bbPlayerView?.heightAnchor.constraint(equalToConstant: containerView.frame.size.width * 9/16).isActive = true
-     
+
+        // create rect for player to exclude text to render there
+        let rect = CGRect(x: 0, y: 800, width: containerView.bounds.size.width, height: containerView.bounds.size.width * 9/16)
+        let playerFrame = UIBezierPath(rect: rect)
+        textView.textContainer.exclusionPaths = [imageFrame, playerFrame]
+        
         // place the cast button in the navigation bar
         if let castButton = bbPlayerView?.player.createChromeCastButton {
             castButton.tintColor = UIColor.black
             navigationItem.rightBarButtonItem = UIBarButtonItem(customView: castButton)
         }
-        
-        // create rect for player to exclude text to render there
-        let rect = CGRect(x: 0, y: 800, width: containerView.bounds.size.width, height: containerView.bounds.size.width * 9/16)
-        let playerFrame = UIBezierPath(rect: rect)
-        textView.textContainer.exclusionPaths = [imageFrame, playerFrame]
+
+        // place chromacast minicontroller outside of player
+        if let chromeCastMiniControlsView = bbPlayerView?.player.getChromeCastMiniControlsView {
+            self.view.addSubview(chromeCastMiniControlsView)
+            chromeCastMiniControlsView.translatesAutoresizingMaskIntoConstraints = false
+            chromeCastMiniControlsView.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
+            chromeCastMiniControlsView.bottomAnchor.constraint(equalTo:  self.view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+            chromeCastMiniControlsView.widthAnchor.constraint(equalTo: self.view.widthAnchor).isActive = true
+            chromeCastMiniControlsView.heightAnchor.constraint(equalToConstant: 75).isActive = true
+        }
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
@@ -156,4 +166,72 @@ Non pulvinar neque laoreet suspendisse interdum consectetur libero. Volutpat odi
         super.viewWillDisappear(animated)
         bbPlayerView?.destroy()
     }
+    
+//    private var bbPlayerView: BBNativePlayerView? = nil
+//    lazy var playerHeightConstraint = bbPlayerView?.heightAnchor.constraint(equalToConstant: view.safeAreaLayoutGuide.layoutFrame.width * 9/16)
+//
+//    let textView: UITextView = {
+//       let textView = UITextView()
+//        textView.contentInsetAdjustmentBehavior = .automatic
+//        textView.textAlignment = NSTextAlignment.left
+//        textView.textColor = UIColor.blue
+//        textView.backgroundColor = UIColor.clear
+//        textView.textColor = UIColor.black
+//        textView.font = UIFont.systemFont(ofSize: 16)
+//        textView.translatesAutoresizingMaskIntoConstraints = false
+//        textView.text = """
+//Below a player is added that will play when it comes into view and pauses when it goes out of view. This is done using the in- and outview settings of the playout in the Blue Billywig OVP.
+//
+//Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam ut venenatis tellus in metus vulputate. Bibendum est ultricies integer quis auctor elit sed vulputate mi. Eros in cursus turpis massa tincidunt dui ut. Velit laoreet id donec ultrices tincidunt arcu non sodales neque. Adipiscing bibendum est ultricies integer quis.
+//
+//Sit amet cursus sit amet. Malesuada proin libero nunc consequat interdum varius sit amet mattis. Sem integer vitae justo eget. Sed risus ultricies tristique nulla aliquet enim tortor at. Adipiscing enim eu turpis egestas.
+//
+//Felis bibendum ut tristique et egestas. Bibendum neque egestas congue quisque egestas. Augue lacus viverra vitae congue eu consequat. Vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur. Facilisis leo vel fringilla est. Nisl purus in mollis nunc sed id semper risus.
+//"""
+//        return textView
+//    }()
+//
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//
+//        // create player view using the embed url
+//        bbPlayerView = BBNativePlayer.createPlayerView(uiViewController: self, frame: view.frame, jsonUrl: "https://demo.bbvms.com/p/default/c/4339066.json")
+//
+//        // use constraints to place and size the player view
+//        view.addSubview(bbPlayerView!)
+//        bbPlayerView?.translatesAutoresizingMaskIntoConstraints = false
+//        bbPlayerView?.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor).isActive = true
+//        bbPlayerView?.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0 ).isActive = true
+//        bbPlayerView?.widthAnchor.constraint(equalTo: view.safeAreaLayoutGuide.widthAnchor).isActive = true
+//        if ( view.safeAreaLayoutGuide.layoutFrame.width > view.safeAreaLayoutGuide.layoutFrame.height ) {
+//            self.playerHeightConstraint?.constant = self.view.safeAreaLayoutGuide.layoutFrame.height
+//        } else {
+//            self.playerHeightConstraint?.constant = self.view.safeAreaLayoutGuide.layoutFrame.width * 9/16
+//        }
+//        playerHeightConstraint?.isActive = true
+//
+//        view.addSubview(textView)
+//        textView.topAnchor.constraint(equalTo: bbPlayerView!.bottomAnchor, constant: 50).isActive = true
+//        textView.widthAnchor.constraint(equalTo: view.safeAreaLayoutGuide.widthAnchor).isActive = true
+//        textView.heightAnchor.constraint(equalToConstant: 5000).isActive = true
+//
+//        // place the cast button in the navigation bar
+//        if let castButton = bbPlayerView?.player.CreateChromeCastButton {
+//            castButton.tintColor = UIColor.black
+//            navigationItem.rightBarButtonItem = UIBarButtonItem(customView: castButton)
+//        }
+//
+//        // place chromacast minicontroller outside of player
+//        if let chromeCastMiniControlsView = bbPlayerView?.player.GetChromeCastMiniControlsView {
+//            self.view.addSubview(chromeCastMiniControlsView)
+//            chromeCastMiniControlsView.translatesAutoresizingMaskIntoConstraints = false
+//            chromeCastMiniControlsView.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
+//            chromeCastMiniControlsView.bottomAnchor.constraint(equalTo:  self.view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+//            chromeCastMiniControlsView.widthAnchor.constraint(equalTo: self.view.widthAnchor).isActive = true
+//            chromeCastMiniControlsView.heightAnchor.constraint(equalToConstant: 75).isActive = true
+//        }
+//
+//
+//
+//    }
 }
