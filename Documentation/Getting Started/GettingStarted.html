@@ -24,17 +24,17 @@ pre code {
 <p>Installing the BlueBillywigNativePlayerKit using CocoaPods<br />CocoaPods is a dependency manager for Xcode projects and is the recommended method for installing the BlueBillywigNativePlayerKit. For more information on installing or using CocoaPods, see the <a href="https://guides.cocoapods.org/">CocoaPods documentation</a>. Once you have CocoaPods installed, use the following instructions to install the IMA SDK:<br />In the same directory as your BBNativePlayerExample.xcodeproject file, create a text file called Podfile, and add the following configuration:</p>
 
 <pre><code>
-platform :ios, '11.0'
+platform :ios, '12.0'
 
 target 'BBNativePlayerExample' do
   # Pods for bbnativeplayerkit-demo
-  pod 'BlueBillywigNativePlayerKit-iOS', '~>0.1.0'
+  pod 'BlueBillywigNativePlayerKit-iOS', '~>7.68'
 end
 </code></pre>
 
 <p>&nbsp;</p>
 <p>From the directory that contains the Podfile, run:<br /><code>pod install --repo-update</code></p>
-<p>This will install the pod 'BlueBillywigNativePlayerKit-iOS' and 2 dependencies, you should see something like this:<br /><em>Installing BlueBillywigNativePlayerKit-iOS (0.1.1)</em><br /><em>Installing BlueBillywigNativeShared-iOS (0.1.1)</em><br /><em>Installing GoogleAds-IMA-iOS-SDK (3.13.0)</em></p>
+<p>This will install the pod 'BlueBillywigNativePlayerKit-iOS' and dependencies, you should see something like this:<br /><em>Installing BlueBillywigNativePlayerKit-iOS (0.1.1)</em><br /><em>Installing BlueBillywigNativeShared-iOS (0.1.1)</em><br /><em>Installing GoogleAds-IMA-iOS-SDK (3.13.0)</em><br /><em>Installing google-cast-sdk-dynamic-ios-bb (4.7.0)</em></p>
 <p>Verify that the installation was successful by opening the BBNativePlayerExample.xcworkspace file and confirming that it contains two projects: BBNativePlayerExample and Pods (the dependencies installed by CocoaPods).<br />if there is a problem installing or updating the pods use this command:<br /><code>pod cache clean --all; rm -rf Podfile.lock Pods; pod install --repo-update</code></p>
 
 <p><br /><strong>3. Import the BBNativePlayerKit</strong><br />Next, add the BBNativePlayerKit framework to the ViewController using an import statement beneath the existing imports.</p>
@@ -54,7 +54,7 @@ override func viewDidLoad() {
     super.viewDidLoad()
     
     // create player view using the embed url
-    bbPlayerView = BBNativePlayer.createPlayerView(frame: view.frame, jsonUrl: "https://bb.dev.bbvms.com/p/default/c/1092747.json")
+    bbPlayerView = BBNativePlayer.createPlayerView(uiViewController: self, frame: view.frame, jsonUrl: "https://bb.dev.bbvms.com/p/default/c/1092747.json")
     
 	// add player to the view
     view.addSubview(bbPlayerView!)
