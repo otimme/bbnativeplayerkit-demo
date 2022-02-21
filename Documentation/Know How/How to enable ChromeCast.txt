@@ -18,6 +18,18 @@ Look for the Log line "....._googlecast._tcp is missing in values associated wit
 This will tell you the String that is missing. Change it into that.
 
 
+Add the following key/strings to your plist:
+
+<key>NSBluetoothAlwaysUsageDescription</key>
+<string>${PRODUCT_NAME} uses Bluetooth to discover nearby Cast devices.</string>
+<key>NSBluetoothPeripheralUsageDescription</key>
+<string>${PRODUCT_NAME} uses Bluetooth to discover nearby Cast devices.</string>	
+<key>NSMicrophoneUsageDescription</key>
+<string>${PRODUCT_NAME} uses microphone access to listen for ultrasonic tokens
+when pairing with nearby Cast devices.</string>
+
+
+
 CastButton
 To use the ChromeCast button in your app (eg as a NavigationItem) use the player api to get the UIButton.
 example:

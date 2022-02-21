@@ -37,6 +37,10 @@ end
 <p>This will install the pod 'BlueBillywigNativePlayerKit-iOS' and dependencies, you should see something like this:<br /><em>Installing BlueBillywigNativePlayerKit-iOS (0.1.1)</em><br /><em>Installing BlueBillywigNativeShared-iOS (0.1.1)</em><br /><em>Installing GoogleAds-IMA-iOS-SDK (3.13.0)</em><br /><em>Installing google-cast-sdk-dynamic-ios-bb (4.7.0)</em></p>
 <p>Verify that the installation was successful by opening the BBNativePlayerExample.xcworkspace file and confirming that it contains two projects: BBNativePlayerExample and Pods (the dependencies installed by CocoaPods).<br />if there is a problem installing or updating the pods use this command:<br /><code>pod cache clean --all; rm -rf Podfile.lock Pods; pod install --repo-update</code></p>
 
+
+<p><br /><strong>2a. Read the file "How to enable ChromeCast.txt" in the KnowHow folder and setup the key/strings to your plist found there (Apple obligates you to do this if the code is in even if you don't want to use ChromeCast)</p>
+
+
 <p><br /><strong>3. Import the BBNativePlayerKit</strong><br />Next, add the BBNativePlayerKit framework to the ViewController using an import statement beneath the existing imports.</p>
 <pre><code>
 import UIKit
