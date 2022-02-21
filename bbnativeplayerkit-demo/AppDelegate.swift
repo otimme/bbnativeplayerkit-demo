@@ -6,14 +6,30 @@
 //
 
 import UIKit
+import BBNativePlayerKit
+import bbnativeshared
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    private var bbPlayerView: BBNativePlayerView? = nil
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        if let rootViewController = application.windows.first?.rootViewController {
+            bbPlayerView = BBNativePlayer.createPlayerView(uiViewController: rootViewController, frame: rootViewController.view.frame, jsonUrl: "", options: ["showChromeCastMiniControlsInPlayer": true])
+            rootViewController.view.addSubview(bbPlayerView!)
+            // place the cast button in the navigation bar
+            if let castButton = bbPlayerView?.player.createChromeCastButton {
+                castButton.tintColor = UIColor.black
+                if let navigationController = application.windows[0].rootViewController as? UINavigationController {
+                    navigationController.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: castButton)
+                }
+            }
+        }
+        
+        
         return true
     }
 

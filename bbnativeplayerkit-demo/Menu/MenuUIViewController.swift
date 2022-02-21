@@ -46,12 +46,14 @@ class MenuUIViewController: UIViewController, MenuCollectionViewControllerDelega
         addChild(menuCollectionViewController)
         let menuCollectionView = menuCollectionViewController.view
         
+        let numberOfButtonRows:CGFloat = 4
+        
         view.addSubview(menuCollectionView!)
         menuCollectionView?.translatesAutoresizingMaskIntoConstraints = false
         menuCollectionView?.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
         menuCollectionView?.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor, constant: 0).isActive = true
         menuCollectionView?.widthAnchor.constraint(equalTo: view.safeAreaLayoutGuide.widthAnchor, constant: 0).isActive = true
-        menuCollectionView?.heightAnchor.constraint(equalToConstant: 540).isActive = true
+        menuCollectionView?.heightAnchor.constraint(equalToConstant: (180 * numberOfButtonRows)).isActive = true
        
         menuCollectionViewController.didMove(toParent: self)
         
@@ -136,6 +138,16 @@ class MenuCollectionViewController: UIViewController, UICollectionViewDelegate, 
                                 title: "WebView",
                                 color1: UIColor.init(hex: "#DE433CFF") ?? UIColor.systemGray,
                                 color2: UIColor.init(hex: "#CE2824FF") ?? UIColor.systemGray)
+        menuItems.append(menuItem)
+        menuItem = MenuItem(name: "Chromecast",
+                                title: "ChromeCast",
+                                color1: UIColor.init(hex: "#793BEBFF") ?? UIColor.systemGray,
+                                color2: UIColor.init(hex: "#47BAECFF") ?? UIColor.systemGray)
+        menuItems.append(menuItem)
+        menuItem = MenuItem(name: "ChromeCast_Controls",
+                                title: "ChromeCast 2",
+                                color1: UIColor.init(hex: "#793BEBFF") ?? UIColor.systemGray,
+                                color2: UIColor.init(hex: "#47BAECFF") ?? UIColor.systemGray)
         menuItems.append(menuItem)
        
     }
