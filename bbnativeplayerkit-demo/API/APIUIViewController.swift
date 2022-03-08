@@ -409,4 +409,10 @@ extension APIUIViewController: BBNativePlayerViewDelegate {
     func didRequestOpenUrl(url: String?) {
         addToEventDebug("Player API Delegate: didRequestOpenUrl : \(String(describing: url))")
     }
+    
+    func bbNativePlayerView(didTriggerAdLoaded playerView: BBNativePlayerView) {
+        addToEventDebug("Player API Delegate: didTriggerAdLoaded")
+//        print("*** didTriggerAdLoaded  adMediaWidth = \(self.bbPlayerView?.player.adMediaWidth) ")
+//        print("*** didTriggerAdLoaded  adMediaHeight = \(self.bbPlayerView?.player.adMediaHeight) ")
+    }
 }

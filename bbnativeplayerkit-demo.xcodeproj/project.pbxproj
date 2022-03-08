@@ -227,7 +227,7 @@
 				ED533D3825EE2D5A007F22A8 /* Frameworks */,
 				ED533D3925EE2D5A007F22A8 /* Resources */,
 				5F2553C8E8A97A54FC14F653 /* [CP] Embed Pods Frameworks */,
-				BFF188C6F3ABFB9603B55D0A /* [CP] Copy Pods Resources */,
+				04B3966DD0F88D9FD86ADD62 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -284,6 +284,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		04B3966DD0F88D9FD86ADD62 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bbnativeplayerkit-demo/Pods-bbnativeplayerkit-demo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bbnativeplayerkit-demo/Pods-bbnativeplayerkit-demo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-bbnativeplayerkit-demo/Pods-bbnativeplayerkit-demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		0DD7AE4B3B77412AF492B571 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -321,23 +338,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-bbnativeplayerkit-demo/Pods-bbnativeplayerkit-demo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BFF188C6F3ABFB9603B55D0A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-bbnativeplayerkit-demo/Pods-bbnativeplayerkit-demo-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-bbnativeplayerkit-demo/Pods-bbnativeplayerkit-demo-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-bbnativeplayerkit-demo/Pods-bbnativeplayerkit-demo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
