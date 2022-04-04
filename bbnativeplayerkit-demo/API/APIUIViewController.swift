@@ -19,7 +19,7 @@ class APIUIViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         APIActionUIPickerView.delegate = self
 
         // create player view using the embed url
-        bbPlayerView = BBNativePlayer.createPlayerView(uiViewController: self, frame: view.frame, jsonUrl: "https://demo.bbvms.com/p/default/c/4256600.json", options: ["showChromeCastMiniControlsInPlayer": true])
+        bbPlayerView = BBNativePlayer.createPlayerView(uiViewController: self, frame: view.frame, jsonUrl: "https://demo.bbvms.com/a/native_sdk_outstream.json", options: ["showChromeCastMiniControlsInPlayer": true])
         
         // use constraints to place and size the player view
         view.addSubview(bbPlayerView!)
@@ -414,5 +414,13 @@ extension APIUIViewController: BBNativePlayerViewDelegate {
         addToEventDebug("Player API Delegate: didTriggerAdLoaded")
 //        print("*** didTriggerAdLoaded  adMediaWidth = \(self.bbPlayerView?.player.adMediaWidth) ")
 //        print("*** didTriggerAdLoaded  adMediaHeight = \(self.bbPlayerView?.player.adMediaHeight) ")
+    }
+    
+    func bbNativePlayerView(didTriggerAdSwipeLeft playerView: BBNativePlayerView) {
+        addToEventDebug("Player API Delegate: didtriggerAdSwipeLeft")
+    }
+
+    func bbNativePlayerView(didTriggerAdSwipeRight playerView: BBNativePlayerView) {
+        addToEventDebug("Player API Delegate: didtriggerAdSwipeRight")
     }
 }
