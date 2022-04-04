@@ -38,7 +38,42 @@ end
 <p>Verify that the installation was successful by opening the BBNativePlayerExample.xcworkspace file and confirming that it contains two projects: BBNativePlayerExample and Pods (the dependencies installed by CocoaPods).<br />if there is a problem installing or updating the pods use this command:<br /><code>pod cache clean --all; rm -rf Podfile.lock Pods; pod install --repo-update</code></p>
 
 
-<p><br /><strong>2a. Read the file "How to enable ChromeCast.txt" in the KnowHow folder and setup the key/strings to your plist found there (Apple obligates you to do this if the code is in even if you don't want to use ChromeCast)</p>
+
+
+
+
+
+
+
+<p><br /><strong>2a. Because the framework might use the GoogleCast framework you have to put the following key/strings to your plist (Apple obligates you to do this if the code reference is there even if you don't want to use ChromeCast)</p></strong>
+
+<pre><code>
+&lt;key&gt;NSBonjourServices&lt;/key&gt;
+&lt;array&gt;
+  &lt;string&gt;_googlecast._tcp&lt;/string&gt;
+  &lt;string&gt;ABCD1234._googlecast._tcp&lt;/string&gt;
+&lt;/array&gt;
+&lt;key&gt;NSBluetoothAlwaysUsageDescription&lt;/key&gt;
+&lt;string&gt;${PRODUCT_NAME} uses Bluetooth to discover nearby Cast devices.&lt;/string&gt;
+&lt;key&gt;NSBluetoothPeripheralUsageDescription&lt;/key&gt;
+&lt;string&gt;${PRODUCT_NAME} uses Bluetooth to discover nearby Cast devices.&lt;/string&gt;    
+&lt;key&gt;NSMicrophoneUsageDescription&lt;/key&gt;
+&lt;string&gt;${PRODUCT_NAME} uses microphone access to listen for ultrasonic tokens
+when pairing with nearby Cast devices.&lt;/string&gt;
+</code></pre>
+
+Where "ABCD1234" is your appId. 
+
+The fastest way to find this string is to put in:
+----._googlecast._tcp
+Then run your app and embed a player
+Look for the Log line "....._googlecast._tcp is missing in values associated with the key NSBonjourServices in info.plist"
+This will tell you the String that is missing. Change it into that.
+
+
+
+
+
 
 
 <p><br /><strong>3. Import the BBNativePlayerKit</strong><br />Next, add the BBNativePlayerKit framework to the ViewController using an import statement beneath the existing imports.</p>
