@@ -3,5 +3,5 @@ platform :ios, '12.0'
 
 target 'bbnativeplayerkit-demo' do
   # Pods for bbnativeplayerkit-demo
-  pod 'BlueBillywigNativePlayerKit-iOS', '~>7.91.1'
+  pod 'BlueBillywigNativePlayerKit-iOS', '~>7.93'
 end
