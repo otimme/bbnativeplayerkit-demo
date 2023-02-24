@@ -127,12 +127,6 @@ Felis bibendum ut tristique et egestas. Bibendum neque egestas congue quisque eg
             }
         }
     }
-    
-    // cleanup when view disappears
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        bbPlayerView?.destroy()
-    }
 }
 
 

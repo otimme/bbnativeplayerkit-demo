@@ -49,7 +49,7 @@ Felis bibendum ut tristique et egestas. Bibendum neque egestas congue quisque eg
         
         
         // Create player with content playing pre- and postroll advertisements
-        bbPlayerView = BBNativePlayer.createPlayerView(uiViewController: self, frame: view.frame, jsonUrl: "https://goldbach.bbvms.com/p/jajaja_c/c/5307979.json")
+        bbPlayerView = BBNativePlayer.createPlayerView(uiViewController: self, frame: view.frame, jsonUrl: "https://demo.bbvms.com/p/native_sdk_preroll/c/4256600.json")
         
         // Add player to View
         view.addSubview(bbPlayerView!)
@@ -63,8 +63,8 @@ Felis bibendum ut tristique et egestas. Bibendum neque egestas congue quisque eg
             self.playerHeightConstraint?.constant = view.frame.size.height
         } else {
             self.playerTopConstraint?.constant = 300
-            self.playerWidthConstraint?.constant = 0
-            self.playerHeightConstraint?.constant = (view.frame.size.width)
+            self.playerWidthConstraint?.constant = -10
+            self.playerHeightConstraint?.constant = (view.frame.size.width - 10) * 9/16
         }
         
         playerTopConstraint?.isActive = true
@@ -100,11 +100,5 @@ Felis bibendum ut tristique et egestas. Bibendum neque egestas congue quisque eg
                 self.playerHeightConstraint?.constant = (self.view.frame.size.width - 10) * 9/16
             }
         }
-    }
-    
-    // cleanup when view disappears
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        bbPlayerView?.destroy()
     }
 }
