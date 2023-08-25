@@ -149,6 +149,11 @@ class MenuCollectionViewController: UIViewController, UICollectionViewDelegate, 
                                 color1: UIColor.init(hex: "#793BEBFF") ?? UIColor.systemGray,
                                 color2: UIColor.init(hex: "#47BAECFF") ?? UIColor.systemGray)
         menuItems.append(menuItem)
+        menuItem = MenuItem(name: "Load_json_url",
+                                title: "Load JSON",
+                                color1: UIColor.init(hex: "#793BEBFF") ?? UIColor.systemGray,
+                                color2: UIColor.init(hex: "#47BAECFF") ?? UIColor.systemGray)
+        menuItems.append(menuItem)
        
     }
     

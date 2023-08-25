@@ -21,6 +21,7 @@
 		ED533D7725EE2E00007F22A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED533D7625EE2E00007F22A8 /* Main.storyboard */; };
 		ED533D7A25EE2E11007F22A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED533D7925EE2E11007F22A8 /* Assets.xcassets */; };
 		ED533D7D25EE2E1B007F22A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED533D7C25EE2E1B007F22A8 /* LaunchScreen.storyboard */; };
+		ED576DAF2A39E5040064C08C /* LoadJSONViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED576DAE2A39E5040064C08C /* LoadJSONViewController.swift */; };
 		ED7FD95326398EC70043C63C /* MenuUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7FD95226398EC70043C63C /* MenuUIViewController.swift */; };
 		ED9124C527BCF961001286F9 /* ChromeCastUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9124C427BCF961001286F9 /* ChromeCastUIViewController.swift */; };
 		ED9124C827BCF976001286F9 /* ChromeCastControlsUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9124C727BCF976001286F9 /* ChromeCastControlsUIViewController.swift */; };
@@ -47,6 +48,7 @@
 		ED533D7625EE2E00007F22A8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		ED533D7925EE2E11007F22A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED533D7C25EE2E1B007F22A8 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ED576DAE2A39E5040064C08C /* LoadJSONViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadJSONViewController.swift; sourceTree = "<group>"; };
 		ED7FD95226398EC70043C63C /* MenuUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuUIViewController.swift; sourceTree = "<group>"; };
 		ED9124C427BCF961001286F9 /* ChromeCastUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChromeCastUIViewController.swift; sourceTree = "<group>"; };
 		ED9124C727BCF976001286F9 /* ChromeCastControlsUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChromeCastControlsUIViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 		ED533D3D25EE2D5A007F22A8 /* bbnativeplayerkit-demo */ = {
 			isa = PBXGroup;
 			children = (
+				ED576DAD2A39E4D90064C08C /* Misc */,
 				ED7FD95126398E9C0043C63C /* Menu */,
 				ED533D5425EE2DE9007F22A8 /* API */,
 				ED533D5825EE2DE9007F22A8 /* List */,
@@ -182,6 +185,14 @@
 			path = OutStream;
 			sourceTree = "<group>";
 		};
+		ED576DAD2A39E4D90064C08C /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				ED576DAE2A39E5040064C08C /* LoadJSONViewController.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
 		ED7FD95126398E9C0043C63C /* Menu */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,8 +237,8 @@
 				ED533D3725EE2D5A007F22A8 /* Sources */,
 				ED533D3825EE2D5A007F22A8 /* Frameworks */,
 				ED533D3925EE2D5A007F22A8 /* Resources */,
-				5F2553C8E8A97A54FC14F653 /* [CP] Embed Pods Frameworks */,
-				04B3966DD0F88D9FD86ADD62 /* [CP] Copy Pods Resources */,
+				BE88CF0C74581FCDFE18DD1E /* [CP] Embed Pods Frameworks */,
+				58FF550C500CE046C03EDA58 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -284,23 +295,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		04B3966DD0F88D9FD86ADD62 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-bbnativeplayerkit-demo/Pods-bbnativeplayerkit-demo-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-bbnativeplayerkit-demo/Pods-bbnativeplayerkit-demo-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-bbnativeplayerkit-demo/Pods-bbnativeplayerkit-demo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		0DD7AE4B3B77412AF492B571 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -323,7 +317,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5F2553C8E8A97A54FC14F653 /* [CP] Embed Pods Frameworks */ = {
+		58FF550C500CE046C03EDA58 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bbnativeplayerkit-demo/Pods-bbnativeplayerkit-demo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bbnativeplayerkit-demo/Pods-bbnativeplayerkit-demo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-bbnativeplayerkit-demo/Pods-bbnativeplayerkit-demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE88CF0C74581FCDFE18DD1E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -347,6 +358,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED576DAF2A39E5040064C08C /* LoadJSONViewController.swift in Sources */,
 				ED533D7325EE2DF7007F22A8 /* AppDelegate.swift in Sources */,
 				ED533D7225EE2DF7007F22A8 /* ViewController.swift in Sources */,
 				ED533D6825EE2DE9007F22A8 /* ListUIViewController.swift in Sources */,
@@ -503,7 +515,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 7.100.1;
+				MARKETING_VERSION = 7.114;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bluebillywig.bbnativeplayerkit-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -530,7 +542,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 7.100.1;
+				MARKETING_VERSION = 7.114;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bluebillywig.bbnativeplayerkit-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
