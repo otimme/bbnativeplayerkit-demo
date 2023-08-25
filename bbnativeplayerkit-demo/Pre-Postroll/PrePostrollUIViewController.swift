@@ -50,7 +50,7 @@ Felis bibendum ut tristique et egestas. Bibendum neque egestas congue quisque eg
         
         // Create player with content playing pre- and postroll advertisements
         bbPlayerView = BBNativePlayer.createPlayerView(uiViewController: self, frame: view.frame, jsonUrl: "https://demo.bbvms.com/p/native_sdk_preroll/c/4256600.json")
-        
+        bbPlayerView?.delegate = self
         // Add player to View
         view.addSubview(bbPlayerView!)
         
@@ -100,5 +100,13 @@ Felis bibendum ut tristique et egestas. Bibendum neque egestas congue quisque eg
                 self.playerHeightConstraint?.constant = (self.view.frame.size.width - 10) * 9/16
             }
         }
+    }
+}
+//Implements BBNativePlayerViewDelegate to receive all API events and logs them in the DebugUITextView
+extension PrePostrollUIViewController: BBNativePlayerViewDelegate {
+   
+    
+    func bbNativePlayerView(didTriggerUIPanGesture playerView: BBNativePlayerView, translation: CGPoint) {
+        print("***** didTriggerUIPangesture: translation = \(translation)")
     }
 }

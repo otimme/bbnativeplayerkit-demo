@@ -434,4 +434,8 @@ extension APIUIViewController: BBNativePlayerViewDelegate {
     func bbNativePlayerView(didRequestExpand playerView: BBNativePlayerView) {
         print("*** did request expand")
     }
+    
+    func bbNativePlayerView(didTriggerUIPanGesture playerView: BBNativePlayerView, translation: CGPoint) {
+        print("***** didTriggerUIPangesture: translation = \(translation)")
+    }
 }
