@@ -154,6 +154,11 @@ class MenuCollectionViewController: UIViewController, UICollectionViewDelegate, 
                                 color1: UIColor.init(hex: "#793BEBFF") ?? UIColor.systemGray,
                                 color2: UIColor.init(hex: "#47BAECFF") ?? UIColor.systemGray)
         menuItems.append(menuItem)
+        menuItem = MenuItem(name: "audio_player",
+                                title: "AudioPlayer",
+                                color1: UIColor.init(hex: "#9FE499FF") ?? UIColor.systemGray,
+                                color2: UIColor.init(hex: "#71D767FF") ?? UIColor.systemGray)
+        menuItems.append(menuItem)
        
     }
     

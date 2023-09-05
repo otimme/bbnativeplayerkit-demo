@@ -23,6 +23,7 @@
 		ED533D7D25EE2E1B007F22A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED533D7C25EE2E1B007F22A8 /* LaunchScreen.storyboard */; };
 		ED576DAF2A39E5040064C08C /* LoadJSONViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED576DAE2A39E5040064C08C /* LoadJSONViewController.swift */; };
 		ED7FD95326398EC70043C63C /* MenuUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7FD95226398EC70043C63C /* MenuUIViewController.swift */; };
+		ED877E722A988EBA004622AC /* AudioPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED877E712A988EBA004622AC /* AudioPlayerViewController.swift */; };
 		ED9124C527BCF961001286F9 /* ChromeCastUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9124C427BCF961001286F9 /* ChromeCastUIViewController.swift */; };
 		ED9124C827BCF976001286F9 /* ChromeCastControlsUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9124C727BCF976001286F9 /* ChromeCastControlsUIViewController.swift */; };
 		ED9D2B862636C77900E69487 /* PrePostrollUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9D2B852636C77900E69487 /* PrePostrollUIViewController.swift */; };
@@ -50,6 +51,7 @@
 		ED533D7C25EE2E1B007F22A8 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED576DAE2A39E5040064C08C /* LoadJSONViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadJSONViewController.swift; sourceTree = "<group>"; };
 		ED7FD95226398EC70043C63C /* MenuUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuUIViewController.swift; sourceTree = "<group>"; };
+		ED877E712A988EBA004622AC /* AudioPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerViewController.swift; sourceTree = "<group>"; };
 		ED9124C427BCF961001286F9 /* ChromeCastUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChromeCastUIViewController.swift; sourceTree = "<group>"; };
 		ED9124C727BCF976001286F9 /* ChromeCastControlsUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChromeCastControlsUIViewController.swift; sourceTree = "<group>"; };
 		ED9D2B852636C77900E69487 /* PrePostrollUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrePostrollUIViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 		ED533D3D25EE2D5A007F22A8 /* bbnativeplayerkit-demo */ = {
 			isa = PBXGroup;
 			children = (
+				ED877E702A988E7C004622AC /* AudioPlayer */,
 				ED576DAD2A39E4D90064C08C /* Misc */,
 				ED7FD95126398E9C0043C63C /* Menu */,
 				ED533D5425EE2DE9007F22A8 /* API */,
@@ -199,6 +202,14 @@
 				ED7FD95226398EC70043C63C /* MenuUIViewController.swift */,
 			);
 			path = Menu;
+			sourceTree = "<group>";
+		};
+		ED877E702A988E7C004622AC /* AudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				ED877E712A988EBA004622AC /* AudioPlayerViewController.swift */,
+			);
+			path = AudioPlayer;
 			sourceTree = "<group>";
 		};
 		ED9124C327BCF92D001286F9 /* ChromeCast */ = {
@@ -364,6 +375,7 @@
 				ED533D6825EE2DE9007F22A8 /* ListUIViewController.swift in Sources */,
 				ED7FD95326398EC70043C63C /* MenuUIViewController.swift in Sources */,
 				ED533D6B25EE2DE9007F22A8 /* VideoCell.swift in Sources */,
+				ED877E722A988EBA004622AC /* AudioPlayerViewController.swift in Sources */,
 				ED533D6625EE2DE9007F22A8 /* InOutViewViewController.swift in Sources */,
 				ED9124C527BCF961001286F9 /* ChromeCastUIViewController.swift in Sources */,
 				ED533D6525EE2DE9007F22A8 /* APIUIViewController.swift in Sources */,
@@ -515,7 +527,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 7.114;
+				MARKETING_VERSION = 7.115;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bluebillywig.bbnativeplayerkit-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -542,7 +554,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 7.114;
+				MARKETING_VERSION = 7.115;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bluebillywig.bbnativeplayerkit-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
