@@ -69,7 +69,30 @@ class MenuUIViewController: UIViewController, MenuCollectionViewControllerDelega
         if ( menuItem.name != "" ) {
             if let vc = self.storyboard?.instantiateViewController(withIdentifier: menuItem.name) {
                 vc.title = menuItem.title
-                self.navigationController?.pushViewController(vc, animated: true)
+                
+                if ( menuItem.name == "Outstream" ) {
+                    let alertController = UIAlertController(title: "Enter your outstream json url", message: nil, preferredStyle: .alert)
+
+                    alertController.addTextField { textField in
+                        textField.text = "https://demo.bbvms.com/a/native_sdk_outstream.json"
+                    }
+
+                    let submitAction = UIAlertAction(title: "Submit", style: .default) { _ in
+                        if let text = alertController.textFields?.first?.text {
+                            if let osvc: OutStreamUIViewController = vc as? OutStreamUIViewController {
+                                osvc.jsonUrl = text
+                                self.navigationController?.pushViewController(vc, animated: true)
+                            }
+                        }
+                    }
+
+                    alertController.addAction(submitAction)
+
+                    present(alertController, animated: true, completion: nil)
+                    
+                } else {
+                    self.navigationController?.pushViewController(vc, animated: true)
+                }
             }
         }
     }

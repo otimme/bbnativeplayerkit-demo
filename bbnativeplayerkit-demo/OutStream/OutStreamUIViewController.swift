@@ -1,5 +1,3 @@
-//
-//  Tab1ViewController.swift
 //  BlueBillywigNativeiOSDemo
 //
 //  Created by Olaf Timme on 09/02/2021.
@@ -10,10 +8,14 @@ import UIKit
 import BBNativePlayerKit
 
 class OutStreamUIViewController: UIViewController {
+
+    internal var jsonUrl:String = "https://demo.bbvms.com/a/native_sdk_outstream.json"
     
-    lazy var playerTopConstraint = bbPlayerView?.topAnchor.constraint(equalTo: view.topAnchor, constant: 300 )
-    lazy var playerWidthConstraint = bbPlayerView?.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -10)
-    lazy var playerHeightConstraint = bbPlayerView?.heightAnchor.constraint(equalToConstant: (view.frame.size.width - 10) * 9/16)
+    let containerView: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
     
     let textView: UITextView = {
        let textView = UITextView()
@@ -24,118 +26,69 @@ class OutStreamUIViewController: UIViewController {
         textView.textColor = UIColor.black
         textView.font = UIFont.systemFont(ofSize: 16)
         textView.translatesAutoresizingMaskIntoConstraints = false
-        textView.isScrollEnabled = false
         textView.text = """
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam ut venenatis tellus in metus vulputate.
-"""
-        return textView
-    }()
-    
-    let textView2: UITextView = {
-       let textView = UITextView()
-        textView.contentInsetAdjustmentBehavior = .automatic
-        textView.textAlignment = NSTextAlignment.left
-        textView.textColor = UIColor.blue
-        textView.backgroundColor = UIColor.clear
-        textView.textColor = UIColor.black
-        textView.font = UIFont.systemFont(ofSize: 16)
-        textView.translatesAutoresizingMaskIntoConstraints = false
-        textView.isScrollEnabled = false
-        textView.text = """
+Below a player is added that will play when it comes into view and pauses when it goes out of view. This is done using the in- and outview settings of the playout in the Blue Billywig OVP.
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam ut venenatis tellus in metus vulputate. Bibendum est ultricies integer quis auctor elit sed vulputate mi. Eros in cursus turpis massa tincidunt dui ut. Velit laoreet id donec ultrices tincidunt arcu non sodales neque. Adipiscing bibendum est ultricies integer quis.
+
 Sit amet cursus sit amet. Malesuada proin libero nunc consequat interdum varius sit amet mattis. Sem integer vitae justo eget. Sed risus ultricies tristique nulla aliquet enim tortor at. Adipiscing enim eu turpis egestas.
+
 Felis bibendum ut tristique et egestas. Bibendum neque egestas congue quisque egestas. Augue lacus viverra vitae congue eu consequat. Vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur. Facilisis leo vel fringilla est. Nisl purus in mollis nunc sed id semper risus. Vel fringilla est ullamcorper eget nulla. Odio morbi quis commodo odio aenean sed adipiscing diam. Sagittis id consectetur purus ut.
+
+Vestibulum lorem sed risus ultricies tristique. Tellus in metus vulputate eu scelerisque felis imperdiet proin fermentum. Feugiat in fermentum posuere urna nec. A diam maecenas sed enim ut. Cursus mattis molestie a iaculis at erat pellentesque adipiscing. Sit amet consectetur adipiscing elit pellentesque habitant. Nisl nunc mi ipsum faucibus vitae aliquet nec.
 """
         return textView
     }()
-   
-   
+
+    let scrollView: UIScrollView = {
+        let v = UIScrollView()
+        v.translatesAutoresizingMaskIntoConstraints = false
+        
+        v.backgroundColor = .white
+        return v
+    }()
+
     private var bbPlayerView: BBNativePlayerView? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.addSubview(textView)
-        textView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor, constant: 0).isActive = true
-        textView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0).isActive = true
-        textView.widthAnchor.constraint(equalTo: view.safeAreaLayoutGuide.widthAnchor).isActive = true
+        // add the scroll view to self.view
+        self.view.addSubview(scrollView)
+
+        // setup scrollable content
+        scrollView.frame = view.frame
+        scrollView.contentSize = CGSize(width: view.bounds.size.width, height: 2800)
+        scrollView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor, constant: 0).isActive = true
+        scrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0).isActive = true
+        scrollView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor, constant: 0).isActive = true
+        scrollView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 0).isActive = true
+
+        scrollView.addSubview(containerView)
+        containerView.backgroundColor = .systemYellow
+        containerView.leftAnchor.constraint(equalTo: scrollView.leftAnchor, constant: 0).isActive = true
+        containerView.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 0).isActive = true
+        containerView.widthAnchor.constraint(equalTo: scrollView.widthAnchor, constant: 0).isActive = true
+                
+        containerView.addSubview(textView)
+        textView.rightAnchor.constraint(equalTo: containerView.rightAnchor, constant: 0).isActive = true
+        textView.widthAnchor.constraint(equalTo: containerView.widthAnchor).isActive = true
+        textView.heightAnchor.constraint(equalToConstant: 5000).isActive = true
         
-        view.layoutIfNeeded()
-        
-    
-        // Create player playing inarticle advertisment
-        bbPlayerView = BBNativePlayer.createPlayerView(uiViewController: self, frame: view.frame, jsonUrl: "https://demo.bbvms.com/a/native_sdk_outstream.json",options: [
-            "allowCollapseExpand": true
-        ])
-        
-        bbPlayerView?.delegate = self
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        // Add player to View
-        view.addSubview(bbPlayerView!)
+        containerView.layoutIfNeeded()
+
+        // Create player using playout with inview play and outview pause action
+        bbPlayerView = BBNativePlayer.createPlayerView(uiViewController: self, frame: view.frame, jsonUrl: jsonUrl)
+
+        // Add player to scrollView
+        scrollView.addSubview(bbPlayerView!)
         
         // Set player constraints
         bbPlayerView?.translatesAutoresizingMaskIntoConstraints = false
-        
-        bbPlayerView?.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        bbPlayerView?.topAnchor.constraint(equalTo: textView.bottomAnchor, constant: 8 ).isActive = true
-        bbPlayerView?.widthAnchor.constraint(equalToConstant: 300) .isActive = true
-
-        
-        view.addSubview(textView2)
-        textView2.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor, constant: 0).isActive = true
-        textView2.topAnchor.constraint(equalTo: bbPlayerView!.bottomAnchor, constant: 0).isActive = true
-        textView2.widthAnchor.constraint(equalTo: view.safeAreaLayoutGuide.widthAnchor).isActive = true
-        
-        
-        // create rect for player to exclude text to render there
-//        let rect = CGRect(x: 0, y: 200, width: view.bounds.size.width, height: view.bounds.size.width * 9/16)
-//        textView.textContainer.exclusionPaths = [UIBezierPath(rect: rect)]
-        
-        // place the cast button in the navigation bar
-        if let castButton = bbPlayerView?.player.createChromeCastButton {
-            castButton.tintColor = UIColor.black
-            navigationItem.rightBarButtonItem = UIBarButtonItem(customView: castButton)
-        }
-    }
-    
-    //MARK: - Handle rotation
-    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        super.viewWillTransition(to: size, with: coordinator)
-        
-        if UIDevice.current.orientation.isLandscape {
-            DispatchQueue.main.async {
-                self.playerTopConstraint?.constant = 0
-                self.playerWidthConstraint?.constant = self.view.frame.size.width
-                self.playerHeightConstraint?.constant = self.view.frame.size.height
-            }
-        } else {
-            DispatchQueue.main.async {
-                self.playerTopConstraint?.constant = 300
-                self.playerWidthConstraint?.constant = -10
-                self.playerHeightConstraint?.constant = (self.view.frame.size.width - 10) * 9/16
-            }
-        }
-    }
-}
-
-
-extension OutStreamUIViewController: BBNativePlayerViewDelegate {
-    func bbNativePlayerView(didRequestCollapse playerView: BBNativePlayerView) {
-        print("*** did request collapse")
-    }
-    
-    func bbNativePlayerView(didRequestExpand playerView: BBNativePlayerView) {
-        print("*** did request expand")
+        bbPlayerView?.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 800 ).isActive = true
+        bbPlayerView?.centerXAnchor.constraint(equalTo: containerView.centerXAnchor, constant: 0 ).isActive = true
+        bbPlayerView?.widthAnchor.constraint(equalTo: containerView.widthAnchor) .isActive = true
+        bbPlayerView?.heightAnchor.constraint(equalToConstant: containerView.frame.size.width * 9/16).isActive = true
+     
     }
 }
