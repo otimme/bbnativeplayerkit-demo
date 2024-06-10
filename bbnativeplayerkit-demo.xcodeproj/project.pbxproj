@@ -26,6 +26,7 @@
 		ED9124C527BCF961001286F9 /* ChromeCastUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9124C427BCF961001286F9 /* ChromeCastUIViewController.swift */; };
 		ED9124C827BCF976001286F9 /* ChromeCastControlsUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9124C727BCF976001286F9 /* ChromeCastControlsUIViewController.swift */; };
 		ED9D2B862636C77900E69487 /* PrePostrollUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9D2B852636C77900E69487 /* PrePostrollUIViewController.swift */; };
+		EDA32B762C172BA9006ADF87 /* ShortsUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA32B752C172BA9006ADF87 /* ShortsUIViewController.swift */; };
 		EDD8161B263BEB4300381B4B /* WebViewUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD8161A263BEB4300381B4B /* WebViewUIViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		ED9124C427BCF961001286F9 /* ChromeCastUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChromeCastUIViewController.swift; sourceTree = "<group>"; };
 		ED9124C727BCF976001286F9 /* ChromeCastControlsUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChromeCastControlsUIViewController.swift; sourceTree = "<group>"; };
 		ED9D2B852636C77900E69487 /* PrePostrollUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrePostrollUIViewController.swift; sourceTree = "<group>"; };
+		EDA32B752C172BA9006ADF87 /* ShortsUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortsUIViewController.swift; sourceTree = "<group>"; };
 		EDD8161A263BEB4300381B4B /* WebViewUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewUIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,8 +117,9 @@
 				ED9D2B842636C73E00E69487 /* Pre-Postroll */,
 				EDD81619263BEB0600381B4B /* WebView */,
 				ED9124C327BCF92D001286F9 /* ChromeCast */,
-				ED533D7125EE2DF7007F22A8 /* SceneDelegate.swift */,
+				EDA32B742C172A8D006ADF87 /* Shorts */,
 				ED533D7025EE2DF7007F22A8 /* AppDelegate.swift */,
+				ED533D7125EE2DF7007F22A8 /* SceneDelegate.swift */,
 				ED533D6F25EE2DF7007F22A8 /* ViewController.swift */,
 				ED533D7625EE2E00007F22A8 /* Main.storyboard */,
 				ED533D4C25EE2D5C007F22A8 /* Info.plist */,
@@ -218,6 +221,14 @@
 			path = "Pre-Postroll";
 			sourceTree = "<group>";
 		};
+		EDA32B742C172A8D006ADF87 /* Shorts */ = {
+			isa = PBXGroup;
+			children = (
+				EDA32B752C172BA9006ADF87 /* ShortsUIViewController.swift */,
+			);
+			path = Shorts;
+			sourceTree = "<group>";
+		};
 		EDD81619263BEB0600381B4B /* WebView */ = {
 			isa = PBXGroup;
 			children = (
@@ -238,6 +249,7 @@
 				ED533D3825EE2D5A007F22A8 /* Frameworks */,
 				ED533D3925EE2D5A007F22A8 /* Resources */,
 				DAF3EA226FC7A079FCDFFD75 /* [CP] Embed Pods Frameworks */,
+				A5073C7D9BF168CED9F214A5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -316,6 +328,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A5073C7D9BF168CED9F214A5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bbnativeplayerkit-demo/Pods-bbnativeplayerkit-demo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bbnativeplayerkit-demo/Pods-bbnativeplayerkit-demo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-bbnativeplayerkit-demo/Pods-bbnativeplayerkit-demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DAF3EA226FC7A079FCDFFD75 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -340,6 +369,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDA32B762C172BA9006ADF87 /* ShortsUIViewController.swift in Sources */,
 				ED576DAF2A39E5040064C08C /* LoadJSONViewController.swift in Sources */,
 				ED533D7325EE2DF7007F22A8 /* AppDelegate.swift in Sources */,
 				ED533D7225EE2DF7007F22A8 /* ViewController.swift in Sources */,
@@ -499,7 +529,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 7.130;
+				MARKETING_VERSION = 8.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bluebillywig.bbnativeplayerkit-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -526,7 +556,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 7.130;
+				MARKETING_VERSION = 8.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bluebillywig.bbnativeplayerkit-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
