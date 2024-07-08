@@ -11,12 +11,13 @@ import BBNativePlayerKit
 
 class ShortsUIViewController: UIViewController {
 
+    internal var jsonUrl:String = "https://testsuite.acc.bbvms.com/sh/17.json"
     internal var bbShortsView: BBNativeShortsView? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        bbShortsView = BBNativeShorts.createShortsView(uiViewController: self, frame: view.frame, jsonUrl: "https://testsuite.acc.bbvms.com/sh/17.json")
+        bbShortsView = BBNativeShorts.createShortsView(uiViewController: self, frame: view.frame, jsonUrl: jsonUrl)
         view.addSubview(bbShortsView!)
         bbShortsView?.translatesAutoresizingMaskIntoConstraints = false
         bbShortsView?.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor).isActive = true

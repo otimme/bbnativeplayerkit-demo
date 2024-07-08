@@ -19,7 +19,7 @@ class APIUIViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         APIActionUIPickerView.delegate = self
 
         // create player view using the embed url
-        bbPlayerView = BBNativePlayer.createPlayerView(uiViewController: self, frame: view.frame, jsonUrl: "https://demo.bbvms.com/p/native_sdk/c/4256593.json", options: ["showChromeCastMiniControlsInPlayer": true])
+        bbPlayerView = BBNativePlayer.createPlayerView(uiViewController: self, frame: view.frame, jsonUrl: "https://omroepwest.bbvms.com/p/default/c/5918505.json", options: ["autoPlay": false])
         
         // use constraints to place and size the player view
         view.addSubview(bbPlayerView!)
@@ -42,6 +42,32 @@ class APIUIViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
             castButton.tintColor = UIColor.black
             navigationItem.rightBarButtonItem = UIBarButtonItem(customView: castButton)
         }
+        
+        var playerCount = 1
+        
+//        _ = Timer.scheduledTimer(withTimeInterval: 10, repeats: true) { timer in
+//            //REMOVING PLAYERVIEW NOW
+//            self.bbPlayerView?.removeFromSuperview()
+//            playerCount += 1
+//            print("Creating new player: count = \(playerCount)")
+//            
+//            
+//            self.bbPlayerView = BBNativePlayer.createPlayerView(uiViewController: self, frame: self.view.frame, jsonUrl: "https://omroepwest.bbvms.com/p/default/c/5918505.json", options: [
+//                "autoPlay": false
+//            ])
+//            self.view.addSubview(self.bbPlayerView!)
+//            self.bbPlayerView?.translatesAutoresizingMaskIntoConstraints = false
+//            self.bbPlayerView?.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
+//            self.bbPlayerView?.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 50 ).isActive = true
+//            self.bbPlayerView?.widthAnchor.constraint(equalTo: self.view.widthAnchor) .isActive = true
+//            self.bbPlayerView?.heightAnchor.constraint(equalToConstant: self.view.frame.size.width * 9/16).isActive = true
+//            
+//            self.bbPlayerView!.delegate = self
+//            
+//            if playerCount == 100 {
+//                timer.invalidate()
+//            }
+//        }
     }
     
     //MARK: - API TESTS UI ELEMENTS

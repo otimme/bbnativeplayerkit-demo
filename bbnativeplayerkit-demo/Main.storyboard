@@ -251,7 +251,7 @@
         <!--ShortsUI View Controller-->
         <scene sceneID="S3P-Yv-0iq">
             <objects>
-                <viewController storyboardIdentifier="shorts_beta" id="jYI-9m-wYn" customClass="ShortsUIViewController" customModule="bbnativeplayerkit_demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Shorts" id="jYI-9m-wYn" customClass="ShortsUIViewController" customModule="bbnativeplayerkit_demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xO2-p5-W2G">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -63,6 +63,27 @@ class MenuUIViewController: UIViewController, MenuCollectionViewControllerDelega
         imageView.widthAnchor.constraint(equalToConstant: 160).isActive = true
 
         view.layoutIfNeeded()
+
+        var playerCount = 0
+        
+//        _ = Timer.scheduledTimer(withTimeInterval: 10, repeats: true) { timer in
+//            //REMOVING PLAYERVIEW NOW
+//            playerCount += 1
+//            print("Creating new player: count = \(playerCount)")
+//            
+//            
+//            if let vc = self.storyboard?.instantiateViewController(withIdentifier: "api") {
+//                vc.title = "api"
+//                self.navigationController?.pushViewController(vc, animated: true)
+//                DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
+//                    self.navigationController?.popViewController(animated: false)
+//                }
+//            }
+//            
+//            if playerCount == 100 {
+//                timer.invalidate()
+//            }
+//        }
     }
     
     func didSelectMenuItem(menuItem: MenuItem) {
@@ -81,6 +102,26 @@ class MenuUIViewController: UIViewController, MenuCollectionViewControllerDelega
                         if let text = alertController.textFields?.first?.text {
                             if let osvc: OutStreamUIViewController = vc as? OutStreamUIViewController {
                                 osvc.jsonUrl = text
+                                self.navigationController?.pushViewController(vc, animated: true)
+                            }
+                        }
+                    }
+
+                    alertController.addAction(submitAction)
+
+                    present(alertController, animated: true, completion: nil)
+                    
+                } else if ( menuItem.name == "Shorts" ) {
+                    let alertController = UIAlertController(title: "Enter your Shorts json url", message: nil, preferredStyle: .alert)
+
+                    alertController.addTextField { textField in
+                        textField.text = "https://testsuite.acc.bbvms.com/sh/17.json"
+                    }
+
+                    let submitAction = UIAlertAction(title: "Submit", style: .default) { _ in
+                        if let text = alertController.textFields?.first?.text {
+                            if let suvc: ShortsUIViewController = vc as? ShortsUIViewController {
+                                suvc.jsonUrl = text
                                 self.navigationController?.pushViewController(vc, animated: true)
                             }
                         }
@@ -176,7 +217,7 @@ class MenuCollectionViewController: UIViewController, UICollectionViewDelegate, 
                                 title: "Load JSON",
                                 color1: UIColor.init(hex: "#793BEBFF") ?? UIColor.systemGray,
                                 color2: UIColor.init(hex: "#47BAECFF") ?? UIColor.systemGray)
-        menuItem = MenuItem(name: "shorts_beta",
+        menuItem = MenuItem(name: "Shorts",
                                 title: "Shorts Beta",
                                 color1: UIColor.init(hex: "#E7AA5AFF") ?? UIColor.systemGray,
                                 color2: UIColor.init(hex: "#DC8237FF") ?? UIColor.systemGray)
