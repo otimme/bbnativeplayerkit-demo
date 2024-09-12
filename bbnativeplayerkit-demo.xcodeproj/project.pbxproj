@@ -28,6 +28,8 @@
 		ED9D2B862636C77900E69487 /* PrePostrollUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9D2B852636C77900E69487 /* PrePostrollUIViewController.swift */; };
 		EDA32B762C172BA9006ADF87 /* ShortsUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA32B752C172BA9006ADF87 /* ShortsUIViewController.swift */; };
 		EDD8161B263BEB4300381B4B /* WebViewUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD8161A263BEB4300381B4B /* WebViewUIViewController.swift */; };
+		EDE194612C92D304005C5070 /* HighlightsUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE194602C92D304005C5070 /* HighlightsUIViewController.swift */; };
+		EDE194632C92D314005C5070 /* ChaptersUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE194622C92D314005C5070 /* ChaptersUIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		ED9D2B852636C77900E69487 /* PrePostrollUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrePostrollUIViewController.swift; sourceTree = "<group>"; };
 		EDA32B752C172BA9006ADF87 /* ShortsUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortsUIViewController.swift; sourceTree = "<group>"; };
 		EDD8161A263BEB4300381B4B /* WebViewUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewUIViewController.swift; sourceTree = "<group>"; };
+		EDE194602C92D304005C5070 /* HighlightsUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightsUIViewController.swift; sourceTree = "<group>"; };
+		EDE194622C92D314005C5070 /* ChaptersUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaptersUIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,9 +121,11 @@
 				ED9D2B842636C73E00E69487 /* Pre-Postroll */,
 				EDD81619263BEB0600381B4B /* WebView */,
 				ED9124C327BCF92D001286F9 /* ChromeCast */,
+				EDE1945E2C92D2BD005C5070 /* Chapters */,
+				EDE1945F2C92D2C7005C5070 /* Highlights */,
 				EDA32B742C172A8D006ADF87 /* Shorts */,
-				ED533D7025EE2DF7007F22A8 /* AppDelegate.swift */,
 				ED533D7125EE2DF7007F22A8 /* SceneDelegate.swift */,
+				ED533D7025EE2DF7007F22A8 /* AppDelegate.swift */,
 				ED533D6F25EE2DF7007F22A8 /* ViewController.swift */,
 				ED533D7625EE2E00007F22A8 /* Main.storyboard */,
 				ED533D4C25EE2D5C007F22A8 /* Info.plist */,
@@ -237,6 +243,22 @@
 			path = WebView;
 			sourceTree = "<group>";
 		};
+		EDE1945E2C92D2BD005C5070 /* Chapters */ = {
+			isa = PBXGroup;
+			children = (
+				EDE194622C92D314005C5070 /* ChaptersUIViewController.swift */,
+			);
+			path = Chapters;
+			sourceTree = "<group>";
+		};
+		EDE1945F2C92D2C7005C5070 /* Highlights */ = {
+			isa = PBXGroup;
+			children = (
+				EDE194602C92D304005C5070 /* HighlightsUIViewController.swift */,
+			);
+			path = Highlights;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -248,8 +270,8 @@
 				ED533D3725EE2D5A007F22A8 /* Sources */,
 				ED533D3825EE2D5A007F22A8 /* Frameworks */,
 				ED533D3925EE2D5A007F22A8 /* Resources */,
-				DAF3EA226FC7A079FCDFFD75 /* [CP] Embed Pods Frameworks */,
-				A5073C7D9BF168CED9F214A5 /* [CP] Copy Pods Resources */,
+				7BAA5048857E64F1135AB6EE /* [CP] Embed Pods Frameworks */,
+				C4E57A9AA6AE4483B0D61806 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -328,24 +350,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A5073C7D9BF168CED9F214A5 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-bbnativeplayerkit-demo/Pods-bbnativeplayerkit-demo-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-bbnativeplayerkit-demo/Pods-bbnativeplayerkit-demo-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-bbnativeplayerkit-demo/Pods-bbnativeplayerkit-demo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DAF3EA226FC7A079FCDFFD75 /* [CP] Embed Pods Frameworks */ = {
+		7BAA5048857E64F1135AB6EE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -360,6 +365,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-bbnativeplayerkit-demo/Pods-bbnativeplayerkit-demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4E57A9AA6AE4483B0D61806 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bbnativeplayerkit-demo/Pods-bbnativeplayerkit-demo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bbnativeplayerkit-demo/Pods-bbnativeplayerkit-demo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-bbnativeplayerkit-demo/Pods-bbnativeplayerkit-demo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -379,11 +401,13 @@
 				ED533D6625EE2DE9007F22A8 /* InOutViewViewController.swift in Sources */,
 				ED9124C527BCF961001286F9 /* ChromeCastUIViewController.swift in Sources */,
 				ED533D6525EE2DE9007F22A8 /* APIUIViewController.swift in Sources */,
+				EDE194612C92D304005C5070 /* HighlightsUIViewController.swift in Sources */,
 				ED533D6725EE2DE9007F22A8 /* ListViewController.swift in Sources */,
 				EDD8161B263BEB4300381B4B /* WebViewUIViewController.swift in Sources */,
 				ED533D6D25EE2DE9007F22A8 /* OutStreamUIViewController.swift in Sources */,
 				ED533D6925EE2DE9007F22A8 /* CollectionViewMediaClipModel.swift in Sources */,
 				ED533D7425EE2DF7007F22A8 /* SceneDelegate.swift in Sources */,
+				EDE194632C92D314005C5070 /* ChaptersUIViewController.swift in Sources */,
 				ED9D2B862636C77900E69487 /* PrePostrollUIViewController.swift in Sources */,
 				ED9124C827BCF976001286F9 /* ChromeCastControlsUIViewController.swift in Sources */,
 			);

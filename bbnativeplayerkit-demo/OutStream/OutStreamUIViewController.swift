@@ -92,6 +92,5 @@ Vestibulum lorem sed risus ultricies tristique. Tellus in metus vulputate eu sce
         bbPlayerView?.centerXAnchor.constraint(equalTo: containerView.centerXAnchor, constant: 0 ).isActive = true
         bbPlayerView?.widthAnchor.constraint(equalTo: containerView.widthAnchor) .isActive = true
         bbPlayerView?.heightAnchor.constraint(equalToConstant: containerView.frame.size.width * 9/16).isActive = true
-     
     }
 }
