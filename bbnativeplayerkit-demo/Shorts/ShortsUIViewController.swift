@@ -24,4 +24,9 @@ class ShortsUIViewController: UIViewController {
         bbShortsView?.widthAnchor.constraint(equalTo: view.safeAreaLayoutGuide.widthAnchor).isActive = true
         bbShortsView?.heightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.heightAnchor).isActive = true
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        bbShortsView?.destroy()
+        super.viewWillDisappear(animated)
+    }
 }
